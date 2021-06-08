@@ -5,6 +5,8 @@ import dots from '../assets/images/dots.png'
 
 export default props =>
     <div className="icon-title">
-        <img src={dots} alt="" />
-        <h1>{props.content}</h1>
+        <div class='row'>
+            <img src={dots} alt="iWorkOff" />
+            <h1>{props.content}</h1>
+        </div>
     </div>

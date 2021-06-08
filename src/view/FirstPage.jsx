@@ -5,9 +5,10 @@ import IconifiedTitle from '../components/IconifiedTitle'
 import './FirstPage.css'
 import Login from './Login'
 
-export default props => 
+export default props =>
     <div className='login'>
         <div className="formdiv">
+            <IconifiedTitle content='Login' />
             <Switch className=''>
                 <Route path='/recovery'>
                     <h1>
@@ -15,12 +16,11 @@ export default props =>
                     </h1>
                 </Route>
                 <Route path='/'>
-                    <IconifiedTitle content='Login' />
                     <Login />
                 </Route>
             </Switch>
         </div>
         <div className="art">
-            
+
         </div>
     </div>

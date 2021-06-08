@@ -1,0 +1,22 @@
+.icon-title {
+    width: 60%;
+    position: absolute;
+
+    top: 10%;
+    left: 5.5%;
+}
+
+.icon-title .row {
+    display: flex;
+    align-items: center;
+}
+
+.icon-title img {
+    margin: 0;
+    width: 70px;
+}
+
+.icon-title h1{
+    margin: 0;
+    font-weight: 900;
+}
