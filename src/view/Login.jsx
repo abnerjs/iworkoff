@@ -10,5 +10,6 @@ export default props =>
         <Field type='text' id='username' title='Nome de usuário' />
         <Field type='password' id='password' title='Senha' />
         <Link className='forgot' to="/recovery">Esqueceu a senha?</Link>
+        {/* when clicked setState of IconifiedTitle content to "Recuperação" */}
         <Submit content='Entrar' />
     </form>
