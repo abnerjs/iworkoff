@@ -1,0 +1,19 @@
+.login {
+    display: flex;
+}
+
+.formdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 100vh;
+    background-color: var(--grey);
+}
+
+.art {
+    width: 55%;
+    height: 100vh;
+    background-color: #fff;
+}
