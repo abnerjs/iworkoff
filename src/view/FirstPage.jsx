@@ -1,6 +1,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
+import IconifiedTitle from '../components/IconifiedTitle'
 import './FirstPage.css'
 import Login from './Login'
 
@@ -14,6 +15,7 @@ export default props =>
                     </h1>
                 </Route>
                 <Route path='/'>
+                    <IconifiedTitle content='Login' />
                     <Login />
                 </Route>
             </Switch>
