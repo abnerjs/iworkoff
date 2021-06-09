@@ -11,7 +11,7 @@
 }
 
 .art .image img {
-    width: 100%;
+    width: 60%;
 }
 
 @media only screen and (max-width: 600px) {

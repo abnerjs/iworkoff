@@ -22,3 +22,8 @@
     height: 28px;
     align-self: flex-start;
 }
+
+.linkToHome {
+    text-decoration: none;
+    color: black;
+}
