@@ -1,0 +1,24 @@
+.detailsTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18pt;
+}
+
+.detailsTitle p {
+    margin: 0;
+}
+
+.detailsTitle .nome {
+    font-weight: 900;
+}
+
+.detailsTitle .status {
+    font-weight: 300;
+}
+
+.statusCircle {
+    width: 28px;
+    height: 28px;
+    align-self: flex-start;
+}
