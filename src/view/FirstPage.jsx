@@ -1,24 +1,26 @@
 /* eslint-disable import/no-anonymous-default-export */
-import React from 'react'
+import React, { useState } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import IconifiedTitle from '../components/IconifiedTitle'
 import UncontrolledLottie from '../components/UncontrolledLottie'
 import './FirstPage.css'
 import Login from './Login'
 import logo from '../assets/images/Marca.png'
+import Recovery from './Recovery'
 
-export default props =>
-    <div className='login'>
+export default props => {
+    const [section, setSection] = useState('Login')
+
+    return (
+        <div className='login'>
         <div className="formdiv">
-            <IconifiedTitle content='Login' />
+            <IconifiedTitle content={section} />
             <Switch className=''>
                 <Route path='/recovery'>
-                    <h1>
-                        TESTE
-                    </h1>
+                    <Recovery setSection={setSection} />
                 </Route>
                 <Route path='/'>
-                    <Login /> 
+                    <Login setSection={setSection} /> 
                 </Route>
             </Switch>
         </div>
@@ -29,3 +31,5 @@ export default props =>
             <UncontrolledLottie />
         </div>
     </div>
+    )
+}

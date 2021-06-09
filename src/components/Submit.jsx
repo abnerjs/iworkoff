@@ -3,4 +3,4 @@ import React from 'react'
 import './Submit.css'
 
 export default props =>
-    <input type='submit' className='button' value={props.content} />
+    <input type='submit' className='inputSubmit' value={props.content} />

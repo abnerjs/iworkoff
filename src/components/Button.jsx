@@ -3,6 +3,6 @@ import React from 'react'
 import './Button.css'
 
 export default props =>
-    <button className='button'>
+    <button className={`button ${props.secondary ? 'secondary' : ''}`}>
         {props.content}
     </button>

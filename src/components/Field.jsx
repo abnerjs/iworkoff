@@ -5,5 +5,5 @@ import './Field.css'
 export default props =>
     <div className='field'>
         <label htmlFor={props.id}>{props.title}</label>
-        <input type={props.type} name={props.id} id={props.id} placeholder={props.title} />
+        <input type={props.type} name={props.id} id={props.id} placeholder={props.placeholder ? props.placeholder : props.title} />
     </div>
