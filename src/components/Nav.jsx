@@ -1,12 +1,12 @@
 /* eslint-disable import/no-anonymous-default-export */
 import React from 'react'
-import Nav from '../components/Nav'
-import './Dashboard.css'
+import './Nav.css'
+import logo from '../assets/images/Marca.png'
 
 export default props => {
     return (
         <div>
-            <Nav />
+            <img src={logo} alt="" />
         </div>
     )
 }
