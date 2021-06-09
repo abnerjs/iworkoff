@@ -1,4 +1,4 @@
-.login .form {
+.page .form {
     width:60%;
     display: flex;
     flex-direction: column;
@@ -6,9 +6,13 @@
     justify-content: center;
 }
 
-.login .form .forgot {
+.page .form .forgot {
     align-self: flex-end;
     margin-right: 15px;
     text-decoration: none;
     color: var(--green-iwo);
+}
+
+.form .submit {
+    width: 100%;
 }

@@ -2,39 +2,41 @@
 import React, { useEffect, useState } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import IconifiedTitle from '../components/IconifiedTitle'
-import UncontrolledLottie from '../components/UncontrolledLottie'
+import Art from './Art'
 import './FirstPage.css'
 import Login from './Login'
-import logo from '../assets/images/Marca.png'
 import Recovery from './Recovery'
+import Dashboard from './Dashboard'
 
 export default props => {
     const [section, setSection] = useState(
         localStorage.getItem('section') ? localStorage.getItem('section') : 'Login'
     )
-    useEffect(()=>{
+    useEffect(() => {
         localStorage.setItem('section', section)
-    },[section]);
+    }, [section]);
 
     return (
-        <div className='login'>
-        <div className="formdiv">
-            <IconifiedTitle content={section} />
+        <div className='page'>
             <Switch className=''>
                 <Route path='/recovery'>
-                    <Recovery setSection={setSection} />
+                    <div className="formdiv">
+                        <IconifiedTitle content={section} />
+                        <Recovery setSection={setSection} />
+                    </div>
+                    <Art />
+                </Route>
+                <Route path='/home'>
+                    <Dashboard />
                 </Route>
                 <Route path='/'>
-                    <Login setSection={setSection} /> 
+                    <div className="formdiv">
+                        <IconifiedTitle content={section} />
+                        <Login setSection={setSection} />
+                    </div>
+                    <Art />
                 </Route>
             </Switch>
         </div>
-        <div className="art">
-            <div className='image'>
-                <img src={logo} alt="" className="logo" />
-            </div>
-            <UncontrolledLottie />
-        </div>
-    </div>
     )
 }

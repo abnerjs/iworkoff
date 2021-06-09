@@ -1,4 +1,4 @@
-.login {
+.page {
     display: flex;
 }
 
@@ -12,27 +12,7 @@
     background-color: var(--grey);
 }
 
-.art {
-    width: 55%;
-    height: 100vh;
-    background-color: #fff;
-}
-
-.art .image {
-    margin: 0;
-    margin-top: 50px;
-    width: 100%;
-}
-
-.art .image img {
-    width: 100%;
-}
-
 @media only screen and (max-width: 600px) {
-    .art {
-        display: none;
-    }
-
     .formdiv {
         width: 100%;
     }

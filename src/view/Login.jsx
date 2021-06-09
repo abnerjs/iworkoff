@@ -11,5 +11,7 @@ export default props =>
         <Field type='password' id='password' title='Senha' />
         <Link onClick={() => props.setSection('Recuperação')} className='forgot' to="/recovery">Esqueceu a senha?</Link>
         {/* when clicked setState of IconifiedTitle content to "Recuperação" */}
-        <Submit content='Entrar' />
+        <Link className='submit' to='/home'>
+            <Submit content='Entrar' />
+        </Link>
     </form>
