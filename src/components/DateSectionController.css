@@ -1,0 +1,14 @@
+.date-section {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.date-section .link {
+    text-decoration: none;
+    color: #78787880;
+}
+
+.date-section .link:hover, .date-section .active {
+    color: var(--green-iwo);
+}
