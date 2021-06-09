@@ -14,7 +14,7 @@ export default props => {
                 <svg className='statusCircle'>
                     <circle cx="14" cy="14" r="7" fill={
                         props.status === 'Online' ? '#009444' :
-                            props.status === 'Ausente' ? 'FBB040' : '#78787880'
+                            props.status === 'Ausente' ? '#FBB040' : '#78787880'
                     } />
                 </svg>
             </div>
