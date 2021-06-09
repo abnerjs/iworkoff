@@ -1,5 +1,5 @@
 /* eslint-disable import/no-anonymous-default-export */
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import IconifiedTitle from '../components/IconifiedTitle'
 import UncontrolledLottie from '../components/UncontrolledLottie'
@@ -9,7 +9,12 @@ import logo from '../assets/images/Marca.png'
 import Recovery from './Recovery'
 
 export default props => {
-    const [section, setSection] = useState('Login')
+    const [section, setSection] = useState(
+        localStorage.getItem('section') ? localStorage.getItem('section') : 'Login'
+    )
+    useEffect(()=>{
+        localStorage.setItem('section', section)
+    },[section]);
 
     return (
         <div className='login'>
