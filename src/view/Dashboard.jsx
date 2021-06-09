@@ -5,7 +5,7 @@ import './Dashboard.css'
 
 export default props => {
     return (
-        <div>
+        <div className='dashboard'>
             <Nav />
         </div>
     )
