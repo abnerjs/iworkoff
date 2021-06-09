@@ -7,6 +7,7 @@ export default props => {
     return (
         <div className='dashboard'>
             <Nav />
+            
         </div>
     )
 }

@@ -1,11 +1,29 @@
 .nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
     height: 40px;
+    width: 100%;
+    margin-top: 20px;
 }
 
-.logo {
+.nav .logo {
     height: 20px;
     margin-right: 20px;
 }
 
+.nav .inline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav .logged:hover {
+    color: var(--green-iwo);
+    cursor: pointer;
+}
+
+.nav .logged p {
+    margin-right: 10px;
+}
