@@ -9,6 +9,7 @@ export default props => {
         <div className='details'>
             <DetailsTitle name='Victor Rocha Azevedo' status='Online' />
             <DateSectionController />
+            
         </div>  
     )
 }
