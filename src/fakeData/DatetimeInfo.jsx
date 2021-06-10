@@ -1,6 +1,6 @@
 export const timeline = []
-const tmpaux = "2021-06-10 13:12:01"
-const tmpaux2 = "2021-06-10 15:15:16"
+var tmpaux = "2021-06-10 13:12:01"
+var tmpaux2 = "2021-06-10 15:15:16"
 timeline.push({
     app: 'Google Chrome',
     initialTime: new Date(Date.UTC(tmpaux[0], tmpaux[1]-1, tmpaux[2],

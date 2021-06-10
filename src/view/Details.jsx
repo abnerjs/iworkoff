@@ -7,8 +7,11 @@ import './Details.css'
 import ActivitiesData from '../components/dataInfo/ActivitiesData'
 import DataSide from '../components/dataInfo/DataSide'
 import AppsUtilizados from '../components/dataInfo/AppsUtilizados'
-import {timeline, pessoa, tempoAuth, tempoIdling, tempoNoAuth,
-    inicio, fim, total, inativo, ativo} from '../fakeData/DatetimeInfo'
+import {
+    timeline, pessoa, tempoAuth, tempoIdling, tempoNoAuth,
+    inicio, fim, total, inativo, ativo
+} from '../fakeData/DatetimeInfo'
+import { Collapse } from 'react-collapse';
 
 export default props => {
 
@@ -35,6 +38,9 @@ export default props => {
                     inativo={inativo}
                 />
                 <AppsUtilizados />
+                <Collapse isOpened={false}>
+                    <div>Random content</div>
+                </Collapse>
                 <p>{timeline[0].app}</p>
             </div>
         </div>
