@@ -6,6 +6,7 @@ import ChartContainer from '../components/dataInfo/ChartContainer'
 import './Details.css'
 import ActivitiesData from '../components/dataInfo/ActivitiesData'
 import DataSide from '../components/dataInfo/DataSide'
+import AppsUtilizados from '../components/dataInfo/AppsUtilizados'
 
 export default props => {
     const tempoAuth = {
@@ -71,6 +72,7 @@ export default props => {
                     ativo={ativo}
                     inativo={inativo}
                 />
+                <AppsUtilizados />
             </div>
         </div>
     )

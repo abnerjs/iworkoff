@@ -6,6 +6,7 @@
 .datatext {
     width: 30%;
     text-align: left;
+    margin-left: 30px;
 }
 
 .details .main {
