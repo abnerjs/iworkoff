@@ -7,7 +7,7 @@ import './Details.css'
 import ActivitiesData from '../components/dataInfo/ActivitiesData'
 import DataSide from '../components/dataInfo/DataSide'
 import AppsUtilizados from '../components/dataInfo/AppsUtilizados'
-import {pessoa, tempoAuth, tempoIdling, tempoNoAuth,
+import {timeline, pessoa, tempoAuth, tempoIdling, tempoNoAuth,
     inicio, fim, total, inativo, ativo} from '../fakeData/DatetimeInfo'
 
 export default props => {
@@ -35,6 +35,7 @@ export default props => {
                     inativo={inativo}
                 />
                 <AppsUtilizados />
+                <p>{timeline[0].app}</p>
             </div>
         </div>
     )
