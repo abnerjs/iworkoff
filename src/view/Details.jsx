@@ -7,53 +7,15 @@ import './Details.css'
 import ActivitiesData from '../components/dataInfo/ActivitiesData'
 import DataSide from '../components/dataInfo/DataSide'
 import AppsUtilizados from '../components/dataInfo/AppsUtilizados'
+import {pessoa, tempoAuth, tempoIdling, tempoNoAuth,
+    inicio, fim, total, inativo, ativo} from '../fakeData/DatetimeInfo'
 
 export default props => {
-    const tempoAuth = {
-        h: 7,
-        min: 15,
-        s: 46
-    }
-    const tempoNoAuth = {
-        h: 7,
-        min: 15,
-        s: 46
-    }
-    const tempoIdling = {
-        h: 7,
-        min: 15,
-        s: 46
-    }
-    const inicio = {
-        h: 7,
-        min: 59,
-        s: 46
-    }
-    const fim = {
-        h: 17,
-        min: 32,
-        s: 6
-    }
-    const total = {
-        h: 9,
-        min: 34,
-        s: 6
-    }
-    const ativo = {
-        h: 8,
-        min: 5,
-        s: 6
-    }
-    const inativo = {
-        h: 1,
-        min: 29,
-        s: 6
-    }
 
     return (
         <div className='details'>
             <div className="main">
-                <DetailsTitle name='Victor Rocha Azevedo' status='Online' />
+                <DetailsTitle name={pessoa.nome} status={pessoa.status} />
                 <DateSectionController />
                 <ChartContainer />
                 <ActivitiesData
