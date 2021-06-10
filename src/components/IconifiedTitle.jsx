@@ -2,11 +2,12 @@
 import React from 'react'
 import './IconifiedTitle.css'
 import dots from '../assets/images/dots.png'
+import Title from './Title'
 
 export default props =>
     <div className="icon-title">
         <div class='row'>
             <img src={dots} alt="iWorkOff" />
-            <h1>{props.content}</h1>
+            <Title content={props.content} />
         </div>
     </div>

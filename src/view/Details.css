@@ -1,4 +1,13 @@
 .details {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+}
+
+.datatext {
+    width: 30%;
+    text-align: left;
+}
+
+.details .main {
+    flex-grow: 2;
 }
