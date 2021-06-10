@@ -9,7 +9,7 @@
     margin: 0;
     margin-right: 10px;
     font-family: 'Poppins';
-    padding: 10px 15px;
+    padding: 5px 10px;
     transition: all 0.1s ease-in-out;
 }
 
@@ -22,16 +22,16 @@
 }
 
 .sem, .mes {
-    font-size: 12pt;
-    line-height: 12pt;
+    font-size: 10pt;
+    line-height: 10pt;
     margin: 0;
     color: #78787880;
     transition: all 0.1s ease-in-out;
 }
 
 .dia {
-    font-size: 24pt;
-    line-height: 24pt;
+    font-size: 20pt;
+    line-height: 20pt;
     margin: 0;
     color: #5C5C5C;
 }

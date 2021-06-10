@@ -1,0 +1,24 @@
+.activities {
+    display: flex;
+    text-align: left;
+}
+
+.activities .section {
+    margin-right: 30px;
+}
+
+.activities .section .title {
+    text-align: center;
+    background-color: #fff;
+    width: 200px;
+    padding: 2px;
+    border-radius: 300px;
+    margin-bottom: 5px;
+    box-shadow: 2px 2px 4px 0px #00000080;
+}
+
+.activities .section p {
+    margin: 0;
+    font-size: 14px;
+    margin-left: 10px;
+}
