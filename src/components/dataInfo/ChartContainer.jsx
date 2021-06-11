@@ -23,11 +23,10 @@ export default props => {
 
     return (
         <div className='chart-container'>
-            {/*
-            
             <Chart
+                className='chart'
                 width='100%'
-                height="500px"
+                height="100%"
                 chartType="Timeline"
                 loader={<div>Carregando chart</div>}
                 data={chartData}
@@ -36,8 +35,6 @@ export default props => {
                 }}
                 rootProps={{ 'data-testid': '0' }}
             />
-            
-            */}
         </div>
     )
 }
