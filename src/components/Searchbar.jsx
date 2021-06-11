@@ -6,7 +6,7 @@ import { IoSearchOutline } from "react-icons/io5"
 export default props => {
     return (
         <div className="searchbar">
-            <IoSearchOutline class='searchIcon' />
+            <IoSearchOutline className='searchIcon' />
             <input type="text" name="" id="" className="searchbar-input" placeholder='Procurar por colaborador ou grupo' />
         </div>
     )

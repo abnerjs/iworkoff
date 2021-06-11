@@ -1,3 +1,30 @@
 .collapsible .divisorContent {
     cursor: pointer;
 }
+
+.collapsible .divisorContent::selection {
+    background-color: var(--bg-light-grey);
+}
+
+.collapsible .app-time-info {
+    background-color: #fff;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.collapsible .app-time-info .isAuth {
+    padding: 2px 20px;
+    border-radius: 100px;
+    width: max-content;
+    text-align: center;
+    color: #fff;
+}
+
+.collapsible .app-time-info .auth {
+    background-color: var(--green-iwo);
+}
+
+.collapsible .app-time-info .noAuth {
+    background-color: var(--red-iwo);
+}

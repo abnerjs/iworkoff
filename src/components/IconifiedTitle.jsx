@@ -6,7 +6,7 @@ import Title from './Title'
 
 export default props =>
     <div className="icon-title">
-        <div class='row'>
+        <div className='row'>
             <img src={dots} alt="iWorkOff" />
             <Title content={props.content} />
         </div>
