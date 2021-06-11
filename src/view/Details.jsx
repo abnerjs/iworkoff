@@ -11,7 +11,7 @@ import {
     timeline, pessoa, tempoAuth, tempoIdling, tempoNoAuth,
     inicio, fim, total, inativo, ativo
 } from '../fakeData/DatetimeInfo'
-import { Collapse } from 'react-collapse';
+import AppCollapse from '../components/dataInfo/AppCollapse'
 
 export default props => {
 
@@ -38,10 +38,7 @@ export default props => {
                     inativo={inativo}
                 />
                 <AppsUtilizados />
-                <Collapse isOpened={false}>
-                    <div>Random content</div>
-                </Collapse>
-                <p>{timeline[0].app}</p>
+                <AppCollapse app={timeline[0]} />
             </div>
         </div>
     )
