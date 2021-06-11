@@ -18,7 +18,7 @@ export default props => {
             <Collapsible trigger={divisorContent(props.app.app)}>
                 <div app-time-info>
                     <div className="timed">
-                        {props.app.finalTime - props.app.initialTime}
+                        {props.app.diff}
                     </div>
                     <div className={props.app.isAuth ? 'auth' : 'noAuth'}>
                         {props.app.isAuth ? 'Autorizado' : 'Não Autorizado'}
