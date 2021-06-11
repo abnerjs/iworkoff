@@ -2,11 +2,13 @@
 import React from 'react'
 import './AppCollapse.css'
 import Collapsible from 'react-collapsible';
+import { IoChevronDownOutline } from "react-icons/io5"
 
 const divisorContent = (nomeApp) => {
     return (
         <div className='divisorContent'>
             {nomeApp}
+            <IoChevronDownOutline className='chevronApps' />
         </div>
     )
 }

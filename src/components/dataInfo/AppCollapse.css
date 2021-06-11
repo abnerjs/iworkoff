@@ -1,5 +1,7 @@
 .collapsible .divisorContent {
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 .collapsible .divisorContent::selection {
@@ -27,4 +29,13 @@
 
 .collapsible .app-time-info .noAuth {
     background-color: var(--red-iwo);
+}
+
+.collapsible .chevronApps {
+    margin-left: 5px;
+    transition: all ease 0.2s;
+}
+
+.collapsible .is-open .chevronApps {
+    transform: rotate(-180deg)
 }
