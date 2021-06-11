@@ -13,10 +13,7 @@ export default props => {
     var rows = [
         [props.apps[0].app, props.apps[0].initialTime, props.apps[0].finalTime],
         [props.apps[1].app, props.apps[1].initialTime, props.apps[1].finalTime],
-        [props.apps[2].app, props.apps[2].initialTime, props.apps[2].finalTime],
-        ['teste', props.apps[0].initialTime, props.apps[0].finalTime],
-        ['teste2', props.apps[0].initialTime, props.apps[0].finalTime],
-
+        [props.apps[2].app, props.apps[2].initialTime, props.apps[2].finalTime]
     ]
 
     const chartData = [columns, ...rows]
@@ -33,7 +30,7 @@ export default props => {
                 options={{
                     showRowNumber: true,
                 }}
-                rootProps={{ 'data-testid': '0' }}
+                rootProps={{ 'data-testid': '1' }}
             />
         </div>
     )

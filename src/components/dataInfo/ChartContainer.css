@@ -21,6 +21,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .chart-container .chart > div > div {
@@ -30,5 +31,9 @@
 
 .chart-container .chart svg {
     width: 100% !important;
-    overflow: visible;
+    overflow: visible !important;
+}
+
+.chart-container .chart svg g {
+    width: 70px !important;
 }
