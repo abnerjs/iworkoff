@@ -10,8 +10,8 @@ export default props => {
             <Title content='Apps utilizados' />
 
             <AppCollapse app={props.apps[0]} />
-            <AppCollapse app={props.apps[0]} />
-            <AppCollapse app={props.apps[0]} />
+            <AppCollapse app={props.apps[1]} />
+            <AppCollapse app={props.apps[2]} />
         </div>
     )
 }

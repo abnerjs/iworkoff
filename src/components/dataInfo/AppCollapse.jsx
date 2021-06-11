@@ -16,11 +16,13 @@ export default props => {
     return (
         <div className='collapsible'>
             <Collapsible trigger={divisorContent(props.app.app)}>
-                <div className="timed">
-
-                </div>
-                <div className="auth">
-                    
+                <div app-time-info>
+                    <div className="timed">
+                        {props.app.finalTime - props.app.initialTime}
+                    </div>
+                    <div className={props.app.isAuth ? 'auth' : 'noAuth'}>
+                        {props.app.isAuth ? 'Autorizado' : 'Não Autorizado'}
+                    </div>
                 </div>
             </Collapsible>
         </div>
