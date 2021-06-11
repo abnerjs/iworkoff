@@ -14,15 +14,15 @@ const divisorContent = (nomeApp) => {
 export default props => {
 
     return (
-        <Collapsible trigger={divisorContent(props.app.app)} className='collapsible'>
-          <p>
-            This is the collapsible content. It can be any element or React
-            component you like.
-          </p>
-          <p>
-            It can even be another Collapsible component. Check out the next
-            section!
-          </p>
-        </Collapsible>
-      )
+        <div className='collapsible'>
+            <Collapsible trigger={divisorContent(props.app.app)}>
+                <div className="timed">
+
+                </div>
+                <div className="auth">
+                    
+                </div>
+            </Collapsible>
+        </div>
+    )
 }

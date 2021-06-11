@@ -11,7 +11,6 @@ import {
     timeline, pessoa, tempoAuth, tempoIdling, tempoNoAuth,
     inicio, fim, total, inativo, ativo
 } from '../fakeData/DatetimeInfo'
-import AppCollapse from '../components/dataInfo/AppCollapse'
 
 export default props => {
 
@@ -37,8 +36,7 @@ export default props => {
                     ativo={ativo}
                     inativo={inativo}
                 />
-                <AppsUtilizados />
-                <AppCollapse app={timeline[0]} />
+                <AppsUtilizados apps={timeline} />
             </div>
         </div>
     )
