@@ -1,6 +1,7 @@
 .activities {
     display: flex;
     text-align: left;
+    margin-bottom: 30px;
 }
 
 .activities .section {
