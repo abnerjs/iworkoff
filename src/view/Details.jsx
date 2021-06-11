@@ -19,7 +19,7 @@ export default props => {
             <div className="main">
                 <DetailsTitle name={pessoa.nome} status={pessoa.status} />
                 <DateSectionController />
-                <ChartContainer />
+                <ChartContainer apps={timeline} />
                 <ActivitiesData
                     tempoAuth={tempoAuth}
                     tempoIdling={tempoIdling}
