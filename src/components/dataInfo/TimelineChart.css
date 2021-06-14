@@ -1,0 +1,45 @@
+.timeline {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.timeline .rows {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    margin-bottom: 30px;
+}
+
+.time-description {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    color: #787878;
+}
+
+.timeline .row {
+    height: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.timeline .cor0 .bar {
+    height: 80%;
+    border-radius: 8px;
+    background-color: var(--green-iwo);
+}
+
+.timeline .cor1 .bar {
+    height: 80%;
+    border-radius: 8px;
+    background-color: var(--red-iwo);
+}
+
+.timeline .cor2 .bar {
+    height: 80%;
+    border-radius: 8px;
+    background-color: var(--yellow-iwo);
+}
