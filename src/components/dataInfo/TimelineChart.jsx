@@ -47,9 +47,9 @@ function rows(data) {
                             width: (value.diffMs / 86400 * 100) + '%',
                             marginLeft: timeMargin(value.initialTime) / 86400 * 100 + '%',
                         }}
-                    >
+                    > 
                     </div>
-                    
+
                     {value.app} /  {value.initialTime.getHours().toString()}  /  {value.diff.toString()}
 
                 </div>
