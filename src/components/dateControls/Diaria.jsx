@@ -9,38 +9,39 @@ export default props => {
     return (
         <div className='diaria'>
             <DiaCard
-                dia={props.timeline[0].initialTime.getDate() - 3}
-                mes={'MAI'}
-                sem={semana[props.timeline[0].initialTime.getDay() - 3 + 7 % 7]}
+                dia={(new Date(props.timeline[0].initialTime.getTime()-(3 * 24 * 60 * 60 * 1000))).getDate()}
+                mes={meses[(new Date(props.timeline[0].initialTime.getTime()-(3 * 24 * 60 * 60 * 1000))).getMonth()]}
+                sem={semana[(props.timeline[0].initialTime.getDay() - 3 + 7) % 7]}
+                
             />
             <DiaCard 
-                dia={props.timeline[0].initialTime.getDate() - 2}
-                mes={'JUN'} 
+                dia={(new Date(props.timeline[0].initialTime.getTime()-(2 * 24 * 60 * 60 * 1000))).getDate()}
+                mes={meses[(new Date(props.timeline[0].initialTime.getTime()-(2 * 24 * 60 * 60 * 1000))).getMonth()]}
                 sem={semana[props.timeline[0].initialTime.getDay() - 2 + 7 % 7]} 
             />
             <DiaCard 
-                dia={props.timeline[0].initialTime.getDate() - 1}
-                mes={'JUN'} 
+                dia={(new Date(props.timeline[0].initialTime.getTime()-(1 * 24 * 60 * 60 * 1000))).getDate()}
+                mes={meses[(new Date(props.timeline[0].initialTime.getTime()-(1 * 24 * 60 * 60 * 1000))).getMonth()]}
                 sem={semana[props.timeline[0].initialTime.getDay() - 1 + 7 % 7]} 
             />
             <DiaCard 
                 dia={props.timeline[0].initialTime.getDate()}
-                mes={meses[props.timeline[0].initialTime.getMonth() - 1]} 
+                mes={meses[props.timeline[0].initialTime.getMonth()]} 
                 sem={semana[props.timeline[0].initialTime.getDay()]} 
             />
             <DiaCard 
-                dia={props.timeline[0].initialTime.getDate() + 1}
-                mes={'JUN'} 
+                dia={(new Date(props.timeline[0].initialTime.getTime()+(1 * 24 * 60 * 60 * 1000))).getDate()}
+                mes={meses[(new Date(props.timeline[0].initialTime.getTime()+(1 * 24 * 60 * 60 * 1000))).getMonth()]}
                 sem={semana[(props.timeline[0].initialTime.getDay() + 1) % 7]} 
             />
             <DiaCard 
-                dia={props.timeline[0].initialTime.getDate() + 2} 
-                mes={'JUN'} 
+                dia={(new Date(props.timeline[0].initialTime.getTime()+(2 * 24 * 60 * 60 * 1000))).getDate()}
+                mes={meses[(new Date(props.timeline[0].initialTime.getTime()+(2 * 24 * 60 * 60 * 1000))).getMonth()]}
                 sem={semana[(props.timeline[0].initialTime.getDay() + 2) % 7]} 
             />
             <DiaCard 
-                dia={props.timeline[0].initialTime.getDate() + 3}
-                mes={'JUN'} 
+                dia={(new Date(props.timeline[0].initialTime.getTime()+(3 * 24 * 60 * 60 * 1000))).getDate()}
+                mes={meses[(new Date(props.timeline[0].initialTime.getTime()+(3 * 24 * 60 * 60 * 1000))).getMonth()]}
                 sem={semana[(props.timeline[0].initialTime.getDay() + 3) % 7]} 
             />
         </div>
