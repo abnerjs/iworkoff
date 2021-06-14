@@ -21,22 +21,25 @@
 }
 
 .timeline .row {
-    background-color: red;
     height: 25%;
+    display: flex;
+    align-items: center;
 }
 
-.timeline .cor0 {
+.timeline .cor0 .bar {
+    height: 80%;
+    border-radius: 8px;
     background-color: var(--green-iwo);
 }
 
-.timeline .cor1 {
+.timeline .cor1 .bar {
+    height: 80%;
+    border-radius: 8px;
     background-color: var(--red-iwo);
 }
 
-.timeline .cor2 {
+.timeline .cor2 .bar {
+    height: 80%;
+    border-radius: 8px;
     background-color: var(--yellow-iwo);
-}
-
-.timeline .cor3 {
-    background-color: #000;
 }
