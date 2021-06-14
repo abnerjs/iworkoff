@@ -12,7 +12,7 @@ export default props => {
             </div>
             
             <div className='section'>
-                <div className="title">Softwares utilizados</div>
+                <div className="title">Softwares não autorizados</div>
                 <p>Tempo: {props.tempoNoAuth.h}h {props.tempoNoAuth.min}min {props.tempoNoAuth.s}s</p>
                 <p>Porcentagem de uso: {props.percentNoAuth}%</p>
             </div>

@@ -20,43 +20,42 @@ function timeLine() {
 }
 
 function timeMargin(initialTime) {
-        var diff = initialTime.getHours() * 60 * 60
-        diff += initialTime.getMinutes() * 60
-        diff += initialTime.getSeconds()
-        return diff
+    var diff = initialTime.getHours() * 60 * 60
+    diff += initialTime.getMinutes() * 60
+    diff += initialTime.getSeconds()
+    return diff
 }
 
 function rows(data) {
 
     return (
         <div className="rows">
+            
             {data.map((value, index) => {
-                console.log(`Programa ${index + 1}: ${value.initialTime.toString()}`)
                 return (
-                <div
-                    className={`
+                    <div
+                        className={`
                         row
                         ${'cor' + (index % 3).toString()} 
-                        ${value.isAuth ? 'auth':'noauth'}
+                        ${value.isAuth ? 'auth' : 'noauth'}
                     `}
-                    key={index}
-                >
+                        key={index}
+                    >
 
-                    <div
-                        className="bar"
-                        style={{
-                            width: (value.diffMs / 86400 * 100) + '%',
-                            marginLeft: timeMargin(value.initialTime) / 86400 * 100 + '%',
-                        }}
-                    > 
-                    {value.initialTime.getHours().toString()}
-                    </div>
-                    <div className='appInfo'>
-                        <div className="app"> {value.app} </div>
-                        <div className="timeInfo">{value.diff.toString()}</div>
-                    </div>
+                        <div
+                            className="bar"
+                            style={{
+                                width: (value.diffMs / 86400 * 100) + '%',
+                                marginLeft: timeMargin(value.initialTime) / 86400 * 100 + '%',
+                            }}
+                        >
+                        </div>
+                        <div className='appInfo'>
+                            <div className="app"> {value.app} </div>
+                            <div className="timeInfo">{value.diff.toString()}</div>
+                        </div>
 
-                </div>
+                    </div>
                 )
             })}
         </div>
