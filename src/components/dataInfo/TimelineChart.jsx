@@ -36,7 +36,8 @@ function rows(data) {
                 <div
                     className={`
                         row
-                        ${'cor' + (index % 3).toString()}
+                        ${'cor' + (index % 3).toString()} 
+                        ${value.isAuth ? 'auth':'noauth'}
                     `}
                     key={index}
                 >
@@ -48,9 +49,12 @@ function rows(data) {
                             marginLeft: timeMargin(value.initialTime) / 86400 * 100 + '%',
                         }}
                     > 
+                    {value.initialTime.getHours().toString()}
                     </div>
-
-                    {value.app} /  {value.initialTime.getHours().toString()}  /  {value.diff.toString()}
+                    <div className='appInfo'>
+                        <div className="app"> {value.app} </div>
+                        <div className="timeInfo">{value.diff.toString()}</div>
+                    </div>
 
                 </div>
                 )
