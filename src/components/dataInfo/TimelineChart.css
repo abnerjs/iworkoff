@@ -6,7 +6,7 @@
     padding: 30px;
 }
 
-.rows {
+.timeline .rows {
     height: 100%;
     width: 100%;
     overflow: auto;
@@ -23,4 +23,20 @@
 .timeline .row {
     background-color: red;
     height: 25%;
+}
+
+.timeline .cor0 {
+    background-color: var(--green-iwo);
+}
+
+.timeline .cor1 {
+    background-color: var(--red-iwo);
+}
+
+.timeline .cor2 {
+    background-color: var(--yellow-iwo);
+}
+
+.timeline .cor3 {
+    background-color: #000;
 }

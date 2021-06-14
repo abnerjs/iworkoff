@@ -24,7 +24,10 @@ function rows(data) {
     return (
         <div className="rows">
             {data.map((value, index) => {
-                return <div className="row" key={index}>{value.app}</div>
+                return <div className={`
+                row
+                ${'cor' + (index % 4).toString()}
+                `} key={index}>{value.app}</div>
             })}    
         </div>
     )
