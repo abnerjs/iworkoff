@@ -11,6 +11,7 @@ import {
     timeline, pessoa, tempoAuth, tempoIdling, tempoNoAuth,
     inicio, fim, total, inativo, ativo
 } from '../fakeData/DatetimeInfo'
+import Diaria from '../components/dateControls/Diaria'
 
 export default props => {
 
@@ -19,6 +20,7 @@ export default props => {
             <div className="main">
                 <DetailsTitle name={pessoa.nome} status={pessoa.status} />
                 <DateSectionController />
+                <Diaria timeline={timeline} />
                 <ChartContainer apps={timeline} />
                 <ActivitiesData
                     tempoAuth={tempoAuth}

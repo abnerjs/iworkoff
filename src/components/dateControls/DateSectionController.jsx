@@ -1,7 +1,6 @@
 /* eslint-disable import/no-anonymous-default-export */
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import Diaria from './Diaria'
 import './DateSectionController.css'
 
 export default props => {
@@ -28,8 +27,6 @@ export default props => {
                     Mensal
             </Link>
             </div>
-
-            <Diaria />
         </div>
     )
 }

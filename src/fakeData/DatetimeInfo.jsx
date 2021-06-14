@@ -35,8 +35,8 @@ const secondsBetween = (initialTime, finalTime) => {
 }
 
 export const timeline = []
-var tmpaux = "2021-06-10 13:12:01".split(/[- :]/)
-var tmpaux2 = "2021-06-10 15:15:16".split(/[- :]/)
+var tmpaux = "2021-06-01 13:12:01".split(/[- :]/)
+var tmpaux2 = "2021-06-01 15:15:16".split(/[- :]/)
 timeline.push({
     app: 'Google Chrome',
     initialTime: new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2],
@@ -53,8 +53,8 @@ timeline.push({
     ),
     isAuth: true
 })
-tmpaux = "2021-06-10 15:15:17".split(/[- :]/)
-tmpaux2 = "2021-06-10 16:11:20".split(/[- :]/)
+tmpaux = "2021-06-01 15:15:17".split(/[- :]/)
+tmpaux2 = "2021-06-01 16:11:20".split(/[- :]/)
 timeline.push({
     app: 'VSCode',
     initialTime: new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2],
@@ -71,8 +71,8 @@ timeline.push({
     ),
     isAuth: true
 })
-tmpaux = "2021-06-10 16:11:21".split(/[- :]/)
-tmpaux2 = "2021-06-10 16:25:42".split(/[- :]/)
+tmpaux = "2021-06-01 16:11:21".split(/[- :]/)
+tmpaux2 = "2021-06-01 16:25:42".split(/[- :]/)
 timeline.push({
     app: 'Valorant',
     initialTime: new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2],
