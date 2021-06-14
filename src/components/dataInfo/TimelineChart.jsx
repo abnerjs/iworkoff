@@ -35,10 +35,13 @@ function rows(data) {
                 return (
                     <div
                         className={`
-                        row
-                        ${'cor' + (index % 3).toString()} 
-                        ${value.isAuth ? 'auth' : 'noauth'}
-                    `}
+                            row
+                            ${'cor' + (index % 3).toString()} 
+                            ${value.isAuth ? 'auth' : 'noauth'}
+                        `}
+                        style={{
+                            height: (100 / data.length) + '%',
+                        }}
                         key={index}
                     >
 
