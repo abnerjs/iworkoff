@@ -19,11 +19,19 @@ function timeLine() {
     )
 }
 
+function timeMargin(initialTime) {
+        var diff = initialTime.getHours() * 60 * 60
+        diff += initialTime.getMinutes() * 60
+        diff += initialTime.getSeconds()
+        return diff
+}
+
 function rows(data) {
 
     return (
         <div className="rows">
             {data.map((value, index) => {
+                console.log(`Programa ${index + 1}: ${value.initialTime.toString()}`)
                 return (
                 <div
                     className={`
@@ -33,9 +41,15 @@ function rows(data) {
                     key={index}
                 >
 
-                    <div className="bar" style={{width: (value.diffMs / 86400 * 100) + '%'}}>
-                    {value.diffMs.toString()}
+                    <div
+                        className="bar"
+                        style={{
+                            width: (value.diffMs / 86400 * 100) + '%',
+                            marginLeft: timeMargin(value.initialTime) / 86400 * 100 + '%',
+                        }}
+                    >
                     </div>
+                    
                     {value.app} /  {value.initialTime.getHours().toString()}  /  {value.diff.toString()}
 
                 </div>
