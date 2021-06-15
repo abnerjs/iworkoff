@@ -11,6 +11,11 @@
     font-family: 'Poppins';
     padding: 5px 10px;
     transition: all 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.diaria .active .sem, .diaria .active .mes {
+    color: var(--green-iwo);
 }
 
 .dia-card:hover {

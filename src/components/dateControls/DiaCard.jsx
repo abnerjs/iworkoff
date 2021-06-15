@@ -4,7 +4,7 @@ import './DiaCard.css'
 
 export default props => {
     return (
-        <div className="dia-card">
+        <div className={`dia-card ${props.active ? 'active':''}`}>
             <div className="sem">{props.sem}</div>
             <div className="dia">{props.dia}</div>
             <div className="mes">{props.mes}</div>

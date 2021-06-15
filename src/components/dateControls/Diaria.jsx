@@ -33,7 +33,7 @@ export default props => {
                 sem={semana[daySelect.getDay() - 1 + 7 % 7]} 
             />
             <DiaCard 
-                className='active'
+                active
                 dia={daySelect.getDate()}
                 mes={meses[daySelect.getMonth()]} 
                 sem={semana[daySelect.getDay()]} 
