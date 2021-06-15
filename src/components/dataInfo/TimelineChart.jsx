@@ -26,7 +26,7 @@ function timeMargin(initialTime) {
     return diff
 }
 
-function rows(data) {
+function rows2(data) {
 
     return (
         <div className="rows">
@@ -34,11 +34,7 @@ function rows(data) {
             {data.map((value, index) => {
                 return (
                     <div
-                        className={`
-                            row
-                            ${'cor' + (index % 3).toString()} 
-                            ${value.isAuth ? 'auth' : 'noauth'}
-                        `}
+                        className={`row ${'cor' + (index % 3).toString()} ${value.isAuth ? 'auth' : 'noauth'}`}
                         style={{
                             height: (100 / data.length) + '%',
                         }}
@@ -65,7 +61,63 @@ function rows(data) {
     )
 }
 
+function rows(data) {
+
+    const result = data.reduce(function (r, a) {
+        r[a.app] = r[a.app] || []
+        r[a.app].push(a)
+        return r
+    }, Object.create(null))
+
+    const keys = Object.keys(result)
+
+    return (
+        <div className="rows">
+            
+            {keys.map((key, index) => {
+                return (
+                    <div
+                        className={`row ${'cor' + (index % 3).toString()} ${result[key][0].isAuth ? 'auth' : 'noauth'}`}
+                        style={{
+                            height: (100 / keys.length) + '%',
+                        }}
+                        key={index}
+                    >
+
+                        <div
+                            className="bar"
+                            style={{
+                                width: (result[key][0].diffMs / 86400 * 100) + '%',
+                                marginLeft: timeMargin(result[key][0].initialTime) / 86400 * 100 + '%',
+                            }}
+                        >
+                        </div>
+                        <div className='appInfo'>
+                            <div className="app"> {key} </div>
+                            <div className="timeInfo">{result[key][0].diff.toString()}</div>
+                        </div>
+
+                    </div>
+                )
+            })}
+        </div>
+    )
+}
+
 export default props => {
+
+    const result = props.data.reduce(function (r, a) {
+        r[a.app] = r[a.app] || []
+        r[a.app].push(a)
+        return r
+    }, Object.create(null))
+
+    const keys = Object.keys(result)
+
+    keys.map((key, index) => {
+        console.log(result[key])
+    })
+
     return (
         <div className="timeline">
             {timeLine()}
