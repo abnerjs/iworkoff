@@ -36,7 +36,6 @@ function timeMargin(element, index) {
 function groupTime(elements) {
     var timed = 0
     elements.map((key, index) => {
-        console.log(`${key.app}: ${key.diffMs} | ${timed + key.diffMs}`)
         return timed += key.diffMs
     })
 
@@ -59,8 +58,20 @@ function groupTime(elements) {
     }
 
     return textual
+}
 
-
+function msUntilMidnight(element) {
+    var final = element.finalTime
+    if(element.finalTime.getDate() > element.initialTime.getDate()) {
+        final.setHours(23)
+        final.setMinutes(59)
+        final.setSeconds(59)
+    }
+    var diff = 0
+    diff = (final.getHours() - element.initialTime.getHours()) * 60 * 60
+    diff += (final.getMinutes() - element.initialTime.getMinutes()) * 60
+    diff += final.getSeconds() - element.initialTime.getSeconds()
+    return diff
 }
 
 function rows(data) {
@@ -90,7 +101,7 @@ function rows(data) {
                                 <div
                                     className="bar"
                                     style={{
-                                        width: (element.diffMs / 86400 * 100) + '%',
+                                        width: (msUntilMidnight(element) / 86400 * 100) + '%',
                                         marginLeft: timeMargin(result[key], indexj) / 86400 * 100 + '%',
                                     }}
                                 >

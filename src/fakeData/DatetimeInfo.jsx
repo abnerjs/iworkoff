@@ -1,34 +1,6 @@
-const timeBetween = (initialTime, finalTime) => {
-    var minutesDiff = finalTime.getMinutes() - initialTime.getMinutes()
-    var flag = false
-    if (minutesDiff < 0) {
-        minutesDiff += 60
-        flag = !flag
-    }
-    var hoursDiff = finalTime.getHours() - initialTime.getHours()
-    if (flag)
-        hoursDiff--
-
-    var textual = ''
-
-    if (hoursDiff > 0) {
-        textual += hoursDiff + ' hora'
-        textual += (hoursDiff > 1) ? 's ' : ' '
-    }
-
-    if (minutesDiff > 0) {
-        if (hoursDiff > 0) {
-            textual += 'e '
-        }
-        textual += minutesDiff + ' minuto'
-        textual += (minutesDiff > 1) ? 's' : ''
-    }
-
-    return textual
-}
-
 const secondsBetween = (initialTime, finalTime) => {
-    var diff = (finalTime.getHours() - initialTime.getHours()) * 60 * 60
+    var diff = (finalTime.getDate() - initialTime.getDate()) * 24 * 60 * 60
+    diff += (finalTime.getHours() - initialTime.getHours()) * 60 * 60
     diff += (finalTime.getMinutes() - initialTime.getMinutes()) * 60
     diff += finalTime.getSeconds() - initialTime.getSeconds()
     return diff
@@ -43,10 +15,6 @@ timeline.push({
         tmpaux[3], tmpaux[4], tmpaux[5]),
     finalTime: new Date(tmpaux2[0], tmpaux2[1] - 1, tmpaux2[2],
         tmpaux2[3], tmpaux2[4], tmpaux2[5]),
-    diff: timeBetween(
-        (new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2], tmpaux[3], tmpaux[4], tmpaux[5])),
-        (new Date(tmpaux2[0], tmpaux2[1] - 1, tmpaux2[2], tmpaux2[3], tmpaux2[4], tmpaux2[5]))
-    ),
     diffMs: secondsBetween(
         (new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2], tmpaux[3], tmpaux[4], tmpaux[5])),
         (new Date(tmpaux2[0], tmpaux2[1] - 1, tmpaux2[2], tmpaux2[3], tmpaux2[4], tmpaux2[5]))
@@ -61,10 +29,6 @@ timeline.push({
         tmpaux[3], tmpaux[4], tmpaux[5]),
     finalTime: new Date(tmpaux2[0], tmpaux2[1] - 1, tmpaux2[2],
         tmpaux2[3], tmpaux2[4], tmpaux2[5]),
-    diff: timeBetween(
-        (new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2], tmpaux[3], tmpaux[4], tmpaux[5])),
-        (new Date(tmpaux2[0], tmpaux2[1] - 1, tmpaux2[2], tmpaux2[3], tmpaux2[4], tmpaux2[5]))
-    ),
     diffMs: secondsBetween(
         (new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2], tmpaux[3], tmpaux[4], tmpaux[5])),
         (new Date(tmpaux2[0], tmpaux2[1] - 1, tmpaux2[2], tmpaux2[3], tmpaux2[4], tmpaux2[5]))
@@ -79,10 +43,6 @@ timeline.push({
         tmpaux[3], tmpaux[4], tmpaux[5]),
     finalTime: new Date(tmpaux2[0], tmpaux2[1] - 1, tmpaux2[2],
         tmpaux2[3], tmpaux2[4], tmpaux2[5]),
-    diff: timeBetween(
-        (new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2], tmpaux[3], tmpaux[4], tmpaux[5])),
-        (new Date(tmpaux2[0], tmpaux2[1] - 1, tmpaux2[2], tmpaux2[3], tmpaux2[4], tmpaux2[5]))
-    ),
     diffMs: secondsBetween(
         (new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2], tmpaux[3], tmpaux[4], tmpaux[5])),
         (new Date(tmpaux2[0], tmpaux2[1] - 1, tmpaux2[2], tmpaux2[3], tmpaux2[4], tmpaux2[5]))
@@ -97,15 +57,25 @@ timeline.push({
         tmpaux[3], tmpaux[4], tmpaux[5]),
     finalTime: new Date(tmpaux2[0], tmpaux2[1] - 1, tmpaux2[2],
         tmpaux2[3], tmpaux2[4], tmpaux2[5]),
-    diff: timeBetween(
-        (new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2], tmpaux[3], tmpaux[4], tmpaux[5])),
-        (new Date(tmpaux2[0], tmpaux2[1] - 1, tmpaux2[2], tmpaux2[3], tmpaux2[4], tmpaux2[5]))
-    ),
     diffMs: secondsBetween(
         (new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2], tmpaux[3], tmpaux[4], tmpaux[5])),
         (new Date(tmpaux2[0], tmpaux2[1] - 1, tmpaux2[2], tmpaux2[3], tmpaux2[4], tmpaux2[5]))
     ),
     isAuth: true
+})
+tmpaux = "2021-06-01 22:18:00".split(/[- :]/)
+tmpaux2 = "2021-06-02 0:11:20".split(/[- :]/)
+timeline.push({
+    app: 'Valorant',
+    initialTime: new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2],
+        tmpaux[3], tmpaux[4], tmpaux[5]),
+    finalTime: new Date(tmpaux2[0], tmpaux2[1] - 1, tmpaux2[2],
+        tmpaux2[3], tmpaux2[4], tmpaux2[5]),
+    diffMs: secondsBetween(
+        (new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2], tmpaux[3], tmpaux[4], tmpaux[5])),
+        (new Date(tmpaux2[0], tmpaux2[1] - 1, tmpaux2[2], tmpaux2[3], tmpaux2[4], tmpaux2[5]))
+    ),
+    isAuth: false
 })
 
 
