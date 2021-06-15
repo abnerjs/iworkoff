@@ -3,7 +3,6 @@ import React from 'react'
 import './TimelineChart.css'
 
 function timeLine() {
-
     return (
         <div className='time-description'>
             <div>0h</div>
@@ -34,39 +33,34 @@ function timeMargin(element, index) {
     return diff
 }
 
-function rows2(data) {
+function groupTime(elements) {
+    var timed = 0
+    elements.map((key, index) => {
+        console.log(`${key.app}: ${key.diffMs} | ${timed + key.diffMs}`)
+        return timed += key.diffMs
+    })
 
-    return (
-        <div className="rows">
+    var textual = ''
 
-            {data.map((value, index) => {
-                return (
-                    <div
-                        className={`row ${'cor' + (index % 3).toString()} ${value.isAuth ? 'auth' : 'noauth'}`}
-                        style={{
-                            height: (100 / data.length) + '%',
-                        }}
-                        key={index}
-                    >
+    const hours = Math.floor((timed / (60 * 60)) % 24)
+    const minutes = Math.floor((timed / (60)) % 60)
 
-                        <div
-                            className="bar"
-                            style={{
-                                width: (value.diffMs / 86400 * 100) + '%',
-                                marginLeft: timeMargin(value.initialTime) / 86400 * 100 + '%',
-                            }}
-                        >
-                        </div>
-                        <div className='appInfo'>
-                            <div className="app"> {value.app} </div>
-                            <div className="timeInfo">{value.diff.toString()}</div>
-                        </div>
+    if (hours > 0) {
+        textual += hours + ' hora'
+        textual += (hours > 1) ? 's ' : ' '
+    }
 
-                    </div>
-                )
-            })}
-        </div>
-    )
+    if (minutes > 0) {
+        if (minutes > 0 && hours > 0) {
+            textual += 'e '
+        }
+        textual += minutes + ' minuto'
+        textual += (minutes > 1) ? 's' : ''
+    }
+
+    return textual
+
+
 }
 
 function rows(data) {
@@ -100,13 +94,12 @@ function rows(data) {
                                         marginLeft: timeMargin(result[key], indexj) / 86400 * 100 + '%',
                                     }}
                                 >
-
                                 </div>
                             )
                         })}
                         <div className='appInfo'>
                             <div className="app"> {key} </div>
-                            <div className="timeInfo">{result[key][0].diff.toString()}</div>
+                            <div className="timeInfo">{groupTime(result[key])}</div>
                         </div>
 
                     </div>

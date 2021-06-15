@@ -72,6 +72,7 @@
 
 .timeline .row .bar:hover ~ .appInfo {
     color: #000;
+    font-weight: 700;
 }
 
 .chart-container:hover .timeline .row .appInfo {
