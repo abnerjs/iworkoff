@@ -2,6 +2,16 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import DiaCard from './DiaCard'
 import './Diaria.css'
+import { IoReload } from "react-icons/io5";
+
+function withoutTime(daySelect) {
+    var dt = daySelect
+    dt.setHours(0,0,0,0)
+    var today = new Date()
+    today.setHours(0,0,0,0)
+    
+    return (dt.getTime() === today.getTime())
+}
 
 export default props => {
     const [daySelect, setDaySelect] = useState(
@@ -13,11 +23,10 @@ export default props => {
     }, [daySelect])
 
     const datesAround = useCallback(function (delta) {
-        console.log(delta)
         setDaySelect(new Date(daySelect.getTime() + (delta * 24 * 60 * 60 * 1000)))
-        console.log(daySelect)
     }, [daySelect])
 
+    var isToday = withoutTime(daySelect)
 
     const semana = ['DOM', 'SEG', 'TER', 'QUA', 'QUI', 'SEX', 'SÁB']
     const meses = ['JAN', 'FEV', 'MAR', 'ABR', 'MAI', 'JUN', 'JUL', 'AGO', 'SET', 'OUT', 'NOV', 'DEZ']
@@ -59,6 +68,9 @@ export default props => {
                 mes={meses[new Date(daySelect.getTime() + (3 * 24 * 60 * 60 * 1000)).getMonth()]}
                 sem={semana[(daySelect.getDay() + 3) % 7]}
             />
+            <div className={`restore ${isToday? '':'active'}`} onClick={() => {setDaySelect(new Date())}}>
+                <IoReload />
+            </div>
         </div>
     )
 }

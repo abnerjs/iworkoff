@@ -1,3 +1,31 @@
 .diaria {
     display: flex;
+    align-items: center;
+}
+
+.diaria .restore {
+    cursor: pointer;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    background-color: #fff;
+    border-radius: 40px;
+    transition: all ease 0.2s;
+}
+
+.diaria .restore:hover {
+    background-color: #ebebeb;
+    color: var(--green-iwo);
+}
+
+.diaria .restore.active {
+    visibility: visible;
+    opacity: 1;
 }
