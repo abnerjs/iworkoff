@@ -89,7 +89,7 @@ timeline.push({
     ),
     isAuth: false
 })
-tmpaux = "2021-06-01 16:25:21".split(/[- :]/)
+tmpaux = "2021-06-01 16:25:43".split(/[- :]/)
 tmpaux2 = "2021-06-01 17:13:42".split(/[- :]/)
 timeline.push({
     app: 'Google Chrome',

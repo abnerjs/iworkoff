@@ -19,10 +19,18 @@ function timeLine() {
     )
 }
 
-function timeMargin(initialTime) {
-    var diff = initialTime.getHours() * 60 * 60
-    diff += initialTime.getMinutes() * 60
-    diff += initialTime.getSeconds()
+function timeMargin(element, index) {
+    var diff = element[index].initialTime.getHours() * 60 * 60
+    diff += element[index].initialTime.getMinutes() * 60
+    diff += element[index].initialTime.getSeconds()
+
+    for (let i = 0; i < index; i++) {
+        diff -= element[i].initialTime.getHours() * 60 * 60
+        diff -= element[i].initialTime.getMinutes() * 60
+        diff -= element[i].initialTime.getSeconds()
+        diff -= element[i].diffMs
+    }
+
     return diff
 }
 
@@ -30,7 +38,7 @@ function rows2(data) {
 
     return (
         <div className="rows">
-            
+
             {data.map((value, index) => {
                 return (
                     <div
@@ -73,7 +81,7 @@ function rows(data) {
 
     return (
         <div className="rows">
-            
+
             {keys.map((key, index) => {
                 return (
                     <div
@@ -83,15 +91,19 @@ function rows(data) {
                         }}
                         key={index}
                     >
+                        {result[key].map((element, indexj) => {
+                            return (
+                                <div
+                                    className="bar"
+                                    style={{
+                                        width: (element.diffMs / 86400 * 100) + '%',
+                                        marginLeft: timeMargin(result[key], indexj) / 86400 * 100 + '%',
+                                    }}
+                                >
 
-                        <div
-                            className="bar"
-                            style={{
-                                width: (result[key][0].diffMs / 86400 * 100) + '%',
-                                marginLeft: timeMargin(result[key][0].initialTime) / 86400 * 100 + '%',
-                            }}
-                        >
-                        </div>
+                                </div>
+                            )
+                        })}
                         <div className='appInfo'>
                             <div className="app"> {key} </div>
                             <div className="timeInfo">{result[key][0].diff.toString()}</div>
@@ -105,19 +117,6 @@ function rows(data) {
 }
 
 export default props => {
-
-    const result = props.data.reduce(function (r, a) {
-        r[a.app] = r[a.app] || []
-        r[a.app].push(a)
-        return r
-    }, Object.create(null))
-
-    const keys = Object.keys(result)
-
-    keys.map((key, index) => {
-        console.log(result[key])
-    })
-
     return (
         <div className="timeline">
             {timeLine()}
