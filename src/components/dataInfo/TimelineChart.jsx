@@ -18,6 +18,18 @@ function timeLine() {
     )
 }
 
+function diffTime(final, init) {
+    var h = final.getHours() - init.getHours()
+    var min = final.getHours() - init.getHours()
+
+    if (min < 0) {
+        h--
+        min = +min
+    }
+
+    return `Total: ${h}h${min}min`
+}
+
 function timeMargin(element, index) {
     var diff = element[index].initialTime.getHours() * 60 * 60
     diff += element[index].initialTime.getMinutes() * 60
@@ -30,6 +42,13 @@ function timeMargin(element, index) {
         diff -= element[i].diffMs
     }
 
+    return diff
+}
+
+function totalTimeMargin(element) {
+    var diff = element.initialTime.getHours() * 60 * 60
+    diff += element.initialTime.getMinutes() * 60
+    diff += element.initialTime.getSeconds()
     return diff
 }
 
@@ -99,6 +118,9 @@ function rows(data) {
                         {result[key].map((element, indexj) => {
                             return (
                                 <div
+                                    tooltip={`${element.initialTime.getHours()}h${element.initialTime.getMinutes()}min - ${element.finalTime.getHours()}h${element.finalTime.getMinutes()}min`}
+                                    flow={(totalTimeMargin(element) / 86400 * 100) < 50 ? 'right':'left'}
+                                    fulltime={diffTime(element.finalTime, element.initialTime)}
                                     className="bar"
                                     style={{
                                         width: (msUntilMidnight(element) / 86400 * 100) + '%',

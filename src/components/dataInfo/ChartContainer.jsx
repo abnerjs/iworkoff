@@ -10,9 +10,6 @@ export default props => {
 
             <TimelineChart
                 data={props.apps}
-                options={{
-                    colors: ['#009444', '#FBB040', '#BE1E2D', '#000'],
-                }}
             />
         </div>
     )
