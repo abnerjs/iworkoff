@@ -10,7 +10,7 @@ const secondsBetween = (initialTime, finalTime) => {
 
 const timeline = []
 var tmpaux = "2021-05-15 23:57:01".split(/[- :]/)
-var tmpaux2 = "2021-06-16 1:12:19".split(/[- :]/)
+var tmpaux2 = "2021-06-16 00:11:00".split(/[- :]/)
 timeline.push({
     app: 'Google Chrome',
     initialTime: new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2],
