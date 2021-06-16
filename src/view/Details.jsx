@@ -8,9 +8,9 @@ import ActivitiesData from '../components/dataInfo/ActivitiesData'
 import DataSide from '../components/dataInfo/DataSide'
 import AppsUtilizados from '../components/dataInfo/AppsUtilizados'
 import {
-    timeline, pessoa, tempoAuth, tempoIdling, tempoNoAuth,
+    timeline, tempoAuth, tempoIdling, tempoNoAuth,
     inicio, fim, total, inativo, ativo
-} from '../fakeData/DatetimeInfo'
+} from '../store/DatetimeInfo'
 import Diaria from '../components/dateControls/Diaria'
 
 export default props => {
@@ -18,7 +18,7 @@ export default props => {
     return (
         <div className='details'>
             <div className="main">
-                <DetailsTitle name={pessoa.nome} status={pessoa.status} />
+                <DetailsTitle />
                 <DateSectionController />
                 <Diaria timeline={timeline} />
                 <ChartContainer apps={timeline} />

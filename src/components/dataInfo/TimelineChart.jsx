@@ -30,7 +30,7 @@ function diffTime(final, init) {
     return `Total: ${h}h${min}min`
 }
 
-function timeMargin(element, index) {
+function timeMargin(element, index, date) {
     var diff = element[index].initialTime.getHours() * 60 * 60
     diff += element[index].initialTime.getMinutes() * 60
     diff += element[index].initialTime.getSeconds()
@@ -41,6 +41,19 @@ function timeMargin(element, index) {
         diff -= element[i].initialTime.getSeconds()
         diff -= element[i].diffMs
     }
+
+    const from = element[index].initialTime
+    const to = element[index].finalTime
+    var check = new Date(element[index].finalTime)
+    check.setHours(0)
+    check.setMinutes(0)
+    check.setSeconds(0)
+    date.setHours(0)
+    date.setMinutes(0)
+    date.setSeconds(0)
+    
+    if(from.getDate() < to.getDate() && check === date)
+        diff = 0
 
     return diff
 }
@@ -85,7 +98,13 @@ function msUntilMidnight(element) {
         final.setHours(23)
         final.setMinutes(59)
         final.setSeconds(59)
+    } else if (element.initialTime.getDate() < element.finalTime.getDate()) {
+        final.setHours(0)
+        final.setMinutes(0)
+        final.setSeconds(0)
     }
+
+
     var diff = 0
     diff = (final.getHours() - element.initialTime.getHours()) * 60 * 60
     diff += (final.getMinutes() - element.initialTime.getMinutes()) * 60
@@ -124,7 +143,7 @@ function rows(data) {
                                     className="bar"
                                     style={{
                                         width: (msUntilMidnight(element) / 86400 * 100) + '%',
-                                        marginLeft: timeMargin(result[key], indexj) / 86400 * 100 + '%',
+                                        marginLeft: timeMargin(result[key], indexj, new Date()) / 86400 * 100 + '%',
                                     }}
                                 >
                                 </div>
