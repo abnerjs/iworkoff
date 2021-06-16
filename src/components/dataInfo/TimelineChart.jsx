@@ -1,5 +1,6 @@
 /* eslint-disable import/no-anonymous-default-export */
 import React from 'react'
+import { connect } from 'react-redux'
 import './TimelineChart.css'
 
 function timeLine() {
@@ -20,17 +21,18 @@ function timeLine() {
 
 function diffTime(final, init) {
     var h = final.getHours() - init.getHours()
-    var min = final.getHours() - init.getHours()
+    var min = final.getMinutes() - init.getMinutes()
+    var s = final.getSeconds() - init.getSeconds()
 
     if (min < 0) {
         h--
-        min = +min
+        min = (min + 60) % 60
     }
 
-    return `Total: ${h}h${min}min`
+    return `Total: ${h > 0 ? h + 'h' : ''}${min > 0 ? min + 'min' : ''}${h < 0 && min < 0 ? s + 's' : ''}`
 }
 
-function timeMargin(element, index, date) {
+function timeMargin(element, index) {
     var diff = element[index].initialTime.getHours() * 60 * 60
     diff += element[index].initialTime.getMinutes() * 60
     diff += element[index].initialTime.getSeconds()
@@ -41,19 +43,6 @@ function timeMargin(element, index, date) {
         diff -= element[i].initialTime.getSeconds()
         diff -= element[i].diffMs
     }
-
-    const from = element[index].initialTime
-    const to = element[index].finalTime
-    var check = new Date(element[index].finalTime)
-    check.setHours(0)
-    check.setMinutes(0)
-    check.setSeconds(0)
-    date.setHours(0)
-    date.setMinutes(0)
-    date.setSeconds(0)
-    
-    if(from.getDate() < to.getDate() && check === date)
-        diff = 0
 
     return diff
 }
@@ -112,7 +101,7 @@ function msUntilMidnight(element) {
     return diff
 }
 
-function rows(data) {
+function rows(data, dateSelected) {
 
     const result = data.reduce(function (r, a) {
         r[a.app] = r[a.app] || []
@@ -135,19 +124,21 @@ function rows(data) {
                         key={index}
                     >
                         {result[key].map((element, indexj) => {
-                            return (
-                                <div
-                                    tooltip={`${element.initialTime.getHours()}h${element.initialTime.getMinutes()}min - ${element.finalTime.getHours()}h${element.finalTime.getMinutes()}min`}
-                                    flow={(totalTimeMargin(element) / 86400 * 100) < 50 ? 'right':'left'}
-                                    fulltime={diffTime(element.finalTime, element.initialTime)}
-                                    className="bar"
-                                    style={{
-                                        width: (msUntilMidnight(element) / 86400 * 100) + '%',
-                                        marginLeft: timeMargin(result[key], indexj, new Date()) / 86400 * 100 + '%',
-                                    }}
-                                >
-                                </div>
-                            )
+                            if(element.initialTime.getDate() === dateSelected.getDate()) {
+                                return (
+                                    <div
+                                        tooltip={`${element.initialTime.getHours()}h${element.initialTime.getMinutes()}min - ${element.finalTime.getHours()}h${element.finalTime.getMinutes()}min`}
+                                        flow={(totalTimeMargin(element) / 86400 * 100) < 50 ? 'right':'left'}
+                                        fulltime={diffTime(element.finalTime, element.initialTime)}
+                                        className="bar"
+                                        style={{
+                                            width: (msUntilMidnight(element) / 86400 * 100) + '%',
+                                            marginLeft: timeMargin(result[key], indexj) / 86400 * 100 + '%',
+                                        }}
+                                    >
+                                    </div>
+                                )
+                            }
                         })}
                         <div className='appInfo'>
                             <div className="app"> {key} </div>
@@ -161,11 +152,22 @@ function rows(data) {
     )
 }
 
-export default props => {
+const TimelineChart = props => {
     return (
         <div className="timeline">
             {timeLine()}
-            {rows(props.data)}
+            {rows(props.data, props.dateSelected)}
         </div>
     )
 }
+
+const mapStateToProps = state => {
+    return {
+        data: state.timelineResult.data,
+        dateSelected: state.timelineResult.dateSelected,
+    }
+}
+
+export default connect(
+    mapStateToProps
+)(TimelineChart)
