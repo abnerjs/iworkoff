@@ -4,44 +4,36 @@ import './AppsUtilizados.css'
 import AppCollapse from './AppCollapse'
 import { connect } from 'react-redux'
 
-
 const AppsUtilizados = props => {
-    const result = props.data.reduce(function (r, a) {
+
+    const result = props.data ? props.data.reduce(function (r, a) {
         r[a.app] = r[a.app] || []
         r[a.app].push(a)
         return r
-    }, Object.create(null))
-    const keys = Object.keys(result)
+    }, Object.create(null)) : {}
 
-    var todayApps = 0
 
-    for (let key of keys) {
-        todayApps += (result[key][0].initialTime.getDate() === props.dateSelected.getDate()) ? 1 : 0
-    }
+    const keys = result ? Object.keys(result) : {}
 
-    if (todayApps > 0) {
+    if (props.data) {
         return (
             <div className="apps-util">
                 <Title content='Apps utilizados' />
-    
+
                 {
                     keys.map((key, index) => {
-                        if (result[key][0].initialTime.getDate() === props.dateSelected.getDate()) {
-                            return <AppCollapse app={result[key][0]} />
-                        } else 
-                            return ''
+                        return <AppCollapse app={result[key][0]} />
                     })
                 }
             </div>
         )
-    } else 
+    } else
         return ''
 }
 
 const mapStateToProps = state => {
     return {
-        data: state.timelineResult.data,
-        dateSelected: state.timelineResult.dateSelected,
+        data: state.timelineResult.dataBrief,
     }
 }
 

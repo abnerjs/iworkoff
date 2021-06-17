@@ -19,6 +19,12 @@ function timeLine() {
     )
 }
 
+function stringToDate(dtaHorInicio) {
+    dtaHorInicio = dtaHorInicio.substring(0, 19)
+    const tmpaux = dtaHorInicio.split(/[- :]/)
+    return new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2], tmpaux[3], tmpaux[4], tmpaux[5])
+}
+
 function diffTime(final, init) {
     var h = final.getHours() - init.getHours()
     var min = final.getMinutes() - init.getMinutes()
@@ -37,24 +43,24 @@ function diffTime(final, init) {
 }
 
 function timeMargin(element, index) {
-    var diff = element[index].initialTime.getHours() * 60 * 60
-    diff += element[index].initialTime.getMinutes() * 60
-    diff += element[index].initialTime.getSeconds()
+    var diff = stringToDate(element[index].dtaInicio).getHours() * 60 * 60
+    diff += stringToDate(element[index].dtaInicio).getMinutes() * 60
+    diff += stringToDate(element[index].dtaInicio).getSeconds()
 
     for (let i = 0; i < index; i++) {
-        diff -= element[i].initialTime.getHours() * 60 * 60
-        diff -= element[i].initialTime.getMinutes() * 60
-        diff -= element[i].initialTime.getSeconds()
-        diff -= element[i].diffMs
+        diff -= stringToDate(element[i].dtaInicio).getHours() * 60 * 60
+        diff -= stringToDate(element[i].dtaInicio).getMinutes() * 60
+        diff -= stringToDate(element[i].dtaInicio).getSeconds()
+        diff -= element[i].tempoUsoSegundos
     }
 
     return diff
 }
 
 function totalTimeMargin(element) {
-    var diff = element.initialTime.getHours() * 60 * 60
-    diff += element.initialTime.getMinutes() * 60
-    diff += element.initialTime.getSeconds()
+    var diff = stringToDate(element.dtaInicio).getHours() * 60 * 60
+    diff += stringToDate(element.dtaInicio).getMinutes() * 60
+    diff += stringToDate(element.dtaInicio).getSeconds()
     return diff
 }
 
@@ -86,12 +92,12 @@ function groupTime(elements) {
 }
 
 function msUntilMidnight(element) {
-    var final = new Date(element.finalTime)
-    if (element.finalTime.getDate() > element.initialTime.getDate()) {
+    var final = new Date(stringToDate(element.dtaFim))
+    if (stringToDate(element.dtaFim).getDate() > stringToDate(element.dtaInicio).getDate()) {
         final.setHours(23)
         final.setMinutes(59)
         final.setSeconds(59)
-    } else if (element.initialTime.getDate() < element.finalTime.getDate()) {
+    } else if (stringToDate(element.dtaInicio).getDate() < stringToDate(element.dtaFim).getDate()) {
         final.setHours(0)
         final.setMinutes(0)
         final.setSeconds(0)
@@ -99,64 +105,60 @@ function msUntilMidnight(element) {
 
 
     var diff = 0
-    diff = (final.getHours() - element.initialTime.getHours()) * 60 * 60
-    diff += (final.getMinutes() - element.initialTime.getMinutes()) * 60
-    diff += final.getSeconds() - element.initialTime.getSeconds()
+    diff = (final.getHours() - stringToDate(element.dtaInicio).getHours()) * 60 * 60
+    diff += (final.getMinutes() - stringToDate(element.dtaInicio).getMinutes()) * 60
+    diff += final.getSeconds() - stringToDate(element.dtaInicio).getSeconds()
     return diff
 }
 
+
 function rows(data, dateSelected) {
 
-    const result = data.reduce(function (r, a) {
+    console.log(data)
+    const result = data ? data.reduce(function (r, a) {
         r[a.app] = r[a.app] || []
         r[a.app].push(a)
         return r
-    }, Object.create(null))
+    }, Object.create(null)) : {}
 
-    const keys = Object.keys(result)
+
+    const keys = result ? Object.keys(result) : {}
 
     return (
         <div className="rows">
-            
+
             {keys.map((key, index) => {
-                if (result[key][0].initialTime.getDate() === dateSelected.getDate()) {
-                    return (
-                        <div
-                            className={`row row${index} ${'cor' + (index % 3).toString()} ${result[key][0].isAuth ? 'auth' : 'noauth'}`}
-                            style={{
-                                height: (100 / keys.length) + '%',
-                            }}
-                            key={index}
+                return (
+                    <div
+                        className={`row row${index} ${'cor' + (index % 3).toString()} ${result[key][0].isAuth ? 'auth' : 'noauth'}`}
+                        style={{
+                            height: (100 / keys.length) + '%',
+                        }}
+                        key={index}
+                    >
+                        <div className={`appInfo`}
+                            id={`rowInfo${index}`}
                         >
-                            <div className={`appInfo`}
-                                id={`rowInfo${index}`}
-                            >
-                                <div className="app"> {key} </div>
-                                <div className="timeInfo">{groupTime(result[key])}</div>
-                            </div>
-                            {result[key].map((element, indexj) => {
-                                if (element.initialTime.getDate() === dateSelected.getDate()) {
-                                    return (
-                                        <div
-                                            tooltip={`${element.initialTime.getHours()}h${element.initialTime.getMinutes()}min - ${element.finalTime.getHours()}h${element.finalTime.getMinutes()}min`}
-                                            flow={(totalTimeMargin(element) / 86400 * 100) < 50 ? 'right' : 'left'}
-                                            fulltime={diffTime(element.finalTime, element.initialTime)}
-                                            className={`bar ${result[key][0].isAuth ? 'auth' : 'noauth'}`}
-                                            style={{
-                                                width: (msUntilMidnight(element) / 86400 * 100) + '%',
-                                                marginLeft: timeMargin(result[key], indexj) / 86400 * 100 + '%',
-                                            }}
-                                        >
-                                        </div>
-                                    )
-                                } else {
-                                    return ''
-                                }
-                            })}
+                            <div className="app"> {key} </div>
+                            <div className="timeInfo">{groupTime(result[key])}</div>
                         </div>
-                    )
-                } else
-                    return ''
+                        {result[key].map((element, indexj) => {
+                            return (
+                                <div
+                                    tooltip={`${stringToDate(element.dtaInicio).getHours()}h${stringToDate(element.dtaInicio).getMinutes()}min - ${stringToDate(element.dtaFim).getHours()}h${stringToDate(element.dtaFim).getMinutes()}min`}
+                                    flow={(totalTimeMargin(element) / 86400 * 100) < 50 ? 'right' : 'left'}
+                                    fulltime={element.tempoUsoSegundos}
+                                    className={`bar ${result[key][0].flgAutorizado === 'S' ? 'auth' : 'noauth'}`}
+                                    style={{
+                                        width: (msUntilMidnight(element) / 86400 * 100) + '%',
+                                        marginLeft: timeMargin(result[key], indexj) / 86400 * 100 + '%',
+                                    }}
+                                >
+                                </div>
+                            )
+                        })}
+                    </div>
+                )
             })}
         </div>
     )

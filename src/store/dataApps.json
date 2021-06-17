@@ -51,7 +51,7 @@
         {
           "desFornecedor": "Allround Automations",
           "desProcesso": "plsqldev",
-          "desSoftware": "PL/SQL Developer",
+          "desSoftware": "PL-SQL Developer",
           "tempoUsoSegundos": 3175,
           "porcentagemUso": 10.593927260593927260593927261,
           "flgAutorizado": "S"
@@ -81,7 +81,7 @@
           "flgAutorizado": "S"
         },
         {
-          "desFornecedor": "Andy Koppe / Thomas Wolff",
+          "desFornecedor": "Andy Koppe - Thomas Wolff",
           "desProcesso": "mintty",
           "desSoftware": "Console Git",
           "tempoUsoSegundos": 205,
@@ -142,272 +142,272 @@
       {
         "desSoftware": "iWorkOff",
         "desFornecedor": "iWorkOff",
-        "dtaInicio": "07/06/21 07:57:31,000000 -03:00",
-        "dtaFim": "07/06/21 07:57:42,000000 -03:00",
+        "dtaInicio": "07-06-2021 07:57:31",
+        "dtaFim": "07-06-2021 07:57:42",
         "tempoUsoSegundos": 11,
         "flgAutorizado": "S"
       },
       {
         "desSoftware": "Skype",
         "desFornecedor": "Skype Technologies S.A.",
-        "dtaInicio": "07/06/21 07:57:42,000000 -03:00",
-        "dtaFim": "07/06/21 07:58:01,000000 -03:00",
+        "dtaInicio": "07-06-2021 07:57:42",
+        "dtaFim": "07-06-2021 07:58:01",
         "tempoUsoSegundos": 19,
         "flgAutorizado": "S"
       },
       {
         "desSoftware": "Microsoft Outlook",
         "desFornecedor": "Microsoft Corporation",
-        "dtaInicio": "07/06/21 07:59:02,000000 -03:00",
-        "dtaFim": "07/06/21 07:59:23,000000 -03:00",
+        "dtaInicio": "07-06-2021 07:59:02",
+        "dtaFim": "07-06-2021 07:59:23",
         "tempoUsoSegundos": 21,
         "flgAutorizado": "S"
       },
       {
         "desSoftware": "Google Chrome",
         "desFornecedor": "Google LLC",
-        "dtaInicio": "07/06/21 07:58:01,000000 -03:00",
-        "dtaFim": "07/06/21 08:00:11,000000 -03:00",
+        "dtaInicio": "07-06-2021 07:58:01",
+        "dtaFim": "07-06-2021 08:00:11",
         "tempoUsoSegundos": 109,
         "flgAutorizado": "S"
       },
       {
         "desSoftware": "Visual Studio Community",
         "desFornecedor": "Microsoft Corporation",
-        "dtaInicio": "07/06/21 08:04:58,000000 -03:00",
-        "dtaFim": "07/06/21 08:11:53,000000 -03:00",
+        "dtaInicio": "07-06-2021 08:04:58",
+        "dtaFim": "07-06-2021 08:11:53",
         "tempoUsoSegundos": 415,
         "flgAutorizado": "S"
       },
       {
         "desSoftware": "Skype",
         "desFornecedor": "Skype Technologies S.A.",
-        "dtaInicio": "07/06/21 08:03:35,000000 -03:00",
-        "dtaFim": "07/06/21 08:29:09,000000 -03:00",
+        "dtaInicio": "07-06-2021 08:03:35",
+        "dtaFim": "07-06-2021 08:29:09",
         "tempoUsoSegundos": 159,
         "flgAutorizado": "S"
       },
       {
         "desSoftware": "Google Chrome",
         "desFornecedor": "Google LLC",
-        "dtaInicio": "07/06/21 08:12:20,000000 -03:00",
-        "dtaFim": "07/06/21 08:37:21,000000 -03:00",
+        "dtaInicio": "07-06-2021 08:12:20",
+        "dtaFim": "07-06-2021 08:37:21",
         "tempoUsoSegundos": 321,
         "flgAutorizado": "S"
       },
       {
         "desSoftware": "Spotify",
         "desFornecedor": "Spotify Ltd",
-        "dtaInicio": "07/06/21 08:48:43,000000 -03:00",
-        "dtaFim": "07/06/21 08:48:55,000000 -03:00",
+        "dtaInicio": "07-06-2021 08:48:43",
+        "dtaFim": "07-06-2021 08:48:55",
         "tempoUsoSegundos": 12,
         "flgAutorizado": "S"
       },
       {
         "desSoftware": "DBDesigner 4",
         "desFornecedor": "",
-        "dtaInicio": "07/06/21 08:14:04,000000 -03:00",
-        "dtaFim": "07/06/21 08:53:35,000000 -03:00",
+        "dtaInicio": "07-06-2021 08:14:04",
+        "dtaFim": "07-06-2021 08:53:35",
         "tempoUsoSegundos": 1035,
         "flgAutorizado": "S"
       },
       {
         "desSoftware": "Windows Explorer",
         "desFornecedor": "Microsoft Corporation",
-        "dtaInicio": "07/06/21 08:00:11,000000 -03:00",
-        "dtaFim": "07/06/21 08:53:47,000000 -03:00",
+        "dtaInicio": "07-06-2021 08:00:11",
+        "dtaFim": "07-06-2021 08:53:47",
         "tempoUsoSegundos": 108,
         "flgAutorizado": "S"
       },
       {
-        "desSoftware": "PL/SQL Developer",
+        "desSoftware": "PL-SQL Developer",
         "desFornecedor": "Allround Automations",
-        "dtaInicio": "07/06/21 08:00:41,000000 -03:00",
-        "dtaFim": "07/06/21 08:56:17,000000 -03:00",
+        "dtaInicio": "07-06-2021 08:00:41",
+        "dtaFim": "07-06-2021 08:56:17",
         "tempoUsoSegundos": 1015,
         "flgAutorizado": "S"
       },
       {
         "desSoftware": "Visual Studio Code",
         "desFornecedor": "Microsoft Corporation",
-        "dtaInicio": "07/06/21 08:04:00,000000 -03:00",
-        "dtaFim": "07/06/21 09:09:24,000000 -03:00",
+        "dtaInicio": "07-06-2021 08:04:00",
+        "dtaFim": "07-06-2021 09:09:24",
         "tempoUsoSegundos": 1016,
         "flgAutorizado": "S"
       },
       {
         "desSoftware": "Bloco de Notas",
         "desFornecedor": "Microsoft Corporation",
-        "dtaInicio": "07/06/21 09:10:10,000000 -03:00",
-        "dtaFim": "07/06/21 09:20:34,000000 -03:00",
+        "dtaInicio": "07-06-2021 09:10:10",
+        "dtaFim": "07-06-2021 09:20:34",
         "tempoUsoSegundos": 195,
         "flgAutorizado": "S"
       },
       {
         "desSoftware": "Windows Explorer",
         "desFornecedor": "Microsoft Corporation",
-        "dtaInicio": "07/06/21 09:41:14,000000 -03:00",
-        "dtaFim": "07/06/21 09:41:24,000000 -03:00",
+        "dtaInicio": "07-06-2021 09:41:14",
+        "dtaFim": "07-06-2021 09:41:24",
         "tempoUsoSegundos": 10,
         "flgAutorizado": "S"
       },
       {
         "desSoftware": "Skype",
         "desFornecedor": "Skype Technologies S.A.",
-        "dtaInicio": "07/06/21 09:09:24,000000 -03:00",
-        "dtaFim": "07/06/21 09:51:53,000000 -03:00",
+        "dtaInicio": "07-06-2021 09:09:24",
+        "dtaFim": "07-06-2021 09:51:53",
         "tempoUsoSegundos": 452,
         "flgAutorizado": "S"
       },
       {
         "desSoftware": "Google Chrome",
         "desFornecedor": "Google LLC",
-        "dtaInicio": "07/06/21 09:29:31,000000 -03:00",
-        "dtaFim": "07/06/21 09:57:28,000000 -03:00",
+        "dtaInicio": "07-06-2021 09:29:31",
+        "dtaFim": "07-06-2021 09:57:28",
         "tempoUsoSegundos": 631,
         "flgAutorizado": "S"
       },
       {
-        "desSoftware": "PL/SQL Developer",
+        "desSoftware": "PL-SQL Developer",
         "desFornecedor": "Allround Automations",
-        "dtaInicio": "07/06/21 09:21:21,000000 -03:00",
-        "dtaFim": "07/06/21 09:58:37,000000 -03:00",
+        "dtaInicio": "07-06-2021 09:21:21",
+        "dtaFim": "07-06-2021 09:58:37",
         "tempoUsoSegundos": 825,
         "flgAutorizado": "S"
       },
       {
         "desSoftware": "Visual Studio Community",
         "desFornecedor": "Microsoft Corporation",
-        "dtaInicio": "07/06/21 09:58:37,000000 -03:00",
-        "dtaFim": "07/06/21 09:59:02,000000 -03:00",
+        "dtaInicio": "07-06-2021 09:58:37",
+        "dtaFim": "07-06-2021 09:59:02",
         "tempoUsoSegundos": 25,
         "flgAutorizado": "S"
       },
       {
         "desSoftware": "Visual Studio Code",
         "desFornecedor": "Microsoft Corporation",
-        "dtaInicio": "07/06/21 09:12:12,000000 -03:00",
-        "dtaFim": "07/06/21 10:00:19,000000 -03:00",
+        "dtaInicio": "07-06-2021 09:12:12",
+        "dtaFim": "07-06-2021 10:00:19",
         "tempoUsoSegundos": 905,
         "flgAutorizado": "S"
       },
       {
         "desSoftware": "Google Chrome",
         "desFornecedor": "Google LLC",
-        "dtaInicio": "07/06/21 10:19:08,000000 -03:00",
-        "dtaFim": "07/06/21 10:23:58,000000 -03:00",
+        "dtaInicio": "07-06-2021 10:19:08",
+        "dtaFim": "07-06-2021 10:23:58",
         "tempoUsoSegundos": 290,
         "flgAutorizado": "S"
       },
       {
         "desSoftware": "Skype",
         "desFornecedor": "Skype Technologies S.A.",
-        "dtaInicio": "07/06/21 10:04:01,000000 -03:00",
-        "dtaFim": "07/06/21 10:40:42,000000 -03:00",
+        "dtaInicio": "07-06-2021 10:04:01",
+        "dtaFim": "07-06-2021 10:40:42",
         "tempoUsoSegundos": 1791,
         "flgAutorizado": "S"
       },
       {
         "desSoftware": "Visual Studio Code",
         "desFornecedor": "Microsoft Corporation",
-        "dtaInicio": "07/06/21 10:44:52,000000 -03:00",
-        "dtaFim": "07/06/21 10:50:01,000000 -03:00",
+        "dtaInicio": "07-06-2021 10:44:52",
+        "dtaFim": "07-06-2021 10:50:01",
         "tempoUsoSegundos": 82,
         "flgAutorizado": "S"
       },
       {
-        "desSoftware": "PL/SQL Developer",
+        "desSoftware": "PL-SQL Developer",
         "desFornecedor": "Allround Automations",
-        "dtaInicio": "07/06/21 10:05:08,000000 -03:00",
-        "dtaFim": "07/06/21 10:58:38,000000 -03:00",
+        "dtaInicio": "07-06-2021 10:05:08",
+        "dtaFim": "07-06-2021 10:58:38",
         "tempoUsoSegundos": 240,
         "flgAutorizado": "S"
       },
       {
         "desSoftware": "Visual Studio Community",
         "desFornecedor": "Microsoft Corporation",
-        "dtaInicio": "07/06/21 10:00:19,000000 -03:00",
-        "dtaFim": "07/06/21 11:04:01,000000 -03:00",
+        "dtaInicio": "07-06-2021 10:00:19",
+        "dtaFim": "07-06-2021 11:04:01",
         "tempoUsoSegundos": 1348,
         "flgAutorizado": "S"
       },
       {
-        "desSoftware": "PL/SQL Developer",
+        "desSoftware": "PL-SQL Developer",
         "desFornecedor": "Allround Automations",
-        "dtaInicio": "07/06/21 11:04:01,000000 -03:00",
-        "dtaFim": "07/06/21 11:19:53,000000 -03:00",
+        "dtaInicio": "07-06-2021 11:04:01",
+        "dtaFim": "07-06-2021 11:19:53",
         "tempoUsoSegundos": 645,
         "flgAutorizado": "S"
       },
       {
         "desSoftware": "Google Chrome",
         "desFornecedor": "Google LLC",
-        "dtaInicio": "07/06/21 11:27:41,000000 -03:00",
-        "dtaFim": "07/06/21 11:28:16,000000 -03:00",
+        "dtaInicio": "07-06-2021 11:27:41",
+        "dtaFim": "07-06-2021 11:28:16",
         "tempoUsoSegundos": 35,
         "flgAutorizado": "S"
       },
       {
         "desSoftware": "Windows Explorer",
         "desFornecedor": "Microsoft Corporation",
-        "dtaInicio": "07/06/21 11:28:16,000000 -03:00",
-        "dtaFim": "07/06/21 11:28:36,000000 -03:00",
+        "dtaInicio": "07-06-2021 11:28:16",
+        "dtaFim": "07-06-2021 11:28:36",
         "tempoUsoSegundos": 20,
         "flgAutorizado": "S"
       },
       {
         "desSoftware": "Visual Studio Community",
         "desFornecedor": "Microsoft Corporation",
-        "dtaInicio": "07/06/21 11:04:57,000000 -03:00",
-        "dtaFim": "07/06/21 11:30:57,000000 -03:00",
+        "dtaInicio": "07-06-2021 11:04:57",
+        "dtaFim": "07-06-2021 11:30:57",
         "tempoUsoSegundos": 602,
         "flgAutorizado": "S"
       },
       {
         "desSoftware": "Visual Studio Code",
         "desFornecedor": "Microsoft Corporation",
-        "dtaInicio": "07/06/21 11:23:33,000000 -03:00",
-        "dtaFim": "07/06/21 12:09:35,000000 -03:00",
+        "dtaInicio": "07-06-2021 11:23:33",
+        "dtaFim": "07-06-2021 12:09:35",
         "tempoUsoSegundos": 2562,
         "flgAutorizado": "S"
       },
       {
-        "desSoftware": "PL/SQL Developer",
+        "desSoftware": "PL-SQL Developer",
         "desFornecedor": "Allround Automations",
-        "dtaInicio": "07/06/21 12:09:35,000000 -03:00",
-        "dtaFim": "07/06/21 12:10:07,000000 -03:00",
+        "dtaInicio": "07-06-2021 12:09:35",
+        "dtaFim": "07-06-2021 12:10:07",
         "tempoUsoSegundos": 32,
         "flgAutorizado": "S"
       },
       {
         "desSoftware": "Visual Studio Community",
         "desFornecedor": "Microsoft Corporation",
-        "dtaInicio": "07/06/21 12:10:07,000000 -03:00",
-        "dtaFim": "07/06/21 12:10:16,000000 -03:00",
+        "dtaInicio": "07-06-2021 12:10:07",
+        "dtaFim": "07-06-2021 12:10:16",
         "tempoUsoSegundos": 9,
         "flgAutorizado": "S"
       },
       {
         "desSoftware": "Microsoft Outlook",
         "desFornecedor": "Microsoft Corporation",
-        "dtaInicio": "07/06/21 12:10:16,000000 -03:00",
-        "dtaFim": "07/06/21 12:10:39,000000 -03:00",
+        "dtaInicio": "07-06-2021 12:10:16",
+        "dtaFim": "07-06-2021 12:10:39",
         "tempoUsoSegundos": 23,
         "flgAutorizado": "S"
       },
       {
         "desSoftware": "Visual Studio Code",
         "desFornecedor": "Microsoft Corporation",
-        "dtaInicio": "07/06/21 12:10:39,000000 -03:00",
-        "dtaFim": "07/06/21 12:12:04,000000 -03:00",
+        "dtaInicio": "07-06-2021 12:10:39",
+        "dtaFim": "07-06-2021 12:12:04",
         "tempoUsoSegundos": 85,
         "flgAutorizado": "S"
       },
       {
         "desSoftware": "iWorkOff",
         "desFornecedor": "iWorkOff",
-        "dtaInicio": "07/06/21 12:12:21,000000 -03:00",
-        "dtaFim": "07/06/21 12:12:23,000000 -03:00",
+        "dtaInicio": "07-06-2021 12:12:21",
+        "dtaFim": "07-06-2021 12:12:23",
         "tempoUsoSegundos": 2,
         "flgAutorizado": "S"
       }
@@ -455,7 +455,7 @@
           "flgAutorizado": "S"
         },
         {
-          "desFornecedor": "Andy Koppe / Thomas Wolff",
+          "desFornecedor": "Andy Koppe - Thomas Wolff",
           "desProcesso": "mintty",
           "desSoftware": "Console Git",
           "tempoUsoSegundos": 1891,
@@ -465,7 +465,7 @@
         {
           "desFornecedor": "Allround Automations",
           "desProcesso": "plsqldev",
-          "desSoftware": "PL/SQL Developer",
+          "desSoftware": "PL-SQL Developer",
           "tempoUsoSegundos": 1289,
           "porcentagemUso": 4.2146220245880198796756473973,
           "flgAutorizado": "S"
@@ -629,368 +629,368 @@
         "desSoftware": "iWorkOff",
         "desFornecedor": "iWorkOff",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 07:58:03,000000 -03:00",
-        "dtaFim": "08/06/21 07:58:13,000000 -03:00",
+        "dtaInicio": "08-06-2021 07:58:03",
+        "dtaFim": "08-06-2021 07:58:13",
         "tempoUsoSegundos": 10
       },
       {
         "desSoftware": "Skype",
         "desFornecedor": "Skype Technologies S.A.",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 07:58:13,000000 -03:00",
-        "dtaFim": "08/06/21 07:58:36,000000 -03:00",
+        "dtaInicio": "08-06-2021 07:58:13",
+        "dtaFim": "08-06-2021 07:58:36",
         "tempoUsoSegundos": 23
       },
       {
         "desSoftware": "Google Chrome",
         "desFornecedor": "Google LLC",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 07:58:36,000000 -03:00",
-        "dtaFim": "08/06/21 08:05:19,000000 -03:00",
+        "dtaInicio": "08-06-2021 07:58:36",
+        "dtaFim": "08-06-2021 08:05:19",
         "tempoUsoSegundos": 403
       },
       {
         "desSoftware": "Microsoft.Photos",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "N",
-        "dtaInicio": "08/06/21 08:06:18,000000 -03:00",
-        "dtaFim": "08/06/21 08:07:27,000000 -03:00",
+        "dtaInicio": "08-06-2021 08:06:18",
+        "dtaFim": "08-06-2021 08:07:27",
         "tempoUsoSegundos": 69
       },
       {
         "desSoftware": "SystemSettings",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "N",
-        "dtaInicio": "08/06/21 08:07:27,000000 -03:00",
-        "dtaFim": "08/06/21 08:07:45,000000 -03:00",
+        "dtaInicio": "08-06-2021 08:07:27",
+        "dtaFim": "08-06-2021 08:07:45",
         "tempoUsoSegundos": 18
       },
       {
         "desSoftware": "Spotify",
         "desFornecedor": "Spotify Ltd",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 08:07:45,000000 -03:00",
-        "dtaFim": "08/06/21 08:10:24,000000 -03:00",
+        "dtaInicio": "08-06-2021 08:07:45",
+        "dtaFim": "08-06-2021 08:10:24",
         "tempoUsoSegundos": 108
       },
       {
         "desSoftware": "Microsoft Outlook",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 08:26:14,000000 -03:00",
-        "dtaFim": "08/06/21 08:26:40,000000 -03:00",
+        "dtaInicio": "08-06-2021 08:26:14",
+        "dtaFim": "08-06-2021 08:26:40",
         "tempoUsoSegundos": 26
       },
       {
         "desSoftware": "Visual Studio Community",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 08:05:19,000000 -03:00",
-        "dtaFim": "08/06/21 08:38:16,000000 -03:00",
+        "dtaInicio": "08-06-2021 08:05:19",
+        "dtaFim": "08-06-2021 08:38:16",
         "tempoUsoSegundos": 124
       },
       {
         "desSoftware": "Skype",
         "desFornecedor": "Skype Technologies S.A.",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 08:11:44,000000 -03:00",
-        "dtaFim": "08/06/21 08:40:26,000000 -03:00",
+        "dtaInicio": "08-06-2021 08:11:44",
+        "dtaFim": "08-06-2021 08:40:26",
         "tempoUsoSegundos": 133
       },
       {
-        "desSoftware": "PL/SQL Developer",
+        "desSoftware": "PL-SQL Developer",
         "desFornecedor": "Allround Automations",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 08:42:28,000000 -03:00",
-        "dtaFim": "08/06/21 08:42:58,000000 -03:00",
+        "dtaInicio": "08-06-2021 08:42:28",
+        "dtaFim": "08-06-2021 08:42:58",
         "tempoUsoSegundos": 30
       },
       {
         "desSoftware": "Visual Studio Code",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 08:05:52,000000 -03:00",
-        "dtaFim": "08/06/21 08:57:49,000000 -03:00",
+        "dtaInicio": "08-06-2021 08:05:52",
+        "dtaFim": "08-06-2021 08:57:49",
         "tempoUsoSegundos": 818
       },
       {
         "desSoftware": "Windows Explorer",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 08:26:40,000000 -03:00",
-        "dtaFim": "08/06/21 08:57:59,000000 -03:00",
+        "dtaInicio": "08-06-2021 08:26:40",
+        "dtaFim": "08-06-2021 08:57:59",
         "tempoUsoSegundos": 101
       },
       {
         "desSoftware": "Console Git",
-        "desFornecedor": "Andy Koppe / Thomas Wolff",
+        "desFornecedor": "Andy Koppe - Thomas Wolff",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 08:24:38,000000 -03:00",
-        "dtaFim": "08/06/21 08:59:15,000000 -03:00",
+        "dtaInicio": "08-06-2021 08:24:38",
+        "dtaFim": "08-06-2021 08:59:15",
         "tempoUsoSegundos": 230
       },
       {
         "desSoftware": "Google Chrome",
         "desFornecedor": "Google LLC",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 08:11:52,000000 -03:00",
-        "dtaFim": "08/06/21 08:59:56,000000 -03:00",
+        "dtaInicio": "08-06-2021 08:11:52",
+        "dtaFim": "08-06-2021 08:59:56",
         "tempoUsoSegundos": 1597
       },
       {
         "desSoftware": "DBDesigner 4",
         "desFornecedor": "",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 08:59:56,000000 -03:00",
-        "dtaFim": "08/06/21 09:02:26,000000 -03:00",
+        "dtaInicio": "08-06-2021 08:59:56",
+        "dtaFim": "08-06-2021 09:02:26",
         "tempoUsoSegundos": 150
       },
       {
         "desSoftware": "DBDplugin_HTMLReport",
         "desFornecedor": "",
         "flgAutorizado": "N",
-        "dtaInicio": "08/06/21 09:08:19,000000 -03:00",
-        "dtaFim": "08/06/21 09:08:33,000000 -03:00",
+        "dtaInicio": "08-06-2021 09:08:19",
+        "dtaFim": "08-06-2021 09:08:33",
         "tempoUsoSegundos": 14
       },
       {
         "desSoftware": "DBDesigner 4",
         "desFornecedor": "",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 09:05:44,000000 -03:00",
-        "dtaFim": "08/06/21 09:17:22,000000 -03:00",
+        "dtaInicio": "08-06-2021 09:05:44",
+        "dtaFim": "08-06-2021 09:17:22",
         "tempoUsoSegundos": 192
       },
       {
         "desSoftware": "Skype",
         "desFornecedor": "Skype Technologies S.A.",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 09:34:01,000000 -03:00",
-        "dtaFim": "08/06/21 09:41:00,000000 -03:00",
+        "dtaInicio": "08-06-2021 09:34:01",
+        "dtaFim": "08-06-2021 09:41:00",
         "tempoUsoSegundos": 107
       },
       {
         "desSoftware": "Visual Studio Community",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 09:43:57,000000 -03:00",
-        "dtaFim": "08/06/21 09:44:30,000000 -03:00",
+        "dtaInicio": "08-06-2021 09:43:57",
+        "dtaFim": "08-06-2021 09:44:30",
         "tempoUsoSegundos": 33
       },
       {
         "desSoftware": "Microsoft Outlook",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 09:45:47,000000 -03:00",
-        "dtaFim": "08/06/21 09:47:11,000000 -03:00",
+        "dtaInicio": "08-06-2021 09:45:47",
+        "dtaFim": "08-06-2021 09:47:11",
         "tempoUsoSegundos": 84
       },
       {
-        "desSoftware": "PL/SQL Developer",
+        "desSoftware": "PL-SQL Developer",
         "desFornecedor": "Allround Automations",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 09:49:09,000000 -03:00",
-        "dtaFim": "08/06/21 09:50:20,000000 -03:00",
+        "dtaInicio": "08-06-2021 09:49:09",
+        "dtaFim": "08-06-2021 09:50:20",
         "tempoUsoSegundos": 71
       },
       {
         "desSoftware": "Windows Explorer",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 09:50:37,000000 -03:00",
-        "dtaFim": "08/06/21 09:51:00,000000 -03:00",
+        "dtaInicio": "08-06-2021 09:50:37",
+        "dtaFim": "08-06-2021 09:51:00",
         "tempoUsoSegundos": 23
       },
       {
         "desSoftware": "Google Chrome",
         "desFornecedor": "Google LLC",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 09:09:32,000000 -03:00",
-        "dtaFim": "08/06/21 09:57:14,000000 -03:00",
+        "dtaInicio": "08-06-2021 09:09:32",
+        "dtaFim": "08-06-2021 09:57:14",
         "tempoUsoSegundos": 1768
       },
       {
         "desSoftware": "Console Git",
-        "desFornecedor": "Andy Koppe / Thomas Wolff",
+        "desFornecedor": "Andy Koppe - Thomas Wolff",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 09:06:07,000000 -03:00",
-        "dtaFim": "08/06/21 09:58:10,000000 -03:00",
+        "dtaInicio": "08-06-2021 09:06:07",
+        "dtaFim": "08-06-2021 09:58:10",
         "tempoUsoSegundos": 181
       },
       {
         "desSoftware": "Visual Studio Code",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 09:02:26,000000 -03:00",
-        "dtaFim": "08/06/21 10:00:08,000000 -03:00",
+        "dtaInicio": "08-06-2021 09:02:26",
+        "dtaFim": "08-06-2021 10:00:08",
         "tempoUsoSegundos": 903
       },
       {
         "desSoftware": "Postman",
         "desFornecedor": "Postman",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 10:07:26,000000 -03:00",
-        "dtaFim": "08/06/21 10:26:09,000000 -03:00",
+        "dtaInicio": "08-06-2021 10:07:26",
+        "dtaFim": "08-06-2021 10:26:09",
         "tempoUsoSegundos": 267
       },
       {
         "desSoftware": "Windows Explorer",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 10:36:29,000000 -03:00",
-        "dtaFim": "08/06/21 10:40:30,000000 -03:00",
+        "dtaInicio": "08-06-2021 10:36:29",
+        "dtaFim": "08-06-2021 10:40:30",
         "tempoUsoSegundos": 41
       },
       {
         "desSoftware": "Visual Studio Code",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 10:37:30,000000 -03:00",
-        "dtaFim": "08/06/21 10:47:06,000000 -03:00",
+        "dtaInicio": "08-06-2021 10:37:30",
+        "dtaFim": "08-06-2021 10:47:06",
         "tempoUsoSegundos": 89
       },
       {
         "desSoftware": "Google Chrome",
         "desFornecedor": "Google LLC",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 10:05:28,000000 -03:00",
-        "dtaFim": "08/06/21 10:52:27,000000 -03:00",
+        "dtaInicio": "08-06-2021 10:05:28",
+        "dtaFim": "08-06-2021 10:52:27",
         "tempoUsoSegundos": 434
       },
       {
-        "desSoftware": "PL/SQL Developer",
+        "desSoftware": "PL-SQL Developer",
         "desFornecedor": "Allround Automations",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 10:07:06,000000 -03:00",
-        "dtaFim": "08/06/21 10:53:46,000000 -03:00",
+        "dtaInicio": "08-06-2021 10:07:06",
+        "dtaFim": "08-06-2021 10:53:46",
         "tempoUsoSegundos": 716
       },
       {
         "desSoftware": "Console Git",
-        "desFornecedor": "Andy Koppe / Thomas Wolff",
+        "desFornecedor": "Andy Koppe - Thomas Wolff",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 10:00:08,000000 -03:00",
-        "dtaFim": "08/06/21 10:54:44,000000 -03:00",
+        "dtaInicio": "08-06-2021 10:00:08",
+        "dtaFim": "08-06-2021 10:54:44",
         "tempoUsoSegundos": 266
       },
       {
         "desSoftware": "Visual Studio Community",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 10:00:46,000000 -03:00",
-        "dtaFim": "08/06/21 11:01:42,000000 -03:00",
+        "dtaInicio": "08-06-2021 10:00:46",
+        "dtaFim": "08-06-2021 11:01:42",
         "tempoUsoSegundos": 1850
       },
       {
         "desSoftware": "Visual Studio Community",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 11:08:56,000000 -03:00",
-        "dtaFim": "08/06/21 11:14:33,000000 -03:00",
+        "dtaInicio": "08-06-2021 11:08:56",
+        "dtaFim": "08-06-2021 11:14:33",
         "tempoUsoSegundos": 199
       },
       {
         "desSoftware": "Área de Trabalho Remota",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 11:15:51,000000 -03:00",
-        "dtaFim": "08/06/21 11:20:11,000000 -03:00",
+        "dtaInicio": "08-06-2021 11:15:51",
+        "dtaFim": "08-06-2021 11:20:11",
         "tempoUsoSegundos": 198
       },
       {
         "desSoftware": "Console Git",
-        "desFornecedor": "Andy Koppe / Thomas Wolff",
+        "desFornecedor": "Andy Koppe - Thomas Wolff",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 11:02:08,000000 -03:00",
-        "dtaFim": "08/06/21 11:23:42,000000 -03:00",
+        "dtaInicio": "08-06-2021 11:02:08",
+        "dtaFim": "08-06-2021 11:23:42",
         "tempoUsoSegundos": 312
       },
       {
         "desSoftware": "Postman",
         "desFornecedor": "Postman",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 11:11:56,000000 -03:00",
-        "dtaFim": "08/06/21 11:34:41,000000 -03:00",
+        "dtaInicio": "08-06-2021 11:11:56",
+        "dtaFim": "08-06-2021 11:34:41",
         "tempoUsoSegundos": 163
       },
       {
         "desSoftware": "Microsoft Outlook",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 11:49:28,000000 -03:00",
-        "dtaFim": "08/06/21 11:50:19,000000 -03:00",
+        "dtaInicio": "08-06-2021 11:49:28",
+        "dtaFim": "08-06-2021 11:50:19",
         "tempoUsoSegundos": 51
       },
       {
-        "desSoftware": "PL/SQL Developer",
+        "desSoftware": "PL-SQL Developer",
         "desFornecedor": "Allround Automations",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 11:12:39,000000 -03:00",
-        "dtaFim": "08/06/21 11:51:25,000000 -03:00",
+        "dtaInicio": "08-06-2021 11:12:39",
+        "dtaFim": "08-06-2021 11:51:25",
         "tempoUsoSegundos": 107
       },
       {
         "desSoftware": "Google Chrome",
         "desFornecedor": "Google LLC",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 11:11:35,000000 -03:00",
-        "dtaFim": "08/06/21 11:51:40,000000 -03:00",
+        "dtaInicio": "08-06-2021 11:11:35",
+        "dtaFim": "08-06-2021 11:51:40",
         "tempoUsoSegundos": 1043
       },
       {
         "desSoftware": "Windows Explorer",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 11:21:17,000000 -03:00",
-        "dtaFim": "08/06/21 11:52:25,000000 -03:00",
+        "dtaInicio": "08-06-2021 11:21:17",
+        "dtaFim": "08-06-2021 11:52:25",
         "tempoUsoSegundos": 370
       },
       {
         "desSoftware": "Console Emulator",
         "desFornecedor": "ConEmu-Maximus5",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 11:44:15,000000 -03:00",
-        "dtaFim": "08/06/21 11:59:53,000000 -03:00",
+        "dtaInicio": "08-06-2021 11:44:15",
+        "dtaFim": "08-06-2021 11:59:53",
         "tempoUsoSegundos": 512
       },
       {
         "desSoftware": "Visual Studio Code",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 11:01:42,000000 -03:00",
-        "dtaFim": "08/06/21 12:04:57,000000 -03:00",
+        "dtaInicio": "08-06-2021 11:01:42",
+        "dtaFim": "08-06-2021 12:04:57",
         "tempoUsoSegundos": 755
       },
       {
         "desSoftware": "Google Chrome",
         "desFornecedor": "Google LLC",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 12:04:57,000000 -03:00",
-        "dtaFim": "08/06/21 12:09:12,000000 -03:00",
+        "dtaInicio": "08-06-2021 12:04:57",
+        "dtaFim": "08-06-2021 12:09:12",
         "tempoUsoSegundos": 104
       },
       {
         "desSoftware": "Visual Studio Code",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 12:05:51,000000 -03:00",
-        "dtaFim": "08/06/21 12:09:43,000000 -03:00",
+        "dtaInicio": "08-06-2021 12:05:51",
+        "dtaFim": "08-06-2021 12:09:43",
         "tempoUsoSegundos": 117
       },
       {
         "desSoftware": "Console Emulator",
         "desFornecedor": "ConEmu-Maximus5",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 12:07:17,000000 -03:00",
-        "dtaFim": "08/06/21 12:10:15,000000 -03:00",
+        "dtaInicio": "08-06-2021 12:07:17",
+        "dtaFim": "08-06-2021 12:10:15",
         "tempoUsoSegundos": 97
       },
       {
         "desSoftware": "iWorkOff",
         "desFornecedor": "iWorkOff",
         "flgAutorizado": "S",
-        "dtaInicio": "08/06/21 12:10:20,000000 -03:00",
-        "dtaFim": "08/06/21 12:10:21,000000 -03:00",
+        "dtaInicio": "08-06-2021 12:10:20",
+        "dtaFim": "08-06-2021 12:10:21",
         "tempoUsoSegundos": 1
       }
     ]
@@ -1053,7 +1053,7 @@
           "flgAutorizado": "S"
         },
         {
-          "desFornecedor": "Andy Koppe / Thomas Wolff",
+          "desFornecedor": "Andy Koppe - Thomas Wolff",
           "desProcesso": "mintty",
           "desSoftware": "Console Git",
           "tempoUsoSegundos": 1632,
@@ -1071,7 +1071,7 @@
         {
           "desFornecedor": "Allround Automations",
           "desProcesso": "plsqldev",
-          "desSoftware": "PL/SQL Developer",
+          "desSoftware": "PL-SQL Developer",
           "tempoUsoSegundos": 146,
           "porcentagemUso": 0.4636392505557319784058431248,
           "flgAutorizado": "S"
@@ -1179,296 +1179,296 @@
         "desSoftware": "iWorkOff",
         "desFornecedor": "iWorkOff",
         "flgAutorizado": "S",
-        "dtaInicio": "09/06/21 08:01:54,000000 -03:00",
-        "dtaFim": "09/06/21 08:01:59,000000 -03:00",
+        "dtaInicio": "09-06-2021 08:01:54",
+        "dtaFim": "09-06-2021 08:01:59",
         "tempoUsoSegundos": 5
       },
       {
         "desSoftware": "HxOutlook",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "N",
-        "dtaInicio": "09/06/21 08:08:17,000000 -03:00",
-        "dtaFim": "09/06/21 08:08:32,000000 -03:00",
+        "dtaInicio": "09-06-2021 08:08:17",
+        "dtaFim": "09-06-2021 08:08:32",
         "tempoUsoSegundos": 15
       },
       {
         "desSoftware": "Skype",
         "desFornecedor": "Skype Technologies S.A.",
         "flgAutorizado": "S",
-        "dtaInicio": "09/06/21 08:01:59,000000 -03:00",
-        "dtaFim": "09/06/21 08:11:16,000000 -03:00",
+        "dtaInicio": "09-06-2021 08:01:59",
+        "dtaFim": "09-06-2021 08:11:16",
         "tempoUsoSegundos": 84
       },
       {
         "desSoftware": "Console Git",
-        "desFornecedor": "Andy Koppe / Thomas Wolff",
+        "desFornecedor": "Andy Koppe - Thomas Wolff",
         "flgAutorizado": "S",
-        "dtaInicio": "09/06/21 08:13:16,000000 -03:00",
-        "dtaFim": "09/06/21 08:13:30,000000 -03:00",
+        "dtaInicio": "09-06-2021 08:13:16",
+        "dtaFim": "09-06-2021 08:13:30",
         "tempoUsoSegundos": 14
       },
       {
         "desSoftware": "Windows Explorer",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "09/06/21 08:13:30,000000 -03:00",
-        "dtaFim": "09/06/21 08:14:12,000000 -03:00",
+        "dtaInicio": "09-06-2021 08:13:30",
+        "dtaFim": "09-06-2021 08:14:12",
         "tempoUsoSegundos": 42
       },
       {
         "desSoftware": "Microsoft Outlook",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "09/06/21 08:21:33,000000 -03:00",
-        "dtaFim": "09/06/21 08:21:42,000000 -03:00",
+        "dtaInicio": "09-06-2021 08:21:33",
+        "dtaFim": "09-06-2021 08:21:42",
         "tempoUsoSegundos": 9
       },
       {
         "desSoftware": "Console Emulator",
         "desFornecedor": "ConEmu-Maximus5",
         "flgAutorizado": "S",
-        "dtaInicio": "09/06/21 08:15:00,000000 -03:00",
-        "dtaFim": "09/06/21 08:52:41,000000 -03:00",
+        "dtaInicio": "09-06-2021 08:15:00",
+        "dtaFim": "09-06-2021 08:52:41",
         "tempoUsoSegundos": 72
       },
       {
         "desSoftware": "Google Chrome",
         "desFornecedor": "Google LLC",
         "flgAutorizado": "S",
-        "dtaInicio": "09/06/21 08:02:15,000000 -03:00",
-        "dtaFim": "09/06/21 08:59:58,000000 -03:00",
+        "dtaInicio": "09-06-2021 08:02:15",
+        "dtaFim": "09-06-2021 08:59:58",
         "tempoUsoSegundos": 1726
       },
       {
         "desSoftware": "Visual Studio Code",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "09/06/21 08:14:12,000000 -03:00",
-        "dtaFim": "09/06/21 09:00:20,000000 -03:00",
+        "dtaInicio": "09-06-2021 08:14:12",
+        "dtaFim": "09-06-2021 09:00:20",
         "tempoUsoSegundos": 1535
       },
       {
         "desSoftware": "Windows Explorer",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "09/06/21 09:16:34,000000 -03:00",
-        "dtaFim": "09/06/21 09:16:46,000000 -03:00",
+        "dtaInicio": "09-06-2021 09:16:34",
+        "dtaFim": "09-06-2021 09:16:46",
         "tempoUsoSegundos": 12
       },
       {
         "desSoftware": "Console Git",
-        "desFornecedor": "Andy Koppe / Thomas Wolff",
+        "desFornecedor": "Andy Koppe - Thomas Wolff",
         "flgAutorizado": "S",
-        "dtaInicio": "09/06/21 09:16:46,000000 -03:00",
-        "dtaFim": "09/06/21 09:17:25,000000 -03:00",
+        "dtaInicio": "09-06-2021 09:16:46",
+        "dtaFim": "09-06-2021 09:17:25",
         "tempoUsoSegundos": 39
       },
       {
         "desSoftware": "Visual Studio Community",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "09/06/21 09:17:25,000000 -03:00",
-        "dtaFim": "09/06/21 09:39:33,000000 -03:00",
+        "dtaInicio": "09-06-2021 09:17:25",
+        "dtaFim": "09-06-2021 09:39:33",
         "tempoUsoSegundos": 450
       },
       {
         "desSoftware": "Skype",
         "desFornecedor": "Skype Technologies S.A.",
         "flgAutorizado": "S",
-        "dtaInicio": "09/06/21 09:39:43,000000 -03:00",
-        "dtaFim": "09/06/21 09:47:38,000000 -03:00",
+        "dtaInicio": "09-06-2021 09:39:43",
+        "dtaFim": "09-06-2021 09:47:38",
         "tempoUsoSegundos": 475
       },
       {
         "desSoftware": "Google Chrome",
         "desFornecedor": "Google LLC",
         "flgAutorizado": "S",
-        "dtaInicio": "09/06/21 09:00:20,000000 -03:00",
-        "dtaFim": "09/06/21 09:52:38,000000 -03:00",
+        "dtaInicio": "09-06-2021 09:00:20",
+        "dtaFim": "09-06-2021 09:52:38",
         "tempoUsoSegundos": 663
       },
       {
         "desSoftware": "Visual Studio Code",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "09/06/21 09:02:15,000000 -03:00",
-        "dtaFim": "09/06/21 09:56:57,000000 -03:00",
+        "dtaInicio": "09-06-2021 09:02:15",
+        "dtaFim": "09-06-2021 09:56:57",
         "tempoUsoSegundos": 1757
       },
       {
-        "desSoftware": "PL/SQL Developer",
+        "desSoftware": "PL-SQL Developer",
         "desFornecedor": "Allround Automations",
         "flgAutorizado": "S",
-        "dtaInicio": "09/06/21 09:56:57,000000 -03:00",
-        "dtaFim": "09/06/21 10:00:17,000000 -03:00",
+        "dtaInicio": "09-06-2021 09:56:57",
+        "dtaFim": "09-06-2021 10:00:17",
         "tempoUsoSegundos": 131
       },
       {
         "desSoftware": "ShellExperienceHost",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "N",
-        "dtaInicio": "09/06/21 10:00:56,000000 -03:00",
-        "dtaFim": "09/06/21 10:01:34,000000 -03:00",
+        "dtaInicio": "09-06-2021 10:00:56",
+        "dtaFim": "09-06-2021 10:01:34",
         "tempoUsoSegundos": 38
       },
       {
         "desSoftware": "Spotify",
         "desFornecedor": "Spotify Ltd",
         "flgAutorizado": "S",
-        "dtaInicio": "09/06/21 10:21:17,000000 -03:00",
-        "dtaFim": "09/06/21 10:22:06,000000 -03:00",
+        "dtaInicio": "09-06-2021 10:21:17",
+        "dtaFim": "09-06-2021 10:22:06",
         "tempoUsoSegundos": 49
       },
       {
         "desSoftware": "Visual Studio Code",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "09/06/21 10:24:41,000000 -03:00",
-        "dtaFim": "09/06/21 10:39:49,000000 -03:00",
+        "dtaInicio": "09-06-2021 10:24:41",
+        "dtaFim": "09-06-2021 10:39:49",
         "tempoUsoSegundos": 122
       },
       {
         "desSoftware": "Visual Studio Community",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "09/06/21 10:04:58,000000 -03:00",
-        "dtaFim": "09/06/21 10:48:41,000000 -03:00",
+        "dtaInicio": "09-06-2021 10:04:58",
+        "dtaFim": "09-06-2021 10:48:41",
         "tempoUsoSegundos": 1153
       },
       {
         "desSoftware": "Google Chrome",
         "desFornecedor": "Google LLC",
         "flgAutorizado": "S",
-        "dtaInicio": "09/06/21 10:00:17,000000 -03:00",
-        "dtaFim": "09/06/21 10:55:55,000000 -03:00",
+        "dtaInicio": "09-06-2021 10:00:17",
+        "dtaFim": "09-06-2021 10:55:55",
         "tempoUsoSegundos": 1449
       },
       {
         "desSoftware": "Bloco de Notas",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "09/06/21 10:58:13,000000 -03:00",
-        "dtaFim": "09/06/21 10:59:06,000000 -03:00",
+        "dtaInicio": "09-06-2021 10:58:13",
+        "dtaFim": "09-06-2021 10:59:06",
         "tempoUsoSegundos": 53
       },
       {
         "desSoftware": "Skype",
         "desFornecedor": "Skype Technologies S.A.",
         "flgAutorizado": "S",
-        "dtaInicio": "09/06/21 10:01:34,000000 -03:00",
-        "dtaFim": "09/06/21 10:59:28,000000 -03:00",
+        "dtaInicio": "09-06-2021 10:01:34",
+        "dtaFim": "09-06-2021 10:59:28",
         "tempoUsoSegundos": 540
       },
       {
         "desSoftware": "Windows Explorer",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "09/06/21 10:02:15,000000 -03:00",
-        "dtaFim": "09/06/21 10:59:35,000000 -03:00",
+        "dtaInicio": "09-06-2021 10:02:15",
+        "dtaFim": "09-06-2021 10:59:35",
         "tempoUsoSegundos": 82
       },
       {
         "desSoftware": "Console Git",
-        "desFornecedor": "Andy Koppe / Thomas Wolff",
+        "desFornecedor": "Andy Koppe - Thomas Wolff",
         "flgAutorizado": "S",
-        "dtaInicio": "09/06/21 10:04:38,000000 -03:00",
-        "dtaFim": "09/06/21 11:00:13,000000 -03:00",
+        "dtaInicio": "09-06-2021 10:04:38",
+        "dtaFim": "09-06-2021 11:00:13",
         "tempoUsoSegundos": 65
       },
       {
         "desSoftware": "Skype",
         "desFornecedor": "Skype Technologies S.A.",
         "flgAutorizado": "S",
-        "dtaInicio": "09/06/21 11:00:13,000000 -03:00",
-        "dtaFim": "09/06/21 11:00:38,000000 -03:00",
+        "dtaInicio": "09-06-2021 11:00:13",
+        "dtaFim": "09-06-2021 11:00:38",
         "tempoUsoSegundos": 25
       },
       {
-        "desSoftware": "PL/SQL Developer",
+        "desSoftware": "PL-SQL Developer",
         "desFornecedor": "Allround Automations",
         "flgAutorizado": "S",
-        "dtaInicio": "09/06/21 11:03:29,000000 -03:00",
-        "dtaFim": "09/06/21 11:03:44,000000 -03:00",
+        "dtaInicio": "09-06-2021 11:03:29",
+        "dtaFim": "09-06-2021 11:03:44",
         "tempoUsoSegundos": 15
       },
       {
         "desSoftware": "wish",
         "desFornecedor": "ActiveState Corporation",
         "flgAutorizado": "N",
-        "dtaInicio": "09/06/21 11:05:38,000000 -03:00",
-        "dtaFim": "09/06/21 11:05:57,000000 -03:00",
+        "dtaInicio": "09-06-2021 11:05:38",
+        "dtaFim": "09-06-2021 11:05:57",
         "tempoUsoSegundos": 19
       },
       {
         "desSoftware": "Gerenciador de Tarefas",
         "desFornecedor": "",
         "flgAutorizado": "S",
-        "dtaInicio": "09/06/21 11:08:07,000000 -03:00",
-        "dtaFim": "09/06/21 11:08:17,000000 -03:00",
+        "dtaInicio": "09-06-2021 11:08:07",
+        "dtaFim": "09-06-2021 11:08:17",
         "tempoUsoSegundos": 10
       },
       {
         "desSoftware": "Visual Studio Code",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "09/06/21 11:12:57,000000 -03:00",
-        "dtaFim": "09/06/21 11:13:29,000000 -03:00",
+        "dtaInicio": "09-06-2021 11:12:57",
+        "dtaFim": "09-06-2021 11:13:29",
         "tempoUsoSegundos": 32
       },
       {
         "desSoftware": "Console Git",
-        "desFornecedor": "Andy Koppe / Thomas Wolff",
+        "desFornecedor": "Andy Koppe - Thomas Wolff",
         "flgAutorizado": "S",
-        "dtaInicio": "09/06/21 11:00:38,000000 -03:00",
-        "dtaFim": "09/06/21 11:15:08,000000 -03:00",
+        "dtaInicio": "09-06-2021 11:00:38",
+        "dtaFim": "09-06-2021 11:15:08",
         "tempoUsoSegundos": 459
       },
       {
         "desSoftware": "Spotify",
         "desFornecedor": "Spotify Ltd",
         "flgAutorizado": "S",
-        "dtaInicio": "09/06/21 11:19:13,000000 -03:00",
-        "dtaFim": "09/06/21 11:19:27,000000 -03:00",
+        "dtaInicio": "09-06-2021 11:19:13",
+        "dtaFim": "09-06-2021 11:19:27",
         "tempoUsoSegundos": 14
       },
       {
         "desSoftware": "Windows Explorer",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "09/06/21 11:00:44,000000 -03:00",
-        "dtaFim": "09/06/21 11:19:59,000000 -03:00",
+        "dtaInicio": "09-06-2021 11:00:44",
+        "dtaFim": "09-06-2021 11:19:59",
         "tempoUsoSegundos": 268
       },
       {
         "desSoftware": "Visual Studio Community",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "09/06/21 11:18:26,000000 -03:00",
-        "dtaFim": "09/06/21 11:22:12,000000 -03:00",
+        "dtaInicio": "09-06-2021 11:18:26",
+        "dtaFim": "09-06-2021 11:22:12",
         "tempoUsoSegundos": 45
       },
       {
         "desSoftware": "ShellExperienceHost",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "N",
-        "dtaInicio": "09/06/21 11:19:59,000000 -03:00",
-        "dtaFim": "09/06/21 11:22:37,000000 -03:00",
+        "dtaInicio": "09-06-2021 11:19:59",
+        "dtaFim": "09-06-2021 11:22:37",
         "tempoUsoSegundos": 42
       },
       {
         "desSoftware": "Google Chrome",
         "desFornecedor": "Google LLC",
         "flgAutorizado": "S",
-        "dtaInicio": "09/06/21 11:10:28,000000 -03:00",
-        "dtaFim": "09/06/21 11:22:47,000000 -03:00",
+        "dtaInicio": "09-06-2021 11:10:28",
+        "dtaFim": "09-06-2021 11:22:47",
         "tempoUsoSegundos": 425
       },
       {
         "desSoftware": "StartMenuExperienceHost",
         "desFornecedor": "",
         "flgAutorizado": "N",
-        "dtaInicio": "09/06/21 11:23:00,000000 -03:00",
-        "dtaFim": "09/06/21 11:23:03,000000 -03:00",
+        "dtaInicio": "09-06-2021 11:23:00",
+        "dtaFim": "09-06-2021 11:23:03",
         "tempoUsoSegundos": 3
       }
     ]
@@ -1515,7 +1515,7 @@
           "flgAutorizado": "S"
         },
         {
-          "desFornecedor": "Andy Koppe / Thomas Wolff",
+          "desFornecedor": "Andy Koppe - Thomas Wolff",
           "desProcesso": "mintty",
           "desSoftware": "Console Git",
           "tempoUsoSegundos": 1128,
@@ -1625,320 +1625,320 @@
         "desSoftware": "iWorkOff",
         "desFornecedor": "iWorkOff",
         "flgAutorizado": "S",
-        "dtaInicio": "10/06/21 07:57:16,000000 -03:00",
-        "dtaFim": "10/06/21 07:57:36,000000 -03:00",
+        "dtaInicio": "10-06-2021 07:57:16",
+        "dtaFim": "10-06-2021 07:57:36",
         "tempoUsoSegundos": 20
       },
       {
         "desSoftware": "Windows Explorer",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "10/06/21 07:57:52,000000 -03:00",
-        "dtaFim": "10/06/21 07:58:29,000000 -03:00",
+        "dtaInicio": "10-06-2021 07:57:52",
+        "dtaFim": "10-06-2021 07:58:29",
         "tempoUsoSegundos": 37
       },
       {
         "desSoftware": "ShellExperienceHost",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "N",
-        "dtaInicio": "10/06/21 07:58:29,000000 -03:00",
-        "dtaFim": "10/06/21 07:58:39,000000 -03:00",
+        "dtaInicio": "10-06-2021 07:58:29",
+        "dtaFim": "10-06-2021 07:58:39",
         "tempoUsoSegundos": 10
       },
       {
         "desSoftware": "Skype",
         "desFornecedor": "Skype Technologies S.A.",
         "flgAutorizado": "S",
-        "dtaInicio": "10/06/21 07:57:36,000000 -03:00",
-        "dtaFim": "10/06/21 07:59:46,000000 -03:00",
+        "dtaInicio": "10-06-2021 07:57:36",
+        "dtaFim": "10-06-2021 07:59:46",
         "tempoUsoSegundos": 83
       },
       {
         "desSoftware": "Google Chrome",
         "desFornecedor": "Google LLC",
         "flgAutorizado": "S",
-        "dtaInicio": "10/06/21 07:59:46,000000 -03:00",
-        "dtaFim": "10/06/21 08:03:46,000000 -03:00",
+        "dtaInicio": "10-06-2021 07:59:46",
+        "dtaFim": "10-06-2021 08:03:46",
         "tempoUsoSegundos": 240
       },
       {
         "desSoftware": "Windows Explorer",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "10/06/21 08:13:43,000000 -03:00",
-        "dtaFim": "10/06/21 08:25:40,000000 -03:00",
+        "dtaInicio": "10-06-2021 08:13:43",
+        "dtaFim": "10-06-2021 08:25:40",
         "tempoUsoSegundos": 26
       },
       {
         "desSoftware": "avpui",
         "desFornecedor": "",
         "flgAutorizado": "N",
-        "dtaInicio": "10/06/21 08:32:18,000000 -03:00",
-        "dtaFim": "10/06/21 08:33:17,000000 -03:00",
+        "dtaInicio": "10-06-2021 08:32:18",
+        "dtaFim": "10-06-2021 08:33:17",
         "tempoUsoSegundos": 59
       },
       {
         "desSoftware": "Visual Studio Code",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "10/06/21 08:17:14,000000 -03:00",
-        "dtaFim": "10/06/21 08:34:27,000000 -03:00",
+        "dtaInicio": "10-06-2021 08:17:14",
+        "dtaFim": "10-06-2021 08:34:27",
         "tempoUsoSegundos": 44
       },
       {
         "desSoftware": "Microsoft Outlook",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "10/06/21 08:46:39,000000 -03:00",
-        "dtaFim": "10/06/21 08:47:15,000000 -03:00",
+        "dtaInicio": "10-06-2021 08:46:39",
+        "dtaFim": "10-06-2021 08:47:15",
         "tempoUsoSegundos": 36
       },
       {
         "desSoftware": "Console Git",
-        "desFornecedor": "Andy Koppe / Thomas Wolff",
+        "desFornecedor": "Andy Koppe - Thomas Wolff",
         "flgAutorizado": "S",
-        "dtaInicio": "10/06/21 08:13:55,000000 -03:00",
-        "dtaFim": "10/06/21 08:47:52,000000 -03:00",
+        "dtaInicio": "10-06-2021 08:13:55",
+        "dtaFim": "10-06-2021 08:47:52",
         "tempoUsoSegundos": 670
       },
       {
         "desSoftware": "Visual Studio Community",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "10/06/21 08:47:52,000000 -03:00",
-        "dtaFim": "10/06/21 08:48:29,000000 -03:00",
+        "dtaInicio": "10-06-2021 08:47:52",
+        "dtaFim": "10-06-2021 08:48:29",
         "tempoUsoSegundos": 37
       },
       {
         "desSoftware": "Skype",
         "desFornecedor": "Skype Technologies S.A.",
         "flgAutorizado": "S",
-        "dtaInicio": "10/06/21 08:11:06,000000 -03:00",
-        "dtaFim": "10/06/21 08:56:27,000000 -03:00",
+        "dtaInicio": "10-06-2021 08:11:06",
+        "dtaFim": "10-06-2021 08:56:27",
         "tempoUsoSegundos": 416
       },
       {
         "desSoftware": "Google Chrome",
         "desFornecedor": "Google LLC",
         "flgAutorizado": "S",
-        "dtaInicio": "10/06/21 08:11:01,000000 -03:00",
-        "dtaFim": "10/06/21 09:08:12,000000 -03:00",
+        "dtaInicio": "10-06-2021 08:11:01",
+        "dtaFim": "10-06-2021 09:08:12",
         "tempoUsoSegundos": 2143
       },
       {
         "desSoftware": "Spotify",
         "desFornecedor": "Spotify Ltd",
         "flgAutorizado": "S",
-        "dtaInicio": "10/06/21 09:08:12,000000 -03:00",
-        "dtaFim": "10/06/21 09:08:32,000000 -03:00",
+        "dtaInicio": "10-06-2021 09:08:12",
+        "dtaFim": "10-06-2021 09:08:32",
         "tempoUsoSegundos": 20
       },
       {
         "desSoftware": "Console Git",
-        "desFornecedor": "Andy Koppe / Thomas Wolff",
+        "desFornecedor": "Andy Koppe - Thomas Wolff",
         "flgAutorizado": "S",
-        "dtaInicio": "10/06/21 09:20:18,000000 -03:00",
-        "dtaFim": "10/06/21 09:21:50,000000 -03:00",
+        "dtaInicio": "10-06-2021 09:20:18",
+        "dtaFim": "10-06-2021 09:21:50",
         "tempoUsoSegundos": 92
       },
       {
         "desSoftware": "Postman",
         "desFornecedor": "Postman",
         "flgAutorizado": "S",
-        "dtaInicio": "10/06/21 09:25:48,000000 -03:00",
-        "dtaFim": "10/06/21 09:26:50,000000 -03:00",
+        "dtaInicio": "10-06-2021 09:25:48",
+        "dtaFim": "10-06-2021 09:26:50",
         "tempoUsoSegundos": 62
       },
       {
         "desSoftware": "Skype",
         "desFornecedor": "Skype Technologies S.A.",
         "flgAutorizado": "S",
-        "dtaInicio": "10/06/21 09:32:56,000000 -03:00",
-        "dtaFim": "10/06/21 09:33:42,000000 -03:00",
+        "dtaInicio": "10-06-2021 09:32:56",
+        "dtaFim": "10-06-2021 09:33:42",
         "tempoUsoSegundos": 46
       },
       {
         "desSoftware": "Windows Explorer",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "10/06/21 09:22:13,000000 -03:00",
-        "dtaFim": "10/06/21 09:35:56,000000 -03:00",
+        "dtaInicio": "10-06-2021 09:22:13",
+        "dtaFim": "10-06-2021 09:35:56",
         "tempoUsoSegundos": 61
       },
       {
         "desSoftware": "Google Chrome",
         "desFornecedor": "Google LLC",
         "flgAutorizado": "S",
-        "dtaInicio": "10/06/21 09:08:32,000000 -03:00",
-        "dtaFim": "10/06/21 09:58:08,000000 -03:00",
+        "dtaInicio": "10-06-2021 09:08:32",
+        "dtaFim": "10-06-2021 09:58:08",
         "tempoUsoSegundos": 617
       },
       {
         "desSoftware": "Visual Studio Community",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "10/06/21 09:12:38,000000 -03:00",
-        "dtaFim": "10/06/21 09:58:42,000000 -03:00",
+        "dtaInicio": "10-06-2021 09:12:38",
+        "dtaFim": "10-06-2021 09:58:42",
         "tempoUsoSegundos": 190
       },
       {
         "desSoftware": "Visual Studio Code",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "10/06/21 09:23:02,000000 -03:00",
-        "dtaFim": "10/06/21 10:02:53,000000 -03:00",
+        "dtaInicio": "10-06-2021 09:23:02",
+        "dtaFim": "10-06-2021 10:02:53",
         "tempoUsoSegundos": 2174
       },
       {
         "desSoftware": "Visual Studio Community",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "10/06/21 10:04:42,000000 -03:00",
-        "dtaFim": "10/06/21 10:05:23,000000 -03:00",
+        "dtaInicio": "10-06-2021 10:04:42",
+        "dtaFim": "10-06-2021 10:05:23",
         "tempoUsoSegundos": 41
       },
       {
         "desSoftware": "Console Git",
-        "desFornecedor": "Andy Koppe / Thomas Wolff",
+        "desFornecedor": "Andy Koppe - Thomas Wolff",
         "flgAutorizado": "S",
-        "dtaInicio": "10/06/21 10:06:36,000000 -03:00",
-        "dtaFim": "10/06/21 10:14:37,000000 -03:00",
+        "dtaInicio": "10-06-2021 10:06:36",
+        "dtaFim": "10-06-2021 10:14:37",
         "tempoUsoSegundos": 270
       },
       {
         "desSoftware": "Skype",
         "desFornecedor": "Skype Technologies S.A.",
         "flgAutorizado": "S",
-        "dtaInicio": "10/06/21 10:18:08,000000 -03:00",
-        "dtaFim": "10/06/21 10:33:45,000000 -03:00",
+        "dtaInicio": "10-06-2021 10:18:08",
+        "dtaFim": "10-06-2021 10:33:45",
         "tempoUsoSegundos": 70
       },
       {
         "desSoftware": "Visual Studio Code",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "10/06/21 10:05:23,000000 -03:00",
-        "dtaFim": "10/06/21 10:46:40,000000 -03:00",
+        "dtaInicio": "10-06-2021 10:05:23",
+        "dtaFim": "10-06-2021 10:46:40",
         "tempoUsoSegundos": 401
       },
       {
         "desSoftware": "Google Chrome",
         "desFornecedor": "Google LLC",
         "flgAutorizado": "S",
-        "dtaInicio": "10/06/21 10:02:53,000000 -03:00",
-        "dtaFim": "10/06/21 11:00:53,000000 -03:00",
+        "dtaInicio": "10-06-2021 10:02:53",
+        "dtaFim": "10-06-2021 11:00:53",
         "tempoUsoSegundos": 2685
       },
       {
         "desSoftware": "Postman",
         "desFornecedor": "Postman",
         "flgAutorizado": "S",
-        "dtaInicio": "10/06/21 11:10:15,000000 -03:00",
-        "dtaFim": "10/06/21 11:10:41,000000 -03:00",
+        "dtaInicio": "10-06-2021 11:10:15",
+        "dtaFim": "10-06-2021 11:10:41",
         "tempoUsoSegundos": 26
       },
       {
         "desSoftware": "Microsoft Outlook",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "10/06/21 11:32:51,000000 -03:00",
-        "dtaFim": "10/06/21 11:33:31,000000 -03:00",
+        "dtaInicio": "10-06-2021 11:32:51",
+        "dtaFim": "10-06-2021 11:33:31",
         "tempoUsoSegundos": 40
       },
       {
         "desSoftware": "Visual Studio Community",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "10/06/21 11:36:59,000000 -03:00",
-        "dtaFim": "10/06/21 11:38:46,000000 -03:00",
+        "dtaInicio": "10-06-2021 11:36:59",
+        "dtaFim": "10-06-2021 11:38:46",
         "tempoUsoSegundos": 107
       },
       {
         "desSoftware": "Área de Trabalho Remota",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "10/06/21 11:39:03,000000 -03:00",
-        "dtaFim": "10/06/21 11:51:12,000000 -03:00",
+        "dtaInicio": "10-06-2021 11:39:03",
+        "dtaFim": "10-06-2021 11:51:12",
         "tempoUsoSegundos": 650
       },
       {
         "desSoftware": "Console Git",
-        "desFornecedor": "Andy Koppe / Thomas Wolff",
+        "desFornecedor": "Andy Koppe - Thomas Wolff",
         "flgAutorizado": "S",
-        "dtaInicio": "10/06/21 11:35:51,000000 -03:00",
-        "dtaFim": "10/06/21 11:52:31,000000 -03:00",
+        "dtaInicio": "10-06-2021 11:35:51",
+        "dtaFim": "10-06-2021 11:52:31",
         "tempoUsoSegundos": 96
       },
       {
         "desSoftware": "Visual Studio Code",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "10/06/21 11:00:53,000000 -03:00",
-        "dtaFim": "10/06/21 11:53:26,000000 -03:00",
+        "dtaInicio": "10-06-2021 11:00:53",
+        "dtaFim": "10-06-2021 11:53:26",
         "tempoUsoSegundos": 1013
       },
       {
         "desSoftware": "Windows Explorer",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "10/06/21 11:38:46,000000 -03:00",
-        "dtaFim": "10/06/21 11:55:03,000000 -03:00",
+        "dtaInicio": "10-06-2021 11:38:46",
+        "dtaFim": "10-06-2021 11:55:03",
         "tempoUsoSegundos": 120
       },
       {
         "desSoftware": "SearchApp",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "N",
-        "dtaInicio": "10/06/21 11:57:13,000000 -03:00",
-        "dtaFim": "10/06/21 11:57:20,000000 -03:00",
+        "dtaInicio": "10-06-2021 11:57:13",
+        "dtaFim": "10-06-2021 11:57:20",
         "tempoUsoSegundos": 7
       },
       {
         "desSoftware": "Prompt de Comando",
         "desFornecedor": "",
         "flgAutorizado": "S",
-        "dtaInicio": "10/06/21 11:57:20,000000 -03:00",
-        "dtaFim": "10/06/21 11:59:44,000000 -03:00",
+        "dtaInicio": "10-06-2021 11:57:20",
+        "dtaFim": "10-06-2021 11:59:44",
         "tempoUsoSegundos": 41
       },
       {
         "desSoftware": "Google Chrome",
         "desFornecedor": "Google LLC",
         "flgAutorizado": "S",
-        "dtaInicio": "10/06/21 11:12:33,000000 -03:00",
-        "dtaFim": "10/06/21 12:03:40,000000 -03:00",
+        "dtaInicio": "10-06-2021 11:12:33",
+        "dtaFim": "10-06-2021 12:03:40",
         "tempoUsoSegundos": 1663
       },
       {
         "desSoftware": "Prompt de Comando",
         "desFornecedor": "",
         "flgAutorizado": "S",
-        "dtaInicio": "10/06/21 12:03:40,000000 -03:00",
-        "dtaFim": "10/06/21 12:03:51,000000 -03:00",
+        "dtaInicio": "10-06-2021 12:03:40",
+        "dtaFim": "10-06-2021 12:03:51",
         "tempoUsoSegundos": 11
       },
       {
         "desSoftware": "Google Chrome",
         "desFornecedor": "Google LLC",
         "flgAutorizado": "S",
-        "dtaInicio": "10/06/21 12:03:51,000000 -03:00",
-        "dtaFim": "10/06/21 12:07:10,000000 -03:00",
+        "dtaInicio": "10-06-2021 12:03:51",
+        "dtaFim": "10-06-2021 12:07:10",
         "tempoUsoSegundos": 199
       },
       {
         "desSoftware": "Windows Explorer",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "10/06/21 12:07:10,000000 -03:00",
-        "dtaFim": "10/06/21 12:07:19,000000 -03:00",
+        "dtaInicio": "10-06-2021 12:07:10",
+        "dtaFim": "10-06-2021 12:07:19",
         "tempoUsoSegundos": 9
       },
       {
         "desSoftware": "iWorkOff",
         "desFornecedor": "iWorkOff",
         "flgAutorizado": "S",
-        "dtaInicio": "10/06/21 12:07:23,000000 -03:00",
-        "dtaFim": "10/06/21 12:07:23,000000 -03:00",
+        "dtaInicio": "10-06-2021 12:07:23",
+        "dtaFim": "10-06-2021 12:07:23",
         "tempoUsoSegundos": 0
       }
     ]
@@ -2011,7 +2011,7 @@
         {
           "desFornecedor": "Allround Automations",
           "desProcesso": "plsqldev",
-          "desSoftware": "PL/SQL Developer",
+          "desSoftware": "PL-SQL Developer",
           "tempoUsoSegundos": 95,
           "porcentagemUso": 0.2671991899645609495415424425,
           "flgAutorizado": "S"
@@ -2049,7 +2049,7 @@
           "flgAutorizado": "S"
         },
         {
-          "desFornecedor": "Andy Koppe / Thomas Wolff",
+          "desFornecedor": "Andy Koppe - Thomas Wolff",
           "desProcesso": "mintty",
           "desSoftware": "Console Git",
           "tempoUsoSegundos": 18,
@@ -2087,224 +2087,224 @@
         "desSoftware": "Skype",
         "desFornecedor": "Skype Technologies S.A.",
         "flgAutorizado": "S",
-        "dtaInicio": "11/06/21 07:59:31,000000 -03:00",
-        "dtaFim": "11/06/21 08:00:58,000000 -03:00",
+        "dtaInicio": "11-06-2021 07:59:31",
+        "dtaFim": "11-06-2021 08:00:58",
         "tempoUsoSegundos": 87
       },
       {
         "desSoftware": "Windows Explorer",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "11/06/21 08:00:58,000000 -03:00",
-        "dtaFim": "11/06/21 08:01:55,000000 -03:00",
+        "dtaInicio": "11-06-2021 08:00:58",
+        "dtaFim": "11-06-2021 08:01:55",
         "tempoUsoSegundos": 57
       },
       {
         "desSoftware": "Console Emulator",
         "desFornecedor": "ConEmu-Maximus5",
         "flgAutorizado": "S",
-        "dtaInicio": "11/06/21 08:21:29,000000 -03:00",
-        "dtaFim": "11/06/21 08:21:57,000000 -03:00",
+        "dtaInicio": "11-06-2021 08:21:29",
+        "dtaFim": "11-06-2021 08:21:57",
         "tempoUsoSegundos": 28
       },
       {
         "desSoftware": "Bloco de Notas",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "11/06/21 08:22:57,000000 -03:00",
-        "dtaFim": "11/06/21 08:23:05,000000 -03:00",
+        "dtaInicio": "11-06-2021 08:22:57",
+        "dtaFim": "11-06-2021 08:23:05",
         "tempoUsoSegundos": 8
       },
       {
         "desSoftware": "Google Chrome",
         "desFornecedor": "Google LLC",
         "flgAutorizado": "S",
-        "dtaInicio": "11/06/21 08:05:11,000000 -03:00",
-        "dtaFim": "11/06/21 08:56:18,000000 -03:00",
+        "dtaInicio": "11-06-2021 08:05:11",
+        "dtaFim": "11-06-2021 08:56:18",
         "tempoUsoSegundos": 946
       },
       {
         "desSoftware": "Visual Studio Code",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "11/06/21 08:01:55,000000 -03:00",
-        "dtaFim": "11/06/21 09:00:27,000000 -03:00",
+        "dtaInicio": "11-06-2021 08:01:55",
+        "dtaFim": "11-06-2021 09:00:27",
         "tempoUsoSegundos": 2530
       },
       {
         "desSoftware": "Google Chrome",
         "desFornecedor": "Google LLC",
         "flgAutorizado": "S",
-        "dtaInicio": "11/06/21 09:00:27,000000 -03:00",
-        "dtaFim": "11/06/21 09:46:11,000000 -03:00",
+        "dtaInicio": "11-06-2021 09:00:27",
+        "dtaFim": "11-06-2021 09:46:11",
         "tempoUsoSegundos": 1698
       },
       {
         "desSoftware": "Visual Studio Code",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "11/06/21 09:04:08,000000 -03:00",
-        "dtaFim": "11/06/21 10:05:24,000000 -03:00",
+        "dtaInicio": "11-06-2021 09:04:08",
+        "dtaFim": "11-06-2021 10:05:24",
         "tempoUsoSegundos": 2199
       },
       {
         "desSoftware": "ShellExperienceHost",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "N",
-        "dtaInicio": "11/06/21 10:05:41,000000 -03:00",
-        "dtaFim": "11/06/21 10:06:04,000000 -03:00",
+        "dtaInicio": "11-06-2021 10:05:41",
+        "dtaFim": "11-06-2021 10:06:04",
         "tempoUsoSegundos": 23
       },
       {
         "desSoftware": "Spotify",
         "desFornecedor": "Spotify Ltd",
         "flgAutorizado": "S",
-        "dtaInicio": "11/06/21 10:05:24,000000 -03:00",
-        "dtaFim": "11/06/21 10:23:51,000000 -03:00",
+        "dtaInicio": "11-06-2021 10:05:24",
+        "dtaFim": "11-06-2021 10:23:51",
         "tempoUsoSegundos": 125
       },
       {
         "desSoftware": "Console Emulator",
         "desFornecedor": "ConEmu-Maximus5",
         "flgAutorizado": "S",
-        "dtaInicio": "11/06/21 10:33:02,000000 -03:00",
-        "dtaFim": "11/06/21 10:33:14,000000 -03:00",
+        "dtaInicio": "11-06-2021 10:33:02",
+        "dtaFim": "11-06-2021 10:33:14",
         "tempoUsoSegundos": 12
       },
       {
         "desSoftware": "Windows Explorer",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "11/06/21 10:49:33,000000 -03:00",
-        "dtaFim": "11/06/21 10:49:51,000000 -03:00",
+        "dtaInicio": "11-06-2021 10:49:33",
+        "dtaFim": "11-06-2021 10:49:51",
         "tempoUsoSegundos": 18
       },
       {
         "desSoftware": "Console Git",
-        "desFornecedor": "Andy Koppe / Thomas Wolff",
+        "desFornecedor": "Andy Koppe - Thomas Wolff",
         "flgAutorizado": "S",
-        "dtaInicio": "11/06/21 10:49:51,000000 -03:00",
-        "dtaFim": "11/06/21 10:50:09,000000 -03:00",
+        "dtaInicio": "11-06-2021 10:49:51",
+        "dtaFim": "11-06-2021 10:50:09",
         "tempoUsoSegundos": 18
       },
       {
         "desSoftware": "Visual Studio Community",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "11/06/21 10:50:09,000000 -03:00",
-        "dtaFim": "11/06/21 10:50:17,000000 -03:00",
+        "dtaInicio": "11-06-2021 10:50:09",
+        "dtaFim": "11-06-2021 10:50:17",
         "tempoUsoSegundos": 8
       },
       {
         "desSoftware": "Visual Studio Code",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "11/06/21 10:06:04,000000 -03:00",
-        "dtaFim": "11/06/21 10:52:40,000000 -03:00",
+        "dtaInicio": "11-06-2021 10:06:04",
+        "dtaFim": "11-06-2021 10:52:40",
         "tempoUsoSegundos": 2092
       },
       {
         "desSoftware": "Google Chrome",
         "desFornecedor": "Google LLC",
         "flgAutorizado": "S",
-        "dtaInicio": "11/06/21 10:19:55,000000 -03:00",
-        "dtaFim": "11/06/21 10:54:24,000000 -03:00",
+        "dtaInicio": "11-06-2021 10:19:55",
+        "dtaFim": "11-06-2021 10:54:24",
         "tempoUsoSegundos": 453
       },
       {
         "desSoftware": "Skype",
         "desFornecedor": "Skype Technologies S.A.",
         "flgAutorizado": "S",
-        "dtaInicio": "11/06/21 10:48:53,000000 -03:00",
-        "dtaFim": "11/06/21 10:59:18,000000 -03:00",
+        "dtaInicio": "11-06-2021 10:48:53",
+        "dtaFim": "11-06-2021 10:59:18",
         "tempoUsoSegundos": 380
       },
       {
-        "desSoftware": "PL/SQL Developer",
+        "desSoftware": "PL-SQL Developer",
         "desFornecedor": "Allround Automations",
         "flgAutorizado": "S",
-        "dtaInicio": "11/06/21 10:59:18,000000 -03:00",
-        "dtaFim": "11/06/21 11:00:01,000000 -03:00",
+        "dtaInicio": "11-06-2021 10:59:18",
+        "dtaFim": "11-06-2021 11:00:01",
         "tempoUsoSegundos": 43
       },
       {
-        "desSoftware": "PL/SQL Developer",
+        "desSoftware": "PL-SQL Developer",
         "desFornecedor": "Allround Automations",
         "flgAutorizado": "S",
-        "dtaInicio": "11/06/21 11:00:52,000000 -03:00",
-        "dtaFim": "11/06/21 11:01:02,000000 -03:00",
+        "dtaInicio": "11-06-2021 11:00:52",
+        "dtaFim": "11-06-2021 11:01:02",
         "tempoUsoSegundos": 10
       },
       {
         "desSoftware": "Spotify",
         "desFornecedor": "Spotify Ltd",
         "flgAutorizado": "S",
-        "dtaInicio": "11/06/21 11:04:27,000000 -03:00",
-        "dtaFim": "11/06/21 11:04:45,000000 -03:00",
+        "dtaInicio": "11-06-2021 11:04:27",
+        "dtaFim": "11-06-2021 11:04:45",
         "tempoUsoSegundos": 18
       },
       {
         "desSoftware": "Visual Studio Code",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "11/06/21 11:04:45,000000 -03:00",
-        "dtaFim": "11/06/21 11:28:57,000000 -03:00",
+        "dtaInicio": "11-06-2021 11:04:45",
+        "dtaFim": "11-06-2021 11:28:57",
         "tempoUsoSegundos": 1452
       },
       {
         "desSoftware": "Mozilla Firefox",
         "desFornecedor": "Mozilla Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "11/06/21 11:34:22,000000 -03:00",
-        "dtaFim": "11/06/21 11:41:38,000000 -03:00",
+        "dtaInicio": "11-06-2021 11:34:22",
+        "dtaFim": "11-06-2021 11:41:38",
         "tempoUsoSegundos": 276
       },
       {
         "desSoftware": "Google Chrome",
         "desFornecedor": "Google LLC",
         "flgAutorizado": "S",
-        "dtaInicio": "11/06/21 11:01:55,000000 -03:00",
-        "dtaFim": "11/06/21 11:59:38,000000 -03:00",
+        "dtaInicio": "11-06-2021 11:01:55",
+        "dtaFim": "11-06-2021 11:59:38",
         "tempoUsoSegundos": 470
       },
       {
         "desSoftware": "Skype",
         "desFornecedor": "Skype Technologies S.A.",
         "flgAutorizado": "S",
-        "dtaInicio": "11/06/21 11:00:01,000000 -03:00",
-        "dtaFim": "11/06/21 12:00:07,000000 -03:00",
+        "dtaInicio": "11-06-2021 11:00:01",
+        "dtaFim": "11-06-2021 12:00:07",
         "tempoUsoSegundos": 1380
       },
       {
         "desSoftware": "Windows Explorer",
         "desFornecedor": "Microsoft Corporation",
         "flgAutorizado": "S",
-        "dtaInicio": "11/06/21 12:09:55,000000 -03:00",
-        "dtaFim": "11/06/21 12:10:09,000000 -03:00",
+        "dtaInicio": "11-06-2021 12:09:55",
+        "dtaFim": "11-06-2021 12:10:09",
         "tempoUsoSegundos": 14
       },
       {
         "desSoftware": "Google Chrome",
         "desFornecedor": "Google LLC",
         "flgAutorizado": "S",
-        "dtaInicio": "11/06/21 12:00:07,000000 -03:00",
-        "dtaFim": "11/06/21 12:11:53,000000 -03:00",
+        "dtaInicio": "11-06-2021 12:00:07",
+        "dtaFim": "11-06-2021 12:11:53",
         "tempoUsoSegundos": 296
       },
       {
         "desSoftware": "Skype",
         "desFornecedor": "Skype Technologies S.A.",
         "flgAutorizado": "S",
-        "dtaInicio": "11/06/21 12:01:16,000000 -03:00",
-        "dtaFim": "11/06/21 12:16:06,000000 -03:00",
+        "dtaInicio": "11-06-2021 12:01:16",
+        "dtaFim": "11-06-2021 12:16:06",
         "tempoUsoSegundos": 649
       },
       {
         "desSoftware": "iWorkOff",
         "desFornecedor": "iWorkOff",
         "flgAutorizado": "S",
-        "dtaInicio": "11/06/21 12:16:07,000000 -03:00",
-        "dtaFim": "11/06/21 12:16:08,000000 -03:00",
+        "dtaInicio": "11-06-2021 12:16:07",
+        "dtaFim": "11-06-2021 12:16:08",
         "tempoUsoSegundos": 1
       }
     ]

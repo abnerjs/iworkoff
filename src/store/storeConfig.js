@@ -1,25 +1,33 @@
 import { combineReducers, createStore } from "redux"
 import dataApps from './dataApps.json'
 
-var timeline = []
-var totalAuth = 0
-var totalNoAuth = 0
-var percentAuth = 0
-var percentNoAuth = 0
-var totalAtiv = 0
-var totalIdling = 0
-for (let access of dataApps) {
-    timeline.push(...access.lstAtividades)
-    totalAuth += access.resumoAtividades.tempoAutorizado
-    totalNoAuth += access.resumoAtividades.tempoNaoAutorizado
-    percentAuth += access.resumoAtividades.porcentagemAutorizado
-    percentNoAuth += access.resumoAtividades.porcentagemNaoAutorizado
-    totalAtiv += access.tempoAtivoSegundos
-    totalIdling += access.tempoInativoSegundos
+function stringToDate(dtaHorInicio) {
+    const tmpaux = dtaHorInicio.split(/[- :]/)
+    return new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2], tmpaux[3], tmpaux[4], tmpaux[5])
 }
-percentAuth /= dataApps.length
-percentNoAuth /= dataApps.length
 
+function withoutTime(day, aux) {
+    day.setHours(0, 0, 0, 0)
+    aux.setHours(0, 0, 0, 0)
+
+    return (day.getTime() === aux.getTime())
+}
+
+function getDataByDateSelected(dateSelected) {
+    for (let dataDay of dataApps) {
+        if (withoutTime(stringToDate(dataDay.dtaHorInicio), dateSelected)) {
+            console.log(dataDay)
+            return dataDay
+        }
+    }
+}
+
+var totalAuth = dataApps[0].resumoAtividades.tempoAutorizado
+var totalNoAuth = dataApps[0].resumoAtividades.tempoNaoAutorizado
+var percentAuth = dataApps[0].resumoAtividades.porcentagemAutorizado
+var percentNoAuth = dataApps[0].resumoAtividades.porcentagemNaoAutorizado
+var totalAtiv = dataApps[0].tempoAtivoSegundos
+var totalIdling = dataApps[0].tempoInativoSegundos
 
 const reducers = combineReducers({
     person: function (state, action) {
@@ -29,35 +37,36 @@ const reducers = combineReducers({
         }
     },
     timelineResult: function (state, action) {
-        switch(action.type) {
+        switch (action.type) {
             case 'DATE_SELECTION_SETTED':
                 return {
                     ...state,
-                    dateSelected: action.payload
+                    dateSelected: action.payload,
+                    dtaHoraFim: getDataByDateSelected(action.payload) ? getDataByDateSelected(action.payload).flgSituacao === 'F' ? dataApps[dataApps.length - 1].dtaHorFim : 'Ativo' : 'Sem atividade',
+                    data: getDataByDateSelected(action.payload) ? getDataByDateSelected(action.payload).lstAtividades : undefined,
+                    dtaHoraInicio: getDataByDateSelected(action.payload) ? getDataByDateSelected(action.payload).dtaHorInicio : 'Sem atividade',
+                    dataBrief: getDataByDateSelected(action.payload) ? getDataByDateSelected(action.payload).resumoAtividades.lstDetalhes : undefined,
                 }
             default:
                 return {
-                    data: timeline,
+                    data: getDataByDateSelected(new Date()) ? getDataByDateSelected(new Date()).lstAtividades : undefined,
+                    dataBrief: getDataByDateSelected(new Date()) ? getDataByDateSelected(new Date()).resumoAtividades.lstDetalhes : undefined,
                     dateSelected: new Date(),
                     weekTime: {
                         initial: new Date(),
                         final: new Date(),
-                    }
+                    },
+                    dtaHoraInicio: getDataByDateSelected(new Date()) ? getDataByDateSelected(new Date()).dtaHorInicio : 'Sem atividade',
+                    dtaHoraFim: getDataByDateSelected(new Date()) ? getDataByDateSelected(new Date()).flgSituacao === 'F' ? dataApps[dataApps.length - 1].dtaHorFim : 'Ativo' : 'Sem atividade',
+                    totalAuth: totalAuth,
+                    totalNoAuth: totalNoAuth,
+                    totalAtiv: totalAtiv,
+                    totalIdling: totalIdling,
+                    percentAuth: percentAuth,
+                    percentNoAuth: percentNoAuth
                 }
         }
     },
-    generalActivities: function (state, action) {
-        return {
-            dtaHoraInicio: dataApps[0].dtaHorInicio,
-            dtaHoraFim: dataApps[dataApps.length - 1].flgSituacao === 'F' ? dataApps[dataApps.length - 1].dtaHorFim : 'Ativo',
-            totalAuth: totalAuth,
-            totalNoAuth: totalNoAuth,
-            totalAtiv: totalAtiv,
-            totalIdling: totalIdling,
-            percentAuth: percentAuth,
-            percentNoAuth: percentNoAuth
-        }
-    }
 
 })
 
