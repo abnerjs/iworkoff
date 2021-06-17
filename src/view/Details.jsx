@@ -38,7 +38,7 @@ export default props => {
                     ativo={ativo}
                     inativo={inativo}
                 />
-                <AppsUtilizados apps={timeline} />
+                <AppsUtilizados />
             </div>
         </div>
     )

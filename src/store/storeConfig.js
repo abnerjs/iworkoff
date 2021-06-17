@@ -141,7 +141,11 @@ const reducers = combineReducers({
             default:
                 return {
                     data: timeline,
-                    dateSelected: new Date()
+                    dateSelected: new Date(),
+                    weekTime: {
+                        initial: new Date(),
+                        final: new Date(),
+                    }
                 }
         }
     }
