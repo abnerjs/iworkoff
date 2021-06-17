@@ -13,6 +13,14 @@
     margin-bottom: 30px;
     z-index: 3;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline .rows:hover {
+    justify-content: flex-start;
 }
 
 .time-description {
@@ -22,11 +30,20 @@
     color: #787878;
 }
 
-.timeline .row {
+
+
+.timeline .rows .row {
+    width: 100%;
     min-height: 25%;
+    position: absolute;
     display: flex;
     align-items: center;
     overflow: hidden;
+    transition: all ease 0.3s;
+}
+
+.timeline .rows:hover .row {
+    position: relative;
 }
 
 .timeline .bar {
