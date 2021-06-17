@@ -149,11 +149,11 @@
 }
 
 .timeline .bar {
-    filter: brightness(150%) grayscale(70%);
+    filter: opacity(50%);
 }
 
 .chart-container:hover .timeline .rows .bar {
-    filter: brightness(100%) grayscale(0%);
+    filter: opacity(100%);
 }
 
 .timeline .bar.auth {

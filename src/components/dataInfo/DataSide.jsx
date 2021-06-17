@@ -2,8 +2,9 @@
 import React from 'react'
 import './DataSide.css'
 import Title from '../Title'
+import { connect } from 'react-redux'
 
-export default props => {
+const DataSide = props => {
     return (
         <div className="dataside">
             <Title content='Dados' />
@@ -17,3 +18,14 @@ export default props => {
         </div>
     )
 }
+
+const mapStateToProps = state => {
+    return {
+        data: state.timelineResult.data,
+        dateSelected: state.timelineResult.dateSelected,
+    }
+}
+
+export default connect(
+    mapStateToProps
+)(DataSide)

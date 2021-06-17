@@ -1,134 +1,31 @@
 import { combineReducers, createStore } from "redux"
+import dataApps from './dataApps.json'
 
-const secondsBetween = (initialTime, finalTime) => {
-    var diff = (finalTime.getDate() - initialTime.getDate()) * 24 * 60 * 60
-    diff += (finalTime.getHours() - initialTime.getHours()) * 60 * 60
-    diff += (finalTime.getMinutes() - initialTime.getMinutes()) * 60
-    diff += finalTime.getSeconds() - initialTime.getSeconds()
-    return diff
+var timeline = []
+var totalAuth = 0
+var totalNoAuth = 0
+var percentAuth = 0
+var percentNoAuth = 0
+var totalAtiv = 0
+var totalIdling = 0
+for (let access of dataApps) {
+    timeline.push(...access.lstAtividades)
+    totalAuth += access.resumoAtividades.tempoAutorizado
+    totalNoAuth += access.resumoAtividades.tempoNaoAutorizado
+    percentAuth += access.resumoAtividades.porcentagemAutorizado
+    percentNoAuth += access.resumoAtividades.porcentagemNaoAutorizado
+    totalAtiv += access.tempoAtivoSegundos
+    totalIdling += access.tempoInativoSegundos
 }
+percentAuth /= dataApps.length
+percentNoAuth /= dataApps.length
 
-const timeline = []
-var tmpaux
-var tmpaux2
-tmpaux = "2021-06-17 00:11:01".split(/[- :]/)
-tmpaux2 = "2021-06-17 3:17:19".split(/[- :]/)
-timeline.push({
-    app: 'VSCode',
-    initialTime: new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2],
-        tmpaux[3], tmpaux[4], tmpaux[5]),
-    finalTime: new Date(tmpaux2[0], tmpaux2[1] - 1, tmpaux2[2],
-        tmpaux2[3], tmpaux2[4], tmpaux2[5]),
-    diffMs: secondsBetween(
-        (new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2], tmpaux[3], tmpaux[4], tmpaux[5])),
-        (new Date(tmpaux2[0], tmpaux2[1] - 1, tmpaux2[2], tmpaux2[3], tmpaux2[4], tmpaux2[5]))
-    ),
-    isAuth: true
-})
-tmpaux = "2021-06-17 3:17:20".split(/[- :]/)
-tmpaux2 = "2021-06-17 6:17:19".split(/[- :]/)
-timeline.push({
-    app: 'Figma',
-    initialTime: new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2],
-        tmpaux[3], tmpaux[4], tmpaux[5]),
-    finalTime: new Date(tmpaux2[0], tmpaux2[1] - 1, tmpaux2[2],
-        tmpaux2[3], tmpaux2[4], tmpaux2[5]),
-    diffMs: secondsBetween(
-        (new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2], tmpaux[3], tmpaux[4], tmpaux[5])),
-        (new Date(tmpaux2[0], tmpaux2[1] - 1, tmpaux2[2], tmpaux2[3], tmpaux2[4], tmpaux2[5]))
-    ),
-    isAuth: true
-})
-tmpaux = "2021-06-17 06:17:20".split(/[- :]/)
-tmpaux2 = "2021-06-17 9:17:19".split(/[- :]/)
-timeline.push({
-    app: 'Tor',
-    initialTime: new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2],
-        tmpaux[3], tmpaux[4], tmpaux[5]),
-    finalTime: new Date(tmpaux2[0], tmpaux2[1] - 1, tmpaux2[2],
-        tmpaux2[3], tmpaux2[4], tmpaux2[5]),
-    diffMs: secondsBetween(
-        (new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2], tmpaux[3], tmpaux[4], tmpaux[5])),
-        (new Date(tmpaux2[0], tmpaux2[1] - 1, tmpaux2[2], tmpaux2[3], tmpaux2[4], tmpaux2[5]))
-    ),
-    isAuth: true
-})
-tmpaux = "2021-06-17 13:12:01".split(/[- :]/)
-tmpaux2 = "2021-06-17 15:15:16".split(/[- :]/)
-timeline.push({
-    app: 'Google Chrome',
-    initialTime: new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2],
-        tmpaux[3], tmpaux[4], tmpaux[5]),
-    finalTime: new Date(tmpaux2[0], tmpaux2[1] - 1, tmpaux2[2],
-        tmpaux2[3], tmpaux2[4], tmpaux2[5]),
-    diffMs: secondsBetween(
-        (new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2], tmpaux[3], tmpaux[4], tmpaux[5])),
-        (new Date(tmpaux2[0], tmpaux2[1] - 1, tmpaux2[2], tmpaux2[3], tmpaux2[4], tmpaux2[5]))
-    ),
-    isAuth: true
-})
-tmpaux = "2021-06-17 15:15:17".split(/[- :]/)
-tmpaux2 = "2021-06-17 16:11:20".split(/[- :]/)
-timeline.push({
-    app: 'VSCode',
-    initialTime: new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2],
-        tmpaux[3], tmpaux[4], tmpaux[5]),
-    finalTime: new Date(tmpaux2[0], tmpaux2[1] - 1, tmpaux2[2],
-        tmpaux2[3], tmpaux2[4], tmpaux2[5]),
-    diffMs: secondsBetween(
-        (new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2], tmpaux[3], tmpaux[4], tmpaux[5])),
-        (new Date(tmpaux2[0], tmpaux2[1] - 1, tmpaux2[2], tmpaux2[3], tmpaux2[4], tmpaux2[5]))
-    ),
-    isAuth: true
-})
-tmpaux = "2021-06-17 16:11:21".split(/[- :]/)
-tmpaux2 = "2021-06-17 16:25:42".split(/[- :]/)
-timeline.push({
-    app: 'Valorant',
-    initialTime: new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2],
-        tmpaux[3], tmpaux[4], tmpaux[5]),
-    finalTime: new Date(tmpaux2[0], tmpaux2[1] - 1, tmpaux2[2],
-        tmpaux2[3], tmpaux2[4], tmpaux2[5]),
-    diffMs: secondsBetween(
-        (new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2], tmpaux[3], tmpaux[4], tmpaux[5])),
-        (new Date(tmpaux2[0], tmpaux2[1] - 1, tmpaux2[2], tmpaux2[3], tmpaux2[4], tmpaux2[5]))
-    ),
-    isAuth: false
-})
-tmpaux = "2021-06-17 16:25:43".split(/[- :]/)
-tmpaux2 = "2021-06-17 17:13:42".split(/[- :]/)
-timeline.push({
-    app: 'Google Chrome',
-    initialTime: new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2],
-        tmpaux[3], tmpaux[4], tmpaux[5]),
-    finalTime: new Date(tmpaux2[0], tmpaux2[1] - 1, tmpaux2[2],
-        tmpaux2[3], tmpaux2[4], tmpaux2[5]),
-    diffMs: secondsBetween(
-        (new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2], tmpaux[3], tmpaux[4], tmpaux[5])),
-        (new Date(tmpaux2[0], tmpaux2[1] - 1, tmpaux2[2], tmpaux2[3], tmpaux2[4], tmpaux2[5]))
-    ),
-    isAuth: true
-})
-tmpaux = "2021-06-17 22:18:00".split(/[- :]/)
-tmpaux2 = "2021-06-18 1:11:20".split(/[- :]/)
-timeline.push({
-    app: 'Valorant',
-    initialTime: new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2],
-        tmpaux[3], tmpaux[4], tmpaux[5]),
-    finalTime: new Date(tmpaux2[0], tmpaux2[1] - 1, tmpaux2[2],
-        tmpaux2[3], tmpaux2[4], tmpaux2[5]),
-    diffMs: secondsBetween(
-        (new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2], tmpaux[3], tmpaux[4], tmpaux[5])),
-        (new Date(tmpaux2[0], tmpaux2[1] - 1, tmpaux2[2], tmpaux2[3], tmpaux2[4], tmpaux2[5]))
-    ),
-    isAuth: false
-})
 
 const reducers = combineReducers({
     person: function (state, action) {
         return {
-            name: 'Victor Rocha Azevedo',
-            status: 'Online',
+            name: dataApps[0].nomUsuario,
+            status: dataApps[dataApps.length - 1].flgSituacao === 'A' ? 'Online' : 'Offline',
         }
     },
     timelineResult: function (state, action) {
@@ -148,7 +45,20 @@ const reducers = combineReducers({
                     }
                 }
         }
+    },
+    generalActivities: function (state, action) {
+        return {
+            dtaHoraInicio: dataApps[0].dtaHorInicio,
+            dtaHoraFim: dataApps[dataApps.length - 1].flgSituacao === 'F' ? dataApps[dataApps.length - 1].dtaHorFim : 'Ativo',
+            totalAuth: totalAuth,
+            totalNoAuth: totalNoAuth,
+            totalAtiv: totalAtiv,
+            totalIdling: totalIdling,
+            percentAuth: percentAuth,
+            percentNoAuth: percentNoAuth
+        }
     }
+
 })
 
 function storeConfig() {
