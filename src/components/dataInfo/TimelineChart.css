@@ -199,7 +199,7 @@
     color: #000;
     font-size: 10pt;
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff;
-    transition: all ease 0s;
+    transition: opacity ease 0s;
     opacity: 0;
     pointer-events: none;
     right: 10px;
@@ -211,7 +211,7 @@
 }
 .chart-container:hover .timeline .rows .appInfo {
     opacity: 1;
-    transition: all ease 1.3s;
+    transition: opacity ease 1.3s;
 }
 
 .timeline .rows .appInfo .app, .timeline .rows .appInfo .timeInfo {
