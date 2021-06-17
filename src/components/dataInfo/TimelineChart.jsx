@@ -141,7 +141,7 @@ function rows(data, dateSelected) {
                                             tooltip={`${element.initialTime.getHours()}h${element.initialTime.getMinutes()}min - ${element.finalTime.getHours()}h${element.finalTime.getMinutes()}min`}
                                             flow={(totalTimeMargin(element) / 86400 * 100) < 50 ? 'right' : 'left'}
                                             fulltime={diffTime(element.finalTime, element.initialTime)}
-                                            className="bar"
+                                            className={`bar ${result[key][0].isAuth ? 'auth' : 'noauth'}`}
                                             style={{
                                                 width: (msUntilMidnight(element) / 86400 * 100) + '%',
                                                 marginLeft: timeMargin(result[key], indexj) / 86400 * 100 + '%',
