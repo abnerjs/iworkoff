@@ -153,9 +153,23 @@
     box-shadow: 0px 0px 10px var(--yellow-iwo);
 }
 
-.timeline .row .appInfo {
-    position: absolute;
+.timeline .rows .appInfos {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.timeline .rows .appInfos .appInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
     text-align: left;
+    min-height: 25%;
+    width: 100%;
     color: #000;
     font-size: 10pt;
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff;
@@ -163,11 +177,11 @@
     opacity: 0;
 }
 
-.timeline .row:hover .appInfo {
+.timeline .rows .appInfos .appInfo:hover {
     font-weight: 700;
 }
 
-.chart-container:hover .timeline .row .appInfo {
+.chart-container:hover .timeline .rows .appInfo {
     opacity: 1;
     transition: all ease 0.3s;
 }

@@ -24,6 +24,10 @@ function diffTime(final, init) {
     var min = final.getMinutes() - init.getMinutes()
     var s = final.getSeconds() - init.getSeconds()
 
+    if (h < 0) {
+        h = (24 - init.getHours()) + final.getHours()
+    }
+
     if (min < 0) {
         h--
         min = (min + 60) % 60
@@ -82,8 +86,8 @@ function groupTime(elements) {
 }
 
 function msUntilMidnight(element) {
-    var final = element.finalTime
-    if(element.finalTime.getDate() > element.initialTime.getDate()) {
+    var final = new Date(element.finalTime)
+    if (element.finalTime.getDate() > element.initialTime.getDate()) {
         final.setHours(23)
         final.setMinutes(59)
         final.setSeconds(59)
@@ -124,11 +128,11 @@ function rows(data, dateSelected) {
                         key={index}
                     >
                         {result[key].map((element, indexj) => {
-                            if(element.initialTime.getDate() === dateSelected.getDate()) {
+                            if (element.initialTime.getDate() === dateSelected.getDate()) {
                                 return (
                                     <div
                                         tooltip={`${element.initialTime.getHours()}h${element.initialTime.getMinutes()}min - ${element.finalTime.getHours()}h${element.finalTime.getMinutes()}min`}
-                                        flow={(totalTimeMargin(element) / 86400 * 100) < 50 ? 'right':'left'}
+                                        flow={(totalTimeMargin(element) / 86400 * 100) < 50 ? 'right' : 'left'}
                                         fulltime={diffTime(element.finalTime, element.initialTime)}
                                         className="bar"
                                         style={{
@@ -138,16 +142,27 @@ function rows(data, dateSelected) {
                                     >
                                     </div>
                                 )
+                            } else {
+                                return ''
                             }
                         })}
-                        <div className='appInfo'>
-                            <div className="app"> {key} </div>
-                            <div className="timeInfo">{groupTime(result[key])}</div>
-                        </div>
-
                     </div>
                 )
             })}
+            <div className="appInfos">
+                {keys.map((key, index) => {
+                    if (result[key][0].initialTime.getDate() === dateSelected.getDate()) {
+                        return (
+                            <div className='appInfo'>
+                                <div className="app"> {key} </div>
+                                <div className="timeInfo">{groupTime(result[key])}</div>
+                            </div>
+                        )
+                    } else 
+                        return ''
+                })}
+            </div>
+
         </div>
     )
 }
