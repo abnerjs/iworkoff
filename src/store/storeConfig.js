@@ -11,8 +11,8 @@ const secondsBetween = (initialTime, finalTime) => {
 const timeline = []
 var tmpaux
 var tmpaux2
-tmpaux = "2021-06-16 00:11:01".split(/[- :]/)
-tmpaux2 = "2021-06-16 3:17:19".split(/[- :]/)
+tmpaux = "2021-06-17 00:11:01".split(/[- :]/)
+tmpaux2 = "2021-06-17 3:17:19".split(/[- :]/)
 timeline.push({
     app: 'VSCode',
     initialTime: new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2],
@@ -25,8 +25,8 @@ timeline.push({
     ),
     isAuth: true
 })
-tmpaux = "2021-06-16 3:17:20".split(/[- :]/)
-tmpaux2 = "2021-06-16 6:17:19".split(/[- :]/)
+tmpaux = "2021-06-17 3:17:20".split(/[- :]/)
+tmpaux2 = "2021-06-17 6:17:19".split(/[- :]/)
 timeline.push({
     app: 'Figma',
     initialTime: new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2],
@@ -39,8 +39,8 @@ timeline.push({
     ),
     isAuth: true
 })
-tmpaux = "2021-06-16 06:17:20".split(/[- :]/)
-tmpaux2 = "2021-06-16 9:17:19".split(/[- :]/)
+tmpaux = "2021-06-17 06:17:20".split(/[- :]/)
+tmpaux2 = "2021-06-17 9:17:19".split(/[- :]/)
 timeline.push({
     app: 'Tor',
     initialTime: new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2],
@@ -53,8 +53,8 @@ timeline.push({
     ),
     isAuth: true
 })
-tmpaux = "2021-06-16 13:12:01".split(/[- :]/)
-tmpaux2 = "2021-06-16 15:15:16".split(/[- :]/)
+tmpaux = "2021-06-17 13:12:01".split(/[- :]/)
+tmpaux2 = "2021-06-17 15:15:16".split(/[- :]/)
 timeline.push({
     app: 'Google Chrome',
     initialTime: new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2],
@@ -67,8 +67,8 @@ timeline.push({
     ),
     isAuth: true
 })
-tmpaux = "2021-06-16 15:15:17".split(/[- :]/)
-tmpaux2 = "2021-06-16 16:11:20".split(/[- :]/)
+tmpaux = "2021-06-17 15:15:17".split(/[- :]/)
+tmpaux2 = "2021-06-17 16:11:20".split(/[- :]/)
 timeline.push({
     app: 'VSCode',
     initialTime: new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2],
@@ -81,8 +81,8 @@ timeline.push({
     ),
     isAuth: true
 })
-tmpaux = "2021-06-16 16:11:21".split(/[- :]/)
-tmpaux2 = "2021-06-16 16:25:42".split(/[- :]/)
+tmpaux = "2021-06-17 16:11:21".split(/[- :]/)
+tmpaux2 = "2021-06-17 16:25:42".split(/[- :]/)
 timeline.push({
     app: 'Valorant',
     initialTime: new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2],
@@ -95,8 +95,8 @@ timeline.push({
     ),
     isAuth: false
 })
-tmpaux = "2021-06-16 16:25:43".split(/[- :]/)
-tmpaux2 = "2021-06-16 17:13:42".split(/[- :]/)
+tmpaux = "2021-06-17 16:25:43".split(/[- :]/)
+tmpaux2 = "2021-06-17 17:13:42".split(/[- :]/)
 timeline.push({
     app: 'Google Chrome',
     initialTime: new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2],
@@ -109,8 +109,8 @@ timeline.push({
     ),
     isAuth: true
 })
-tmpaux = "2021-06-16 22:18:00".split(/[- :]/)
-tmpaux2 = "2021-06-17 1:11:20".split(/[- :]/)
+tmpaux = "2021-06-17 22:18:00".split(/[- :]/)
+tmpaux2 = "2021-06-18 1:11:20".split(/[- :]/)
 timeline.push({
     app: 'Valorant',
     initialTime: new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2],
@@ -134,7 +134,6 @@ const reducers = combineReducers({
     timelineResult: function (state, action) {
         switch(action.type) {
             case 'DATE_SELECTION_SETTED':
-                console.log(state)
                 return {
                     ...state,
                     dateSelected: action.payload

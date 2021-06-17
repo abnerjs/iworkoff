@@ -1,5 +1,5 @@
 /* eslint-disable import/no-anonymous-default-export */
-import React, { useState, useEffect, useCallback } from 'react'
+import React from 'react'
 import DiaCard from './DiaCard'
 import { connect } from 'react-redux'
 import './Diaria.css'

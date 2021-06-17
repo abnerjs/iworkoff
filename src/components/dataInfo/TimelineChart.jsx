@@ -1,5 +1,5 @@
 /* eslint-disable import/no-anonymous-default-export */
-import React from 'react'
+import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
 import './TimelineChart.css'
 
@@ -117,52 +117,58 @@ function rows(data, dateSelected) {
 
     return (
         <div className="rows">
-
-            {keys.map((key, index) => {
-                return (
-                    <div
-                        className={`row ${'cor' + (index % 3).toString()} ${result[key][0].isAuth ? 'auth' : 'noauth'}`}
-                        style={{
-                            height: (100 / keys.length) + '%',
-                        }}
-                        key={index}
-                    >
-                        {result[key].map((element, indexj) => {
-                            if (element.initialTime.getDate() === dateSelected.getDate()) {
-                                return (
-                                    <div
-                                        tooltip={`${element.initialTime.getHours()}h${element.initialTime.getMinutes()}min - ${element.finalTime.getHours()}h${element.finalTime.getMinutes()}min`}
-                                        flow={(totalTimeMargin(element) / 86400 * 100) < 50 ? 'right' : 'left'}
-                                        fulltime={diffTime(element.finalTime, element.initialTime)}
-                                        className="bar"
-                                        style={{
-                                            width: (msUntilMidnight(element) / 86400 * 100) + '%',
-                                            marginLeft: timeMargin(result[key], indexj) / 86400 * 100 + '%',
-                                        }}
-                                    >
-                                    </div>
-                                )
-                            } else {
-                                return ''
-                            }
-                        })}
-                    </div>
-                )
-            })}
             <div className="appInfos">
                 {keys.map((key, index) => {
                     if (result[key][0].initialTime.getDate() === dateSelected.getDate()) {
                         return (
-                            <div className='appInfo'>
+                            <div className={`appInfo`}
+                                id={`rowInfo${index}`}
+                                style={{
+                                    height: (100 / keys.length) + '%',
+                                }}
+                            >
                                 <div className="app"> {key} </div>
                                 <div className="timeInfo">{groupTime(result[key])}</div>
                             </div>
                         )
-                    } else 
+                    } else
                         return ''
                 })}
             </div>
-
+            {keys.map((key, index) => {
+                if (result[key][0].initialTime.getDate() === dateSelected.getDate()) {
+                    return (
+                        <div
+                            className={`row row${index} ${'cor' + (index % 3).toString()} ${result[key][0].isAuth ? 'auth' : 'noauth'}`}
+                            style={{
+                                height: (100 / keys.length) + '%',
+                            }}
+                            key={index}
+                        >
+                            {result[key].map((element, indexj) => {
+                                if (element.initialTime.getDate() === dateSelected.getDate()) {
+                                    return (
+                                        <div
+                                            tooltip={`${element.initialTime.getHours()}h${element.initialTime.getMinutes()}min - ${element.finalTime.getHours()}h${element.finalTime.getMinutes()}min`}
+                                            flow={(totalTimeMargin(element) / 86400 * 100) < 50 ? 'right' : 'left'}
+                                            fulltime={diffTime(element.finalTime, element.initialTime)}
+                                            className="bar"
+                                            style={{
+                                                width: (msUntilMidnight(element) / 86400 * 100) + '%',
+                                                marginLeft: timeMargin(result[key], indexj) / 86400 * 100 + '%',
+                                            }}
+                                        >
+                                        </div>
+                                    )
+                                } else {
+                                    return ''
+                                }
+                            })}
+                        </div>
+                    )
+                } else
+                    return ''
+            })}
         </div>
     )
 }

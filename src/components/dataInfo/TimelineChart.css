@@ -12,6 +12,7 @@
     overflow: auto;
     margin-bottom: 30px;
     z-index: 3;
+    position: relative;
 }
 
 .time-description {
@@ -154,12 +155,14 @@
 }
 
 .timeline .rows .appInfos {
-    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    right: 10px;
     text-align: right;
+    position: absolute;
+    z-index: 3;
 }
 
 .timeline .rows .appInfos .appInfo {
@@ -175,6 +178,7 @@
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff;
     transition: all ease 0.6s;
     opacity: 0;
+    pointer-events: visiblePainted;
 }
 
 .timeline .rows .appInfos .appInfo:hover {
@@ -184,4 +188,8 @@
 .chart-container:hover .timeline .rows .appInfo {
     opacity: 1;
     transition: all ease 0.3s;
+}
+
+.timeline .rows .appInfo .app, .timeline .rows .appInfo .timeInfo {
+    line-height: 100%;
 }
