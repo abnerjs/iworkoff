@@ -117,24 +117,7 @@ function rows(data, dateSelected) {
 
     return (
         <div className="rows">
-            <div className="appInfos">
-                {keys.map((key, index) => {
-                    if (result[key][0].initialTime.getDate() === dateSelected.getDate()) {
-                        return (
-                            <div className={`appInfo`}
-                                id={`rowInfo${index}`}
-                                style={{
-                                    height: (100 / keys.length) + '%',
-                                }}
-                            >
-                                <div className="app"> {key} </div>
-                                <div className="timeInfo">{groupTime(result[key])}</div>
-                            </div>
-                        )
-                    } else
-                        return ''
-                })}
-            </div>
+            
             {keys.map((key, index) => {
                 if (result[key][0].initialTime.getDate() === dateSelected.getDate()) {
                     return (
@@ -145,6 +128,12 @@ function rows(data, dateSelected) {
                             }}
                             key={index}
                         >
+                            <div className={`appInfo`}
+                                id={`rowInfo${index}`}
+                            >
+                                <div className="app"> {key} </div>
+                                <div className="timeInfo">{groupTime(result[key])}</div>
+                            </div>
                             {result[key].map((element, indexj) => {
                                 if (element.initialTime.getDate() === dateSelected.getDate()) {
                                     return (
