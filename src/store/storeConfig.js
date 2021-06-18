@@ -56,7 +56,9 @@ const reducers = combineReducers({
                         final: new Date(),
                     },
                     dtaHoraInicio: getDataByDateSelected(new Date()) ? getDataByDateSelected(new Date()).dtaHorInicio : 'Sem atividade',
-                    dtaHoraFim: getDataByDateSelected(new Date()) ? getDataByDateSelected(new Date()).flgSituacao === 'F' ? dataApps[dataApps.length - 1].dtaHorFim : 'Ativo' : 'Sem atividade',
+                    dtaHoraFim: getDataByDateSelected(new Date()) ?
+                        getDataByDateSelected(new Date()).flgSituacao === 'F' ? dataApps[dataApps.length - 1].dtaHorFim : 'Ativo' :
+                         'Sem atividade',
                     totalAuth: getDataByDateSelected(new Date()) ? getDataByDateSelected(new Date()).resumoAtividades.tempoAutorizado : undefined,
                     totalNoAuth: getDataByDateSelected(new Date()) ? getDataByDateSelected(new Date()).resumoAtividades.tempoNaoAutorizado : undefined,
                     tempoRegistradoSegundos: getDataByDateSelected(new Date()) ? getDataByDateSelected(new Date()).tempoRegistradoSegundos : undefined,

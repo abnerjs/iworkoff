@@ -36,7 +36,11 @@ const DataSide = props => {
         <div className="dataside">
             <Title content='Dados' />
             <p>Hora de início: {dateDisplay(stringToDate(props.dtaHoraInicio))}</p>
-            <p>Hora de final: {dateDisplay(stringToDate(props.dtaHoraFim))}</p>
+            <p>Hora final: {
+            (props.dtaHoraFim !== 'Ativo') ?
+                dateDisplay(stringToDate(props.dtaHoraFim)) :
+                'Ativo'
+            }</p>
             <br />
             <p>Tempo total: {secondsToHours(props.tempoRegistradoSegundos)}</p>
             <p>Tempo ativo: {secondsToHours(props.totalAtiv)}</p>

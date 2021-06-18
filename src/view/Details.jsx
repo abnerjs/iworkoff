@@ -10,17 +10,6 @@ import AppsUtilizados from '../components/dataInfo/AppsUtilizados'
 import Diaria from '../components/dateControls/Diaria'
 import { connect } from 'react-redux'
 
-function hasDataRender(props) {
-    if(props.data) {
-        return (
-            <div className="datatext">
-                <DataSide />
-                <AppsUtilizados />
-            </div>
-        )
-    }
-}
-
 const Details = props => {
 
     return (
@@ -32,7 +21,10 @@ const Details = props => {
                 <ChartContainer />
                 <ActivitiesData />
             </div>
-            <hasDataRender props={props}/>
+            {props.data ? <div className="datatext">
+                <DataSide />
+                <AppsUtilizados />
+            </div> : ''}
         </div>
     )
 }

@@ -60,13 +60,6 @@ function timeMargin(element, index) {
     return diff
 }
 
-function totalTimeMargin(element) {
-    var diff = stringToDate(element.dtaInicio).getHours() * 60 * 60
-    diff += stringToDate(element.dtaInicio).getMinutes() * 60
-    diff += stringToDate(element.dtaInicio).getSeconds()
-    return diff
-}
-
 function groupTime(elements) {
     var timed = 0
     elements.map((key, index) => {
