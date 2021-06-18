@@ -7,10 +7,7 @@ export default props => {
     
     return (
         <div className='chart-container'>
-
-            <TimelineChart
-                data={props.apps}
-            />
+            <TimelineChart />
         </div>
     )
 }

@@ -36,8 +36,8 @@ const ActivitiesData = props => {
                 </div>
                 
                 <div className='section'>
-                    <div className="title">Softwares utilizados</div>
-                    <p>Tempo: {secondsToHours(props.tempoRegistradoSegundos)}</p>
+                    <div className="title">Inatividade</div>
+                    <p>Tempo: {secondsToHours(props.totalIdling)}</p>
                 </div>
                 
             </div>
@@ -52,7 +52,7 @@ const mapStateToProps = state => {
         totalNoAuth: state.timelineResult.totalNoAuth,
         percentAuth: state.timelineResult.percentAuth,
         percentNoAuth: state.timelineResult.percentNoAuth,
-        tempoRegistradoSegundos: state.timelineResult.tempoRegistradoSegundos,
+        totalIdling: state.timelineResult.totalIdling,
     }
 }
 
