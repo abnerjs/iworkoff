@@ -16,7 +16,6 @@ function withoutTime(day, aux) {
 function getDataByDateSelected(dateSelected) {
     for (let dataDay of dataApps) {
         if (withoutTime(stringToDate(dataDay.dtaHorInicio), dateSelected)) {
-            console.log(dataDay)
             return dataDay
         }
     }

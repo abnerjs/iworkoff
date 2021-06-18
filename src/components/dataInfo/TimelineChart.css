@@ -19,6 +19,19 @@
     justify-content: center;
 }
 
+.timeline .rows::-webkit-scrollbar {
+    width: 10px;
+}
+
+.timeline .rows::-webkit-scrollbar-thumb {
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+.timeline .rows::-webkit-scrollbar-thumb:hover {
+    background-color: #bbb;
+}
+
 .chart-container:hover .timeline .rows {
     justify-content: flex-start;
 }
@@ -38,6 +51,7 @@
     position: absolute;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     overflow: hidden;
     transition: all ease 0.3s;
 }
@@ -81,7 +95,7 @@
 }
 
 [tooltip]::after {
-    content: attr(tooltip) "\a" attr(fulltime);
+    content: attr(tooltip) "\a"attr(fulltime);
     font-family: 'Poppins';
     text-align: center;
     min-width: 3em;
@@ -190,7 +204,7 @@
 }
 
 .timeline .rows .appInfo {
-    display: flex;    
+    display: flex;
     width: 100%;
     position: absolute;
     flex-direction: column;
@@ -210,11 +224,13 @@
 .timeline .rows .row:hover .appInfo {
     font-weight: 700;
 }
+
 .chart-container:hover .timeline .rows .appInfo {
     opacity: 1;
     transition: opacity ease 1.3s;
 }
 
-.timeline .rows .appInfo .app, .timeline .rows .appInfo .timeInfo {
+.timeline .rows .appInfo .app,
+.timeline .rows .appInfo .timeInfo {
     line-height: 100%;
 }

@@ -20,39 +20,42 @@ function timeLine() {
 }
 
 function stringToDate(dtaHorInicio) {
-    dtaHorInicio = dtaHorInicio.substring(0, 19)
     const tmpaux = dtaHorInicio.split(/[- :]/)
     return new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2], tmpaux[3], tmpaux[4], tmpaux[5])
 }
 
-function diffTime(final, init) {
-    var h = final.getHours() - init.getHours()
-    var min = final.getMinutes() - init.getMinutes()
-    var s = final.getSeconds() - init.getSeconds()
+function secondsToHours(sec) {
+    var aux = new Date(1970, 0, 1)
+    aux.setSeconds(sec)
+    var textual = ''
 
-    if (h < 0) {
-        h = (24 - init.getHours()) + final.getHours()
-    }
+    if (aux.getHours() > 0)
+        textual += aux.getHours() + 'h'
 
-    if (min < 0) {
-        h--
-        min = (min + 60) % 60
-    }
+    if (aux.getMinutes() > 0)
+        textual += aux.getMinutes() + 'min'
 
-    return `Total: ${h > 0 ? h + 'h' : ''}${min > 0 ? min + 'min' : ''}${h < 0 && min < 0 ? s + 's' : ''}`
+    if (aux.getHours() <= 0 && aux.getMinutes() <= 0)
+        textual += aux.getSeconds() + 's'
+
+    return textual
 }
 
 function timeMargin(element, index) {
+
     var diff = stringToDate(element[index].dtaInicio).getHours() * 60 * 60
     diff += stringToDate(element[index].dtaInicio).getMinutes() * 60
     diff += stringToDate(element[index].dtaInicio).getSeconds()
 
-    for (let i = 0; i < index; i++) {
-        diff -= stringToDate(element[i].dtaInicio).getHours() * 60 * 60
-        diff -= stringToDate(element[i].dtaInicio).getMinutes() * 60
-        diff -= stringToDate(element[i].dtaInicio).getSeconds()
-        diff -= element[i].tempoUsoSegundos
+
+    if(index > 0) {
+        diff -= stringToDate(element[index - 1].dtaInicio).getHours() * 60 * 60
+        diff -= stringToDate(element[index - 1].dtaInicio).getMinutes() * 60
+        diff -= stringToDate(element[index - 1].dtaInicio).getSeconds()
     }
+
+    console.log(index + ': ' + element[0].desSoftware + ' ------------------------- ' + diff)
+    console.log('    ' + element[index].dtaInicio + ' - ' + element[index].dtaFim + '    ')
 
     return diff
 }
@@ -103,21 +106,36 @@ function msUntilMidnight(element) {
     diff = (final.getHours() - stringToDate(element.dtaInicio).getHours()) * 60 * 60
     diff += (final.getMinutes() - stringToDate(element.dtaInicio).getMinutes()) * 60
     diff += final.getSeconds() - stringToDate(element.dtaInicio).getSeconds()
+
+    console.log(diff)
     return diff
 }
 
 
 function rows(data, dateSelected) {
 
-    console.log(data)
     const result = data ? data.reduce(function (r, a) {
-        r[a.desSoftware] = r[a.desSoftware] || []
-        r[a.desSoftware].push(a)
+        r[a.desProcesso] = r[a.desProcesso] || []
+        r[a.desProcesso].push(a)
         return r
     }, Object.create(null)) : {}
 
-
     const keys = result ? Object.keys(result) : {}
+
+    for (let key of keys) {
+
+        result[key].sort(function (a, b) {
+            var x = stringToDate(a.dtaInicio)
+            var y = stringToDate(b.dtaInicio)
+            if (x < y)
+                return -1
+            else if (x === y)
+                return 0
+            else
+                return 1
+        })
+
+    }
 
     return (
         <div className="rows">
@@ -131,9 +149,7 @@ function rows(data, dateSelected) {
                         }}
                         key={index}
                     >
-                        <div className={`appInfo`}
-                            id={`rowInfo${index}`}
-                        >
+                        <div className={`appInfo`} id={`rowInfo${index}`}>
                             <div className="app"> {key} </div>
                             <div className="timeInfo">{groupTime(result[key])}</div>
                         </div>
@@ -141,8 +157,8 @@ function rows(data, dateSelected) {
                             return (
                                 <div
                                     tooltip={`${stringToDate(element.dtaInicio).getHours()}h${stringToDate(element.dtaInicio).getMinutes()}min - ${stringToDate(element.dtaFim).getHours()}h${stringToDate(element.dtaFim).getMinutes()}min`}
-                                    flow={(totalTimeMargin(element) / 86400 * 100) < 50 ? 'right' : 'left'}
-                                    fulltime={element.tempoUsoSegundos}
+                                    flow={'left'}
+                                    fulltime={'Uso: ' + secondsToHours(element.tempoUsoSegundos)}
                                     className={`bar ${result[key][0].flgAutorizado === 'S' ? 'auth' : 'noauth'}`}
                                     style={{
                                         width: (msUntilMidnight(element) / 86400 * 100) + '%',
@@ -177,4 +193,4 @@ const mapStateToProps = state => {
 
 export default connect(
     mapStateToProps
-) (TimelineChart)
+)(TimelineChart)

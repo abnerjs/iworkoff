@@ -1,5 +1,4 @@
-[
-  {
+[{
     "idAcesso": 887,
     "nomUsuario": "Matheus",
     "dtaHorInicio": "2021-06-07 07:57:31",
@@ -15,8 +14,7 @@
       "tempoNaoAutorizado": 83,
       "porcentagemAutorizado": 99.72305638972305638972305638,
       "porcentagemNaoAutorizado": 0.2769436102769436102769436103,
-      "lstDetalhes": [
-        {
+      "lstDetalhes": [{
           "desFornecedor": "Microsoft Corporation",
           "desProcesso": "Code",
           "desSoftware": "Visual Studio Code",
@@ -138,81 +136,48 @@
         }
       ]
     },
-    "lstAtividades": [
-      {
-        "desSoftware": "Visual Studio Code",
-        "desFornecedor": "Microsoft Corporation",
-        "dtaInicio": "2021-06-07 10:44:52",
-        "dtaFim": "2021-06-07 10:50:01",
-        "tempoUsoSegundos": 82,
+    "lstAtividades": [{
+        "desProcesso": "Google Chrome",
+        "desFornecedor": "Google LLC",
+        "dtaInicio": "2021-06-07 07:58:01",
+        "dtaFim": "2021-06-07 07:59:02",
+        "tempoUsoSegundos": 61,
         "flgAutorizado": "S"
       },
       {
-        "desSoftware": "Visual Studio Code",
-        "desFornecedor": "Microsoft Corporation",
-        "dtaInicio": "2021-06-07 12:10:39",
-        "dtaFim": "2021-06-07 12:12:04",
-        "tempoUsoSegundos": 85,
-        "flgAutorizado": "S"
-      },
-      {
-        "desSoftware": "Windows Explorer",
+        "desProcesso": "Windows Explorer",
         "desFornecedor": "Microsoft Corporation",
         "dtaInicio": "2021-06-07 08:00:11",
         "dtaFim": "2021-06-07 08:53:47",
-        "tempoUsoSegundos": 108,
+        "tempoUsoSegundos": 3216,
         "flgAutorizado": "S"
       },
       {
-        "desSoftware": "Google Chrome",
-        "desFornecedor": "Google LLC",
-        "dtaInicio": "2021-06-07 07:58:01",
-        "dtaFim": "2021-06-07 08:00:11",
-        "tempoUsoSegundos": 109,
+        "desProcesso": "PL/SQL Developer",
+        "desFornecedor": "Allround Automations",
+        "dtaInicio": "2021-06-07 08:00:41",
+        "dtaFim": "2021-06-07 08:56:17",
+        "tempoUsoSegundos": 3336,
         "flgAutorizado": "S"
       },
       {
-        "desSoftware": "Skype",
+        "desProcesso": "Skype",
         "desFornecedor": "Skype Technologies S.A.",
         "dtaInicio": "2021-06-07 08:03:35",
         "dtaFim": "2021-06-07 08:29:09",
-        "tempoUsoSegundos": 159,
+        "tempoUsoSegundos": 1534,
         "flgAutorizado": "S"
       },
       {
-        "desSoftware": "Bloco de Notas",
+        "desProcesso": "Visual Studio Code",
         "desFornecedor": "Microsoft Corporation",
-        "dtaInicio": "2021-06-07 09:10:10",
-        "dtaFim": "2021-06-07 09:20:34",
-        "tempoUsoSegundos": 195,
+        "dtaInicio": "2021-06-07 08:04:00",
+        "dtaFim": "2021-06-07 08:56:03",
+        "tempoUsoSegundos": 3123,
         "flgAutorizado": "S"
       },
       {
-        "desSoftware": "PL/SQL Developer",
-        "desFornecedor": "Allround Automations",
-        "dtaInicio": "2021-06-07 10:05:08",
-        "dtaFim": "2021-06-07 10:58:38",
-        "tempoUsoSegundos": 240,
-        "flgAutorizado": "S"
-      },
-      {
-        "desSoftware": "Google Chrome",
-        "desFornecedor": "Google LLC",
-        "dtaInicio": "2021-06-07 10:19:08",
-        "dtaFim": "2021-06-07 10:23:58",
-        "tempoUsoSegundos": 290,
-        "flgAutorizado": "S"
-      },
-      {
-        "desSoftware": "Google Chrome",
-        "desFornecedor": "Google LLC",
-        "dtaInicio": "2021-06-07 08:12:20",
-        "dtaFim": "2021-06-07 08:37:21",
-        "tempoUsoSegundos": 321,
-        "flgAutorizado": "S"
-      },
-      {
-        "desSoftware": "Visual Studio Community",
+        "desProcesso": "Visual Studio Community",
         "desFornecedor": "Microsoft Corporation",
         "dtaInicio": "2021-06-07 08:04:58",
         "dtaFim": "2021-06-07 08:11:53",
@@ -220,99 +185,163 @@
         "flgAutorizado": "S"
       },
       {
-        "desSoftware": "Skype",
-        "desFornecedor": "Skype Technologies S.A.",
-        "dtaInicio": "2021-06-07 09:09:24",
-        "dtaFim": "2021-06-07 09:51:53",
-        "tempoUsoSegundos": 452,
-        "flgAutorizado": "S"
-      },
-      {
-        "desSoftware": "Visual Studio Community",
-        "desFornecedor": "Microsoft Corporation",
-        "dtaInicio": "2021-06-07 11:04:57",
-        "dtaFim": "2021-06-07 11:30:57",
-        "tempoUsoSegundos": 602,
-        "flgAutorizado": "S"
-      },
-      {
-        "desSoftware": "Google Chrome",
+        "desProcesso": "Google Chrome",
         "desFornecedor": "Google LLC",
-        "dtaInicio": "2021-06-07 09:29:31",
-        "dtaFim": "2021-06-07 09:57:28",
-        "tempoUsoSegundos": 631,
+        "dtaInicio": "2021-06-07 08:12:20",
+        "dtaFim": "2021-06-07 08:37:21",
+        "tempoUsoSegundos": 1501,
         "flgAutorizado": "S"
       },
       {
-        "desSoftware": "PL/SQL Developer",
-        "desFornecedor": "Allround Automations",
-        "dtaInicio": "2021-06-07 11:04:01",
-        "dtaFim": "2021-06-07 11:19:53",
-        "tempoUsoSegundos": 645,
-        "flgAutorizado": "S"
-      },
-      {
-        "desSoftware": "PL/SQL Developer",
-        "desFornecedor": "Allround Automations",
-        "dtaInicio": "2021-06-07 09:21:21",
-        "dtaFim": "2021-06-07 09:58:37",
-        "tempoUsoSegundos": 825,
-        "flgAutorizado": "S"
-      },
-      {
-        "desSoftware": "Visual Studio Code",
-        "desFornecedor": "Microsoft Corporation",
-        "dtaInicio": "2021-06-07 09:12:12",
-        "dtaFim": "2021-06-07 10:00:19",
-        "tempoUsoSegundos": 905,
-        "flgAutorizado": "S"
-      },
-      {
-        "desSoftware": "PL/SQL Developer",
-        "desFornecedor": "Allround Automations",
-        "dtaInicio": "2021-06-07 08:00:41",
-        "dtaFim": "2021-06-07 08:56:17",
-        "tempoUsoSegundos": 1015,
-        "flgAutorizado": "S"
-      },
-      {
-        "desSoftware": "Visual Studio Code",
-        "desFornecedor": "Microsoft Corporation",
-        "dtaInicio": "2021-06-07 08:04:00",
-        "dtaFim": "2021-06-07 09:09:24",
-        "tempoUsoSegundos": 1016,
-        "flgAutorizado": "S"
-      },
-      {
-        "desSoftware": "DBDesigner 4",
+        "desProcesso": "DBDesigner 4",
         "desFornecedor": "",
         "dtaInicio": "2021-06-07 08:14:04",
         "dtaFim": "2021-06-07 08:53:35",
-        "tempoUsoSegundos": 1035,
+        "tempoUsoSegundos": 2371,
         "flgAutorizado": "S"
       },
       {
-        "desSoftware": "Visual Studio Community",
+        "desProcesso": "Visual Studio Code",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-07 08:56:17",
+        "dtaFim": "2021-06-07 09:09:24",
+        "tempoUsoSegundos": 787,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Skype",
+        "desFornecedor": "Skype Technologies S.A.",
+        "dtaInicio": "2021-06-07 09:09:24",
+        "dtaFim": "2021-06-07 09:51:53",
+        "tempoUsoSegundos": 2549,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Bloco de Notas",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-07 09:10:10",
+        "dtaFim": "2021-06-07 09:20:34",
+        "tempoUsoSegundos": 624,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Code",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-07 09:12:12",
+        "dtaFim": "2021-06-07 09:45:21",
+        "tempoUsoSegundos": 1989,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "PL/SQL Developer",
+        "desFornecedor": "Allround Automations",
+        "dtaInicio": "2021-06-07 09:21:21",
+        "dtaFim": "2021-06-07 09:58:37",
+        "tempoUsoSegundos": 2236,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Google Chrome",
+        "desFornecedor": "Google LLC",
+        "dtaInicio": "2021-06-07 09:29:31",
+        "dtaFim": "2021-06-07 09:57:28",
+        "tempoUsoSegundos": 1677,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Code",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-07 09:59:02",
+        "dtaFim": "2021-06-07 10:00:19",
+        "tempoUsoSegundos": 77,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Community",
         "desFornecedor": "Microsoft Corporation",
         "dtaInicio": "2021-06-07 10:00:19",
-        "dtaFim": "2021-06-07 11:04:01",
-        "tempoUsoSegundos": 1348,
+        "dtaFim": "2021-06-07 10:55:44",
+        "tempoUsoSegundos": 3325,
         "flgAutorizado": "S"
       },
       {
-        "desSoftware": "Skype",
+        "desProcesso": "Skype",
         "desFornecedor": "Skype Technologies S.A.",
         "dtaInicio": "2021-06-07 10:04:01",
         "dtaFim": "2021-06-07 10:40:42",
-        "tempoUsoSegundos": 1791,
+        "tempoUsoSegundos": 2201,
         "flgAutorizado": "S"
       },
       {
-        "desSoftware": "Visual Studio Code",
+        "desProcesso": "PL/SQL Developer",
+        "desFornecedor": "Allround Automations",
+        "dtaInicio": "2021-06-07 10:05:08",
+        "dtaFim": "2021-06-07 10:58:38",
+        "tempoUsoSegundos": 3210,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Google Chrome",
+        "desFornecedor": "Google LLC",
+        "dtaInicio": "2021-06-07 10:19:08",
+        "dtaFim": "2021-06-07 10:23:58",
+        "tempoUsoSegundos": 290,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Code",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-07 10:44:52",
+        "dtaFim": "2021-06-07 10:50:01",
+        "tempoUsoSegundos": 309,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Community",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-07 10:58:38",
+        "dtaFim": "2021-06-07 11:04:01",
+        "tempoUsoSegundos": 323,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "PL/SQL Developer",
+        "desFornecedor": "Allround Automations",
+        "dtaInicio": "2021-06-07 11:04:01",
+        "dtaFim": "2021-06-07 11:19:53",
+        "tempoUsoSegundos": 952,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Community",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-07 11:04:57",
+        "dtaFim": "2021-06-07 11:30:57",
+        "tempoUsoSegundos": 1560,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Code",
         "desFornecedor": "Microsoft Corporation",
         "dtaInicio": "2021-06-07 11:23:33",
+        "dtaFim": "2021-06-07 11:38:08",
+        "tempoUsoSegundos": 875,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Code",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-07 11:39:18",
         "dtaFim": "2021-06-07 12:09:35",
-        "tempoUsoSegundos": 2562,
+        "tempoUsoSegundos": 1817,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Code",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-07 12:10:39",
+        "dtaFim": "2021-06-07 12:12:04",
+        "tempoUsoSegundos": 85,
         "flgAutorizado": "S"
       }
     ]
@@ -333,8 +362,7 @@
       "tempoNaoAutorizado": 269,
       "porcentagemAutorizado": 99.12045513994245357049437614,
       "porcentagemNaoAutorizado": 0.8795448600575464295056238557,
-      "lstDetalhes": [
-        {
+      "lstDetalhes": [{
           "desFornecedor": "Google LLC",
           "desProcesso": "chrome",
           "desSoftware": "Google Chrome",
@@ -528,286 +556,317 @@
         }
       ]
     },
-    "lstAtividades": [
-      {
-        "desSoftware": "Microsoft.Photos",
-        "desFornecedor": "Microsoft Corporation",
-        "flgAutorizado": "N",
-        "dtaInicio": "2021-06-08 08:06:18",
-        "dtaFim": "2021-06-08 08:07:27",
-        "tempoUsoSegundos": 69
-      },
-      {
-        "desSoftware": "PL/SQL Developer",
-        "desFornecedor": "Allround Automations",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-08 09:49:09",
-        "dtaFim": "2021-06-08 09:50:20",
-        "tempoUsoSegundos": 71
-      },
-      {
-        "desSoftware": "Microsoft Outlook",
-        "desFornecedor": "Microsoft Corporation",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-08 09:45:47",
-        "dtaFim": "2021-06-08 09:47:11",
-        "tempoUsoSegundos": 84
-      },
-      {
-        "desSoftware": "Visual Studio Code",
-        "desFornecedor": "Microsoft Corporation",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-08 10:37:30",
-        "dtaFim": "2021-06-08 10:47:06",
-        "tempoUsoSegundos": 89
-      },
-      {
-        "desSoftware": "Console Emulator",
-        "desFornecedor": "ConEmu-Maximus5",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-08 12:07:17",
-        "dtaFim": "2021-06-08 12:10:15",
-        "tempoUsoSegundos": 97
-      },
-      {
-        "desSoftware": "Windows Explorer",
-        "desFornecedor": "Microsoft Corporation",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-08 08:26:40",
-        "dtaFim": "2021-06-08 08:57:59",
-        "tempoUsoSegundos": 101
-      },
-      {
-        "desSoftware": "Google Chrome",
+    "lstAtividades": [{
+        "desProcesso": "Google Chrome",
         "desFornecedor": "Google LLC",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-08 12:04:57",
-        "dtaFim": "2021-06-08 12:09:12",
-        "tempoUsoSegundos": 104
-      },
-      {
-        "desSoftware": "Skype",
-        "desFornecedor": "Skype Technologies S.A.",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-08 09:34:01",
-        "dtaFim": "2021-06-08 09:41:00",
-        "tempoUsoSegundos": 107
-      },
-      {
-        "desSoftware": "PL/SQL Developer",
-        "desFornecedor": "Allround Automations",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-08 11:12:39",
-        "dtaFim": "2021-06-08 11:51:25",
-        "tempoUsoSegundos": 107
-      },
-      {
-        "desSoftware": "Spotify",
-        "desFornecedor": "Spotify Ltd",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-08 08:07:45",
-        "dtaFim": "2021-06-08 08:10:24",
-        "tempoUsoSegundos": 108
-      },
-      {
-        "desSoftware": "Visual Studio Code",
-        "desFornecedor": "Microsoft Corporation",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-08 12:05:51",
-        "dtaFim": "2021-06-08 12:09:43",
-        "tempoUsoSegundos": 117
-      },
-      {
-        "desSoftware": "Visual Studio Community",
-        "desFornecedor": "Microsoft Corporation",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-08 08:05:19",
-        "dtaFim": "2021-06-08 08:38:16",
-        "tempoUsoSegundos": 124
-      },
-      {
-        "desSoftware": "Skype",
-        "desFornecedor": "Skype Technologies S.A.",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-08 08:11:44",
-        "dtaFim": "2021-06-08 08:40:26",
-        "tempoUsoSegundos": 133
-      },
-      {
-        "desSoftware": "DBDesigner 4",
-        "desFornecedor": "",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-08 08:59:56",
-        "dtaFim": "2021-06-08 09:02:26",
-        "tempoUsoSegundos": 150
-      },
-      {
-        "desSoftware": "Postman",
-        "desFornecedor": "Postman",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-08 11:11:56",
-        "dtaFim": "2021-06-08 11:34:41",
-        "tempoUsoSegundos": 163
-      },
-      {
-        "desSoftware": "Console Git",
-        "desFornecedor": "Andy Koppe / Thomas Wolff",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-08 09:06:07",
-        "dtaFim": "2021-06-08 09:58:10",
-        "tempoUsoSegundos": 181
-      },
-      {
-        "desSoftware": "DBDesigner 4",
-        "desFornecedor": "",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-08 09:05:44",
-        "dtaFim": "2021-06-08 09:17:22",
-        "tempoUsoSegundos": 192
-      },
-      {
-        "desSoftware": "Área de Trabalho Remota",
-        "desFornecedor": "Microsoft Corporation",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-08 11:15:51",
-        "dtaFim": "2021-06-08 11:20:11",
-        "tempoUsoSegundos": 198
-      },
-      {
-        "desSoftware": "Visual Studio Community",
-        "desFornecedor": "Microsoft Corporation",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-08 11:08:56",
-        "dtaFim": "2021-06-08 11:14:33",
-        "tempoUsoSegundos": 199
-      },
-      {
-        "desSoftware": "Console Git",
-        "desFornecedor": "Andy Koppe / Thomas Wolff",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-08 08:24:38",
-        "dtaFim": "2021-06-08 08:59:15",
-        "tempoUsoSegundos": 230
-      },
-      {
-        "desSoftware": "Console Git",
-        "desFornecedor": "Andy Koppe / Thomas Wolff",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-08 10:00:08",
-        "dtaFim": "2021-06-08 10:54:44",
-        "tempoUsoSegundos": 266
-      },
-      {
-        "desSoftware": "Postman",
-        "desFornecedor": "Postman",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-08 10:07:26",
-        "dtaFim": "2021-06-08 10:26:09",
-        "tempoUsoSegundos": 267
-      },
-      {
-        "desSoftware": "Console Git",
-        "desFornecedor": "Andy Koppe / Thomas Wolff",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-08 11:02:08",
-        "dtaFim": "2021-06-08 11:23:42",
-        "tempoUsoSegundos": 312
-      },
-      {
-        "desSoftware": "Windows Explorer",
-        "desFornecedor": "Microsoft Corporation",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-08 11:21:17",
-        "dtaFim": "2021-06-08 11:52:25",
-        "tempoUsoSegundos": 370
-      },
-      {
-        "desSoftware": "Google Chrome",
-        "desFornecedor": "Google LLC",
-        "flgAutorizado": "S",
         "dtaInicio": "2021-06-08 07:58:36",
         "dtaFim": "2021-06-08 08:05:19",
-        "tempoUsoSegundos": 403
+        "tempoUsoSegundos": 403,
+        "flgAutorizado": "S"
       },
       {
-        "desSoftware": "Google Chrome",
-        "desFornecedor": "Google LLC",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-08 10:05:28",
-        "dtaFim": "2021-06-08 10:52:27",
-        "tempoUsoSegundos": 434
-      },
-      {
-        "desSoftware": "Console Emulator",
-        "desFornecedor": "ConEmu-Maximus5",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-08 11:44:15",
-        "dtaFim": "2021-06-08 11:59:53",
-        "tempoUsoSegundos": 512
-      },
-      {
-        "desSoftware": "PL/SQL Developer",
-        "desFornecedor": "Allround Automations",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-08 10:07:06",
-        "dtaFim": "2021-06-08 10:53:46",
-        "tempoUsoSegundos": 716
-      },
-      {
-        "desSoftware": "Visual Studio Code",
+        "desProcesso": "Visual Studio Community",
         "desFornecedor": "Microsoft Corporation",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-08 11:01:42",
-        "dtaFim": "2021-06-08 12:04:57",
-        "tempoUsoSegundos": 755
+        "dtaInicio": "2021-06-08 08:05:19",
+        "dtaFim": "2021-06-08 08:38:16",
+        "tempoUsoSegundos": 1977,
+        "flgAutorizado": "S"
       },
       {
-        "desSoftware": "Visual Studio Code",
+        "desProcesso": "Visual Studio Code",
         "desFornecedor": "Microsoft Corporation",
-        "flgAutorizado": "S",
         "dtaInicio": "2021-06-08 08:05:52",
         "dtaFim": "2021-06-08 08:57:49",
-        "tempoUsoSegundos": 818
+        "tempoUsoSegundos": 3117,
+        "flgAutorizado": "S"
       },
       {
-        "desSoftware": "Visual Studio Code",
+        "desProcesso": "Microsoft.Photos",
         "desFornecedor": "Microsoft Corporation",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-08 09:02:26",
-        "dtaFim": "2021-06-08 10:00:08",
-        "tempoUsoSegundos": 903
+        "dtaInicio": "2021-06-08 08:06:18",
+        "dtaFim": "2021-06-08 08:07:27",
+        "tempoUsoSegundos": 69,
+        "flgAutorizado": "N"
       },
       {
-        "desSoftware": "Google Chrome",
-        "desFornecedor": "Google LLC",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-08 11:11:35",
-        "dtaFim": "2021-06-08 11:51:40",
-        "tempoUsoSegundos": 1043
+        "desProcesso": "Spotify",
+        "desFornecedor": "Spotify Ltd",
+        "dtaInicio": "2021-06-08 08:07:45",
+        "dtaFim": "2021-06-08 08:10:24",
+        "tempoUsoSegundos": 159,
+        "flgAutorizado": "S"
       },
       {
-        "desSoftware": "Google Chrome",
+        "desProcesso": "Skype",
+        "desFornecedor": "Skype Technologies S.A.",
+        "dtaInicio": "2021-06-08 08:11:44",
+        "dtaFim": "2021-06-08 08:40:26",
+        "tempoUsoSegundos": 1722,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Google Chrome",
         "desFornecedor": "Google LLC",
-        "flgAutorizado": "S",
         "dtaInicio": "2021-06-08 08:11:52",
         "dtaFim": "2021-06-08 08:59:56",
-        "tempoUsoSegundos": 1597
+        "tempoUsoSegundos": 2884,
+        "flgAutorizado": "S"
       },
       {
-        "desSoftware": "Google Chrome",
+        "desProcesso": "Console Git",
+        "desFornecedor": "Andy Koppe / Thomas Wolff",
+        "dtaInicio": "2021-06-08 08:24:38",
+        "dtaFim": "2021-06-08 08:59:15",
+        "tempoUsoSegundos": 2077,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Windows Explorer",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-08 08:26:40",
+        "dtaFim": "2021-06-08 08:57:59",
+        "tempoUsoSegundos": 1879,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "DBDesigner 4",
+        "desFornecedor": "",
+        "dtaInicio": "2021-06-08 08:59:56",
+        "dtaFim": "2021-06-08 09:02:26",
+        "tempoUsoSegundos": 150,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Code",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-08 09:02:26",
+        "dtaFim": "2021-06-08 09:56:04",
+        "tempoUsoSegundos": 3218,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "DBDesigner 4",
+        "desFornecedor": "",
+        "dtaInicio": "2021-06-08 09:05:44",
+        "dtaFim": "2021-06-08 09:17:22",
+        "tempoUsoSegundos": 698,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Console Git",
+        "desFornecedor": "Andy Koppe / Thomas Wolff",
+        "dtaInicio": "2021-06-08 09:06:07",
+        "dtaFim": "2021-06-08 09:58:10",
+        "tempoUsoSegundos": 3123,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Google Chrome",
         "desFornecedor": "Google LLC",
-        "flgAutorizado": "S",
         "dtaInicio": "2021-06-08 09:09:32",
         "dtaFim": "2021-06-08 09:57:14",
-        "tempoUsoSegundos": 1768
+        "tempoUsoSegundos": 2862,
+        "flgAutorizado": "S"
       },
       {
-        "desSoftware": "Visual Studio Community",
+        "desProcesso": "Skype",
+        "desFornecedor": "Skype Technologies S.A.",
+        "dtaInicio": "2021-06-08 09:34:01",
+        "dtaFim": "2021-06-08 09:41:00",
+        "tempoUsoSegundos": 419,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Microsoft Outlook",
         "desFornecedor": "Microsoft Corporation",
-        "flgAutorizado": "S",
+        "dtaInicio": "2021-06-08 09:45:47",
+        "dtaFim": "2021-06-08 09:47:11",
+        "tempoUsoSegundos": 84,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "PL/SQL Developer",
+        "desFornecedor": "Allround Automations",
+        "dtaInicio": "2021-06-08 09:49:09",
+        "dtaFim": "2021-06-08 09:50:20",
+        "tempoUsoSegundos": 71,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Code",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-08 09:58:10",
+        "dtaFim": "2021-06-08 10:00:08",
+        "tempoUsoSegundos": 118,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Console Git",
+        "desFornecedor": "Andy Koppe / Thomas Wolff",
+        "dtaInicio": "2021-06-08 10:00:08",
+        "dtaFim": "2021-06-08 10:54:44",
+        "tempoUsoSegundos": 3276,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Community",
+        "desFornecedor": "Microsoft Corporation",
         "dtaInicio": "2021-06-08 10:00:46",
+        "dtaFim": "2021-06-08 10:54:07",
+        "tempoUsoSegundos": 3201,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Google Chrome",
+        "desFornecedor": "Google LLC",
+        "dtaInicio": "2021-06-08 10:05:28",
+        "dtaFim": "2021-06-08 10:52:27",
+        "tempoUsoSegundos": 2819,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "PL/SQL Developer",
+        "desFornecedor": "Allround Automations",
+        "dtaInicio": "2021-06-08 10:07:06",
+        "dtaFim": "2021-06-08 10:53:46",
+        "tempoUsoSegundos": 2800,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Postman",
+        "desFornecedor": "Postman",
+        "dtaInicio": "2021-06-08 10:07:26",
+        "dtaFim": "2021-06-08 10:26:09",
+        "tempoUsoSegundos": 1123,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Windows Explorer",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-08 10:36:29",
+        "dtaFim": "2021-06-08 10:40:30",
+        "tempoUsoSegundos": 241,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Code",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-08 10:37:30",
+        "dtaFim": "2021-06-08 10:47:06",
+        "tempoUsoSegundos": 576,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Community",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-08 10:54:44",
         "dtaFim": "2021-06-08 11:01:42",
-        "tempoUsoSegundos": 1850
+        "tempoUsoSegundos": 418,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Code",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-08 11:01:42",
+        "dtaFim": "2021-06-08 11:58:30",
+        "tempoUsoSegundos": 3408,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Console Git",
+        "desFornecedor": "Andy Koppe / Thomas Wolff",
+        "dtaInicio": "2021-06-08 11:02:08",
+        "dtaFim": "2021-06-08 11:23:42",
+        "tempoUsoSegundos": 1294,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Community",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-08 11:08:56",
+        "dtaFim": "2021-06-08 11:14:33",
+        "tempoUsoSegundos": 337,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Google Chrome",
+        "desFornecedor": "Google LLC",
+        "dtaInicio": "2021-06-08 11:11:35",
+        "dtaFim": "2021-06-08 11:51:40",
+        "tempoUsoSegundos": 2405,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Postman",
+        "desFornecedor": "Postman",
+        "dtaInicio": "2021-06-08 11:11:56",
+        "dtaFim": "2021-06-08 11:34:41",
+        "tempoUsoSegundos": 1365,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "PL/SQL Developer",
+        "desFornecedor": "Allround Automations",
+        "dtaInicio": "2021-06-08 11:12:39",
+        "dtaFim": "2021-06-08 11:51:25",
+        "tempoUsoSegundos": 2326,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Área de Trabalho Remota",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-08 11:15:51",
+        "dtaFim": "2021-06-08 11:20:11",
+        "tempoUsoSegundos": 260,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Windows Explorer",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-08 11:21:17",
+        "dtaFim": "2021-06-08 11:52:25",
+        "tempoUsoSegundos": 1868,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Console Emulator",
+        "desFornecedor": "ConEmu-Maximus5",
+        "dtaInicio": "2021-06-08 11:44:15",
+        "dtaFim": "2021-06-08 11:59:53",
+        "tempoUsoSegundos": 938,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Code",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-08 11:59:53",
+        "dtaFim": "2021-06-08 12:04:57",
+        "tempoUsoSegundos": 304,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Google Chrome",
+        "desFornecedor": "Google LLC",
+        "dtaInicio": "2021-06-08 12:04:57",
+        "dtaFim": "2021-06-08 12:09:12",
+        "tempoUsoSegundos": 255,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Code",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-08 12:05:51",
+        "dtaFim": "2021-06-08 12:09:43",
+        "tempoUsoSegundos": 232,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Console Emulator",
+        "desFornecedor": "ConEmu-Maximus5",
+        "dtaInicio": "2021-06-08 12:07:17",
+        "dtaFim": "2021-06-08 12:10:15",
+        "tempoUsoSegundos": 178,
+        "flgAutorizado": "S"
       }
     ]
   },
@@ -827,8 +886,7 @@
       "tempoNaoAutorizado": 133,
       "porcentagemAutorizado": 99.57764369641155922515084152,
       "porcentagemNaoAutorizado": 0.4223563035884407748491584630,
-      "lstDetalhes": [
-        {
+      "lstDetalhes": [{
           "desFornecedor": "Google LLC",
           "desProcesso": "chrome",
           "desSoftware": "Google Chrome",
@@ -990,150 +1048,165 @@
         }
       ]
     },
-    "lstAtividades": [
-      {
-        "desSoftware": "Console Git",
-        "desFornecedor": "Andy Koppe / Thomas Wolff",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-09 10:04:38",
-        "dtaFim": "2021-06-09 11:00:13",
-        "tempoUsoSegundos": 65
-      },
-      {
-        "desSoftware": "Console Emulator",
-        "desFornecedor": "ConEmu-Maximus5",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-09 08:15:00",
-        "dtaFim": "2021-06-09 08:52:41",
-        "tempoUsoSegundos": 72
-      },
-      {
-        "desSoftware": "Windows Explorer",
-        "desFornecedor": "Microsoft Corporation",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-09 10:02:15",
-        "dtaFim": "2021-06-09 10:59:35",
-        "tempoUsoSegundos": 82
-      },
-      {
-        "desSoftware": "Skype",
+    "lstAtividades": [{
+        "desProcesso": "Skype",
         "desFornecedor": "Skype Technologies S.A.",
-        "flgAutorizado": "S",
         "dtaInicio": "2021-06-09 08:01:59",
         "dtaFim": "2021-06-09 08:11:16",
-        "tempoUsoSegundos": 84
+        "tempoUsoSegundos": 557,
+        "flgAutorizado": "S"
       },
       {
-        "desSoftware": "Visual Studio Code",
-        "desFornecedor": "Microsoft Corporation",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-09 10:24:41",
-        "dtaFim": "2021-06-09 10:39:49",
-        "tempoUsoSegundos": 122
-      },
-      {
-        "desSoftware": "PL/SQL Developer",
-        "desFornecedor": "Allround Automations",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-09 09:56:57",
-        "dtaFim": "2021-06-09 10:00:17",
-        "tempoUsoSegundos": 131
-      },
-      {
-        "desSoftware": "Windows Explorer",
-        "desFornecedor": "Microsoft Corporation",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-09 11:00:44",
-        "dtaFim": "2021-06-09 11:19:59",
-        "tempoUsoSegundos": 268
-      },
-      {
-        "desSoftware": "Google Chrome",
+        "desProcesso": "Google Chrome",
         "desFornecedor": "Google LLC",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-09 11:10:28",
-        "dtaFim": "2021-06-09 11:22:47",
-        "tempoUsoSegundos": 425
-      },
-      {
-        "desSoftware": "Visual Studio Community",
-        "desFornecedor": "Microsoft Corporation",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-09 09:17:25",
-        "dtaFim": "2021-06-09 09:39:33",
-        "tempoUsoSegundos": 450
-      },
-      {
-        "desSoftware": "Console Git",
-        "desFornecedor": "Andy Koppe / Thomas Wolff",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-09 11:00:38",
-        "dtaFim": "2021-06-09 11:15:08",
-        "tempoUsoSegundos": 459
-      },
-      {
-        "desSoftware": "Skype",
-        "desFornecedor": "Skype Technologies S.A.",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-09 09:39:43",
-        "dtaFim": "2021-06-09 09:47:38",
-        "tempoUsoSegundos": 475
-      },
-      {
-        "desSoftware": "Skype",
-        "desFornecedor": "Skype Technologies S.A.",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-09 10:01:34",
-        "dtaFim": "2021-06-09 10:59:28",
-        "tempoUsoSegundos": 540
-      },
-      {
-        "desSoftware": "Google Chrome",
-        "desFornecedor": "Google LLC",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-09 09:00:20",
-        "dtaFim": "2021-06-09 09:52:38",
-        "tempoUsoSegundos": 663
-      },
-      {
-        "desSoftware": "Visual Studio Community",
-        "desFornecedor": "Microsoft Corporation",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-09 10:04:58",
-        "dtaFim": "2021-06-09 10:48:41",
-        "tempoUsoSegundos": 1153
-      },
-      {
-        "desSoftware": "Google Chrome",
-        "desFornecedor": "Google LLC",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-09 10:00:17",
-        "dtaFim": "2021-06-09 10:55:55",
-        "tempoUsoSegundos": 1449
-      },
-      {
-        "desSoftware": "Visual Studio Code",
-        "desFornecedor": "Microsoft Corporation",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-09 08:14:12",
-        "dtaFim": "2021-06-09 09:00:20",
-        "tempoUsoSegundos": 1535
-      },
-      {
-        "desSoftware": "Google Chrome",
-        "desFornecedor": "Google LLC",
-        "flgAutorizado": "S",
         "dtaInicio": "2021-06-09 08:02:15",
         "dtaFim": "2021-06-09 08:59:58",
-        "tempoUsoSegundos": 1726
+        "tempoUsoSegundos": 3463,
+        "flgAutorizado": "S"
       },
       {
-        "desSoftware": "Visual Studio Code",
+        "desProcesso": "Visual Studio Code",
         "desFornecedor": "Microsoft Corporation",
-        "flgAutorizado": "S",
+        "dtaInicio": "2021-06-09 08:14:12",
+        "dtaFim": "2021-06-09 08:59:33",
+        "tempoUsoSegundos": 2721,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Console Emulator",
+        "desFornecedor": "ConEmu-Maximus5",
+        "dtaInicio": "2021-06-09 08:15:00",
+        "dtaFim": "2021-06-09 08:52:41",
+        "tempoUsoSegundos": 2261,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Google Chrome",
+        "desFornecedor": "Google LLC",
+        "dtaInicio": "2021-06-09 09:00:20",
+        "dtaFim": "2021-06-09 09:52:38",
+        "tempoUsoSegundos": 3138,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Code",
+        "desFornecedor": "Microsoft Corporation",
         "dtaInicio": "2021-06-09 09:02:15",
         "dtaFim": "2021-06-09 09:56:57",
-        "tempoUsoSegundos": 1757
+        "tempoUsoSegundos": 3282,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Community",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-09 09:17:25",
+        "dtaFim": "2021-06-09 09:39:33",
+        "tempoUsoSegundos": 1328,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Skype",
+        "desFornecedor": "Skype Technologies S.A.",
+        "dtaInicio": "2021-06-09 09:39:43",
+        "dtaFim": "2021-06-09 09:47:38",
+        "tempoUsoSegundos": 475,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "PL/SQL Developer",
+        "desFornecedor": "Allround Automations",
+        "dtaInicio": "2021-06-09 09:56:57",
+        "dtaFim": "2021-06-09 09:58:02",
+        "tempoUsoSegundos": 65,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "PL/SQL Developer",
+        "desFornecedor": "Allround Automations",
+        "dtaInicio": "2021-06-09 09:59:11",
+        "dtaFim": "2021-06-09 10:00:17",
+        "tempoUsoSegundos": 66,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Google Chrome",
+        "desFornecedor": "Google LLC",
+        "dtaInicio": "2021-06-09 10:00:17",
+        "dtaFim": "2021-06-09 10:55:55",
+        "tempoUsoSegundos": 3338,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Skype",
+        "desFornecedor": "Skype Technologies S.A.",
+        "dtaInicio": "2021-06-09 10:01:34",
+        "dtaFim": "2021-06-09 10:59:28",
+        "tempoUsoSegundos": 3474,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Windows Explorer",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-09 10:02:15",
+        "dtaFim": "2021-06-09 10:59:35",
+        "tempoUsoSegundos": 3440,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Community",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-09 10:04:58",
+        "dtaFim": "2021-06-09 10:48:41",
+        "tempoUsoSegundos": 2623,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Code",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-09 10:24:41",
+        "dtaFim": "2021-06-09 10:39:49",
+        "tempoUsoSegundos": 908,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Console Git",
+        "desFornecedor": "Andy Koppe / Thomas Wolff",
+        "dtaInicio": "2021-06-09 11:00:38",
+        "dtaFim": "2021-06-09 11:15:08",
+        "tempoUsoSegundos": 870,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Windows Explorer",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-09 11:00:44",
+        "dtaFim": "2021-06-09 11:19:59",
+        "tempoUsoSegundos": 1155,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Google Chrome",
+        "desFornecedor": "Google LLC",
+        "dtaInicio": "2021-06-09 11:10:28",
+        "dtaFim": "2021-06-09 11:22:47",
+        "tempoUsoSegundos": 739,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Community",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-09 11:18:26",
+        "dtaFim": "2021-06-09 11:22:12",
+        "tempoUsoSegundos": 226,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "ShellExperienceHost",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-09 11:19:59",
+        "dtaFim": "2021-06-09 11:22:37",
+        "tempoUsoSegundos": 158,
+        "flgAutorizado": "N"
       }
     ]
   },
@@ -1153,8 +1226,7 @@
       "tempoNaoAutorizado": 85,
       "porcentagemAutorizado": 99.70938183807439824945295404,
       "porcentagemNaoAutorizado": 0.2906181619256017505470459519,
-      "lstDetalhes": [
-        {
+      "lstDetalhes": [{
           "desFornecedor": "Google LLC",
           "desProcesso": "chrome",
           "desSoftware": "Google Chrome",
@@ -1284,182 +1356,237 @@
         }
       ]
     },
-    "lstAtividades": [
-      {
-        "desSoftware": "Windows Explorer",
-        "desFornecedor": "Microsoft Corporation",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-10 09:22:13",
-        "dtaFim": "2021-06-10 09:35:56",
-        "tempoUsoSegundos": 61
-      },
-      {
-        "desSoftware": "Postman",
-        "desFornecedor": "Postman",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-10 09:25:48",
-        "dtaFim": "2021-06-10 09:26:50",
-        "tempoUsoSegundos": 62
-      },
-      {
-        "desSoftware": "Skype",
+    "lstAtividades": [{
+        "desProcesso": "Skype",
         "desFornecedor": "Skype Technologies S.A.",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-10 10:18:08",
-        "dtaFim": "2021-06-10 10:33:45",
-        "tempoUsoSegundos": 70
-      },
-      {
-        "desSoftware": "Skype",
-        "desFornecedor": "Skype Technologies S.A.",
-        "flgAutorizado": "S",
         "dtaInicio": "2021-06-10 07:57:36",
         "dtaFim": "2021-06-10 07:59:46",
-        "tempoUsoSegundos": 83
+        "tempoUsoSegundos": 130,
+        "flgAutorizado": "S"
       },
       {
-        "desSoftware": "Console Git",
-        "desFornecedor": "Andy Koppe / Thomas Wolff",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-10 09:20:18",
-        "dtaFim": "2021-06-10 09:21:50",
-        "tempoUsoSegundos": 92
-      },
-      {
-        "desSoftware": "Console Git",
-        "desFornecedor": "Andy Koppe / Thomas Wolff",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-10 11:35:51",
-        "dtaFim": "2021-06-10 11:52:31",
-        "tempoUsoSegundos": 96
-      },
-      {
-        "desSoftware": "Visual Studio Community",
-        "desFornecedor": "Microsoft Corporation",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-10 11:36:59",
-        "dtaFim": "2021-06-10 11:38:46",
-        "tempoUsoSegundos": 107
-      },
-      {
-        "desSoftware": "Windows Explorer",
-        "desFornecedor": "Microsoft Corporation",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-10 11:38:46",
-        "dtaFim": "2021-06-10 11:55:03",
-        "tempoUsoSegundos": 120
-      },
-      {
-        "desSoftware": "Visual Studio Community",
-        "desFornecedor": "Microsoft Corporation",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-10 09:12:38",
-        "dtaFim": "2021-06-10 09:58:42",
-        "tempoUsoSegundos": 190
-      },
-      {
-        "desSoftware": "Google Chrome",
+        "desProcesso": "Google Chrome",
         "desFornecedor": "Google LLC",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-10 12:03:51",
-        "dtaFim": "2021-06-10 12:07:10",
-        "tempoUsoSegundos": 199
-      },
-      {
-        "desSoftware": "Google Chrome",
-        "desFornecedor": "Google LLC",
-        "flgAutorizado": "S",
         "dtaInicio": "2021-06-10 07:59:46",
         "dtaFim": "2021-06-10 08:03:46",
-        "tempoUsoSegundos": 240
+        "tempoUsoSegundos": 240,
+        "flgAutorizado": "S"
       },
       {
-        "desSoftware": "Console Git",
-        "desFornecedor": "Andy Koppe / Thomas Wolff",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-10 10:06:36",
-        "dtaFim": "2021-06-10 10:14:37",
-        "tempoUsoSegundos": 270
+        "desProcesso": "Google Chrome",
+        "desFornecedor": "Google LLC",
+        "dtaInicio": "2021-06-10 08:11:01",
+        "dtaFim": "2021-06-10 08:55:23",
+        "tempoUsoSegundos": 2662,
+        "flgAutorizado": "S"
       },
       {
-        "desSoftware": "Visual Studio Code",
-        "desFornecedor": "Microsoft Corporation",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-10 10:05:23",
-        "dtaFim": "2021-06-10 10:46:40",
-        "tempoUsoSegundos": 401
-      },
-      {
-        "desSoftware": "Skype",
+        "desProcesso": "Skype",
         "desFornecedor": "Skype Technologies S.A.",
-        "flgAutorizado": "S",
         "dtaInicio": "2021-06-10 08:11:06",
         "dtaFim": "2021-06-10 08:56:27",
-        "tempoUsoSegundos": 416
+        "tempoUsoSegundos": 2721,
+        "flgAutorizado": "S"
       },
       {
-        "desSoftware": "Google Chrome",
-        "desFornecedor": "Google LLC",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-10 09:08:32",
-        "dtaFim": "2021-06-10 09:58:08",
-        "tempoUsoSegundos": 617
-      },
-      {
-        "desSoftware": "Área de Trabalho Remota",
+        "desProcesso": "Windows Explorer",
         "desFornecedor": "Microsoft Corporation",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-10 11:39:03",
-        "dtaFim": "2021-06-10 11:51:12",
-        "tempoUsoSegundos": 650
+        "dtaInicio": "2021-06-10 08:13:43",
+        "dtaFim": "2021-06-10 08:25:40",
+        "tempoUsoSegundos": 717,
+        "flgAutorizado": "S"
       },
       {
-        "desSoftware": "Console Git",
+        "desProcesso": "Console Git",
         "desFornecedor": "Andy Koppe / Thomas Wolff",
-        "flgAutorizado": "S",
         "dtaInicio": "2021-06-10 08:13:55",
         "dtaFim": "2021-06-10 08:47:52",
-        "tempoUsoSegundos": 670
+        "tempoUsoSegundos": 2037,
+        "flgAutorizado": "S"
       },
       {
-        "desSoftware": "Visual Studio Code",
+        "desProcesso": "Visual Studio Code",
         "desFornecedor": "Microsoft Corporation",
-        "flgAutorizado": "S",
+        "dtaInicio": "2021-06-10 08:17:14",
+        "dtaFim": "2021-06-10 08:34:27",
+        "tempoUsoSegundos": 1033,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Google Chrome",
+        "desFornecedor": "Google LLC",
+        "dtaInicio": "2021-06-10 08:56:27",
+        "dtaFim": "2021-06-10 09:08:12",
+        "tempoUsoSegundos": 705,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Google Chrome",
+        "desFornecedor": "Google LLC",
+        "dtaInicio": "2021-06-10 09:08:32",
+        "dtaFim": "2021-06-10 09:58:08",
+        "tempoUsoSegundos": 2976,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Community",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-10 09:12:38",
+        "dtaFim": "2021-06-10 09:58:42",
+        "tempoUsoSegundos": 2764,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Console Git",
+        "desFornecedor": "Andy Koppe / Thomas Wolff",
+        "dtaInicio": "2021-06-10 09:20:18",
+        "dtaFim": "2021-06-10 09:21:50",
+        "tempoUsoSegundos": 92,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Windows Explorer",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-10 09:22:13",
+        "dtaFim": "2021-06-10 09:35:56",
+        "tempoUsoSegundos": 823,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Code",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-10 09:23:02",
+        "dtaFim": "2021-06-10 09:57:49",
+        "tempoUsoSegundos": 2087,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Postman",
+        "desFornecedor": "Postman",
+        "dtaInicio": "2021-06-10 09:25:48",
+        "dtaFim": "2021-06-10 09:26:50",
+        "tempoUsoSegundos": 62,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Code",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-10 09:58:42",
+        "dtaFim": "2021-06-10 10:02:53",
+        "tempoUsoSegundos": 251,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Google Chrome",
+        "desFornecedor": "Google LLC",
+        "dtaInicio": "2021-06-10 10:02:53",
+        "dtaFim": "2021-06-10 10:45:09",
+        "tempoUsoSegundos": 2536,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Code",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-10 10:05:23",
+        "dtaFim": "2021-06-10 10:46:40",
+        "tempoUsoSegundos": 2477,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Console Git",
+        "desFornecedor": "Andy Koppe / Thomas Wolff",
+        "dtaInicio": "2021-06-10 10:06:36",
+        "dtaFim": "2021-06-10 10:14:37",
+        "tempoUsoSegundos": 481,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Skype",
+        "desFornecedor": "Skype Technologies S.A.",
+        "dtaInicio": "2021-06-10 10:18:08",
+        "dtaFim": "2021-06-10 10:33:45",
+        "tempoUsoSegundos": 937,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Google Chrome",
+        "desFornecedor": "Google LLC",
+        "dtaInicio": "2021-06-10 10:46:40",
+        "dtaFim": "2021-06-10 11:00:53",
+        "tempoUsoSegundos": 853,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Code",
+        "desFornecedor": "Microsoft Corporation",
         "dtaInicio": "2021-06-10 11:00:53",
         "dtaFim": "2021-06-10 11:53:26",
-        "tempoUsoSegundos": 1013
+        "tempoUsoSegundos": 3153,
+        "flgAutorizado": "S"
       },
       {
-        "desSoftware": "Google Chrome",
+        "desProcesso": "Google Chrome",
         "desFornecedor": "Google LLC",
-        "flgAutorizado": "S",
         "dtaInicio": "2021-06-10 11:12:33",
-        "dtaFim": "2021-06-10 12:03:40",
-        "tempoUsoSegundos": 1663
+        "dtaFim": "2021-06-10 11:59:16",
+        "tempoUsoSegundos": 2803,
+        "flgAutorizado": "S"
       },
       {
-        "desSoftware": "Google Chrome",
-        "desFornecedor": "Google LLC",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-10 08:11:01",
-        "dtaFim": "2021-06-10 09:08:12",
-        "tempoUsoSegundos": 2143
+        "desProcesso": "Console Git",
+        "desFornecedor": "Andy Koppe / Thomas Wolff",
+        "dtaInicio": "2021-06-10 11:35:51",
+        "dtaFim": "2021-06-10 11:52:31",
+        "tempoUsoSegundos": 1000,
+        "flgAutorizado": "S"
       },
       {
-        "desSoftware": "Visual Studio Code",
+        "desProcesso": "Visual Studio Community",
         "desFornecedor": "Microsoft Corporation",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-10 09:23:02",
-        "dtaFim": "2021-06-10 10:02:53",
-        "tempoUsoSegundos": 2174
+        "dtaInicio": "2021-06-10 11:36:59",
+        "dtaFim": "2021-06-10 11:38:46",
+        "tempoUsoSegundos": 107,
+        "flgAutorizado": "S"
       },
       {
-        "desSoftware": "Google Chrome",
+        "desProcesso": "Windows Explorer",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-10 11:38:46",
+        "dtaFim": "2021-06-10 11:55:03",
+        "tempoUsoSegundos": 977,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Área de Trabalho Remota",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-10 11:39:03",
+        "dtaFim": "2021-06-10 11:51:12",
+        "tempoUsoSegundos": 729,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Prompt de Comando",
+        "desFornecedor": "",
+        "dtaInicio": "2021-06-10 11:57:20",
+        "dtaFim": "2021-06-10 11:59:44",
+        "tempoUsoSegundos": 144,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Google Chrome",
         "desFornecedor": "Google LLC",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-10 10:02:53",
-        "dtaFim": "2021-06-10 11:00:53",
-        "tempoUsoSegundos": 2685
+        "dtaInicio": "2021-06-10 11:59:44",
+        "dtaFim": "2021-06-10 12:03:40",
+        "tempoUsoSegundos": 236,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Google Chrome",
+        "desFornecedor": "Google LLC",
+        "dtaInicio": "2021-06-10 12:03:51",
+        "dtaFim": "2021-06-10 12:07:10",
+        "tempoUsoSegundos": 199,
+        "flgAutorizado": "S"
       }
     ]
   },
@@ -1604,124 +1731,689 @@
     },
     "lstAtividades": [
       {
-        "desSoftware": "Skype",
+        "desProcesso": "Skype",
         "desFornecedor": "Skype Technologies S.A.",
-        "flgAutorizado": "S",
         "dtaInicio": "2021-06-11 07:59:31",
         "dtaFim": "2021-06-11 08:00:58",
-        "tempoUsoSegundos": 87
+        "tempoUsoSegundos": 87,
+        "flgAutorizado": "S"
       },
       {
-        "desSoftware": "Spotify",
-        "desFornecedor": "Spotify Ltd",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-11 10:05:24",
-        "dtaFim": "2021-06-11 10:23:51",
-        "tempoUsoSegundos": 125
+        "desProcesso": "Visual Studio Code",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-11 08:01:55",
+        "dtaFim": "2021-06-11 08:56:04",
+        "tempoUsoSegundos": 3249,
+        "flgAutorizado": "S"
       },
       {
-        "desSoftware": "Mozilla Firefox",
-        "desFornecedor": "Mozilla Corporation",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-11 11:34:22",
-        "dtaFim": "2021-06-11 11:41:38",
-        "tempoUsoSegundos": 276
-      },
-      {
-        "desSoftware": "Google Chrome",
+        "desProcesso": "Google Chrome",
         "desFornecedor": "Google LLC",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-11 12:00:07",
-        "dtaFim": "2021-06-11 12:11:53",
-        "tempoUsoSegundos": 296
-      },
-      {
-        "desSoftware": "Skype",
-        "desFornecedor": "Skype Technologies S.A.",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-11 10:48:53",
-        "dtaFim": "2021-06-11 10:59:18",
-        "tempoUsoSegundos": 380
-      },
-      {
-        "desSoftware": "Google Chrome",
-        "desFornecedor": "Google LLC",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-11 10:19:55",
-        "dtaFim": "2021-06-11 10:54:24",
-        "tempoUsoSegundos": 453
-      },
-      {
-        "desSoftware": "Google Chrome",
-        "desFornecedor": "Google LLC",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-11 11:01:55",
-        "dtaFim": "2021-06-11 11:59:38",
-        "tempoUsoSegundos": 470
-      },
-      {
-        "desSoftware": "Skype",
-        "desFornecedor": "Skype Technologies S.A.",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-11 12:01:16",
-        "dtaFim": "2021-06-11 12:16:06",
-        "tempoUsoSegundos": 649
-      },
-      {
-        "desSoftware": "Google Chrome",
-        "desFornecedor": "Google LLC",
-        "flgAutorizado": "S",
         "dtaInicio": "2021-06-11 08:05:11",
         "dtaFim": "2021-06-11 08:56:18",
-        "tempoUsoSegundos": 946
+        "tempoUsoSegundos": 3067,
+        "flgAutorizado": "S"
       },
       {
-        "desSoftware": "Skype",
-        "desFornecedor": "Skype Technologies S.A.",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-11 11:00:01",
-        "dtaFim": "2021-06-11 12:00:07",
-        "tempoUsoSegundos": 1380
-      },
-      {
-        "desSoftware": "Visual Studio Code",
+        "desProcesso": "Visual Studio Code",
         "desFornecedor": "Microsoft Corporation",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-11 11:04:45",
-        "dtaFim": "2021-06-11 11:28:57",
-        "tempoUsoSegundos": 1452
+        "dtaInicio": "2021-06-11 08:56:18",
+        "dtaFim": "2021-06-11 09:00:27",
+        "tempoUsoSegundos": 249,
+        "flgAutorizado": "S"
       },
       {
-        "desSoftware": "Google Chrome",
+        "desProcesso": "Google Chrome",
         "desFornecedor": "Google LLC",
-        "flgAutorizado": "S",
         "dtaInicio": "2021-06-11 09:00:27",
         "dtaFim": "2021-06-11 09:46:11",
-        "tempoUsoSegundos": 1698
+        "tempoUsoSegundos": 2744,
+        "flgAutorizado": "S"
       },
       {
-        "desSoftware": "Visual Studio Code",
+        "desProcesso": "Visual Studio Code",
         "desFornecedor": "Microsoft Corporation",
-        "flgAutorizado": "S",
+        "dtaInicio": "2021-06-11 09:04:08",
+        "dtaFim": "2021-06-11 09:42:37",
+        "tempoUsoSegundos": 2309,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Code",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-11 09:46:11",
+        "dtaFim": "2021-06-11 10:05:24",
+        "tempoUsoSegundos": 1153,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Spotify",
+        "desFornecedor": "Spotify Ltd",
+        "dtaInicio": "2021-06-11 10:05:24",
+        "dtaFim": "2021-06-11 10:23:51",
+        "tempoUsoSegundos": 1107,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Code",
+        "desFornecedor": "Microsoft Corporation",
         "dtaInicio": "2021-06-11 10:06:04",
         "dtaFim": "2021-06-11 10:52:40",
-        "tempoUsoSegundos": 2092
+        "tempoUsoSegundos": 2796,
+        "flgAutorizado": "S"
       },
       {
-        "desSoftware": "Visual Studio Code",
-        "desFornecedor": "Microsoft Corporation",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-11 09:04:08",
-        "dtaFim": "2021-06-11 10:05:24",
-        "tempoUsoSegundos": 2199
+        "desProcesso": "Google Chrome",
+        "desFornecedor": "Google LLC",
+        "dtaInicio": "2021-06-11 10:19:55",
+        "dtaFim": "2021-06-11 10:54:24",
+        "tempoUsoSegundos": 2069,
+        "flgAutorizado": "S"
       },
       {
-        "desSoftware": "Visual Studio Code",
+        "desProcesso": "Skype",
+        "desFornecedor": "Skype Technologies S.A.",
+        "dtaInicio": "2021-06-11 10:48:53",
+        "dtaFim": "2021-06-11 10:59:18",
+        "tempoUsoSegundos": 625,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Skype",
+        "desFornecedor": "Skype Technologies S.A.",
+        "dtaInicio": "2021-06-11 11:00:01",
+        "dtaFim": "2021-06-11 11:55:08",
+        "tempoUsoSegundos": 3307,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Google Chrome",
+        "desFornecedor": "Google LLC",
+        "dtaInicio": "2021-06-11 11:01:55",
+        "dtaFim": "2021-06-11 11:59:38",
+        "tempoUsoSegundos": 3463,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Code",
         "desFornecedor": "Microsoft Corporation",
-        "flgAutorizado": "S",
-        "dtaInicio": "2021-06-11 08:01:55",
-        "dtaFim": "2021-06-11 09:00:27",
-        "tempoUsoSegundos": 2530
+        "dtaInicio": "2021-06-11 11:04:45",
+        "dtaFim": "2021-06-11 11:28:57",
+        "tempoUsoSegundos": 1452,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Mozilla Firefox",
+        "desFornecedor": "Mozilla Corporation",
+        "dtaInicio": "2021-06-11 11:34:22",
+        "dtaFim": "2021-06-11 11:41:38",
+        "tempoUsoSegundos": 436,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Google Chrome",
+        "desFornecedor": "Google LLC",
+        "dtaInicio": "2021-06-11 12:00:07",
+        "dtaFim": "2021-06-11 12:11:53",
+        "tempoUsoSegundos": 706,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Skype",
+        "desFornecedor": "Skype Technologies S.A.",
+        "dtaInicio": "2021-06-11 12:01:16",
+        "dtaFim": "2021-06-11 12:16:06",
+        "tempoUsoSegundos": 890,
+        "flgAutorizado": "S"
+      }
+    ]
+  },
+  {
+    "idAcesso": 1016,
+    "nomUsuario": "Matheus",
+    "dtaHorInicio": "2021-06-17 07:58:31",
+    "dtaHorFim": "2021-06-17 16:23:29",
+    "tempoTotalSegundos": 30298,
+    "tempoRegistradoSegundos": 26812,
+    "tempoAtivoSegundos": 26611,
+    "tempoInativoSegundos": 201,
+    "flgSituacao": "A",
+    "resumoAtividades": {
+      "idAcesso": 1016,
+      "tempoAutorizado": 26418,
+      "tempoNaoAutorizado": 193,
+      "porcentagemAutorizado": 99.27473601142384728119950397,
+      "porcentagemNaoAutorizado": 0.7252639885761527188004960354,
+      "lstDetalhes": [
+        {
+          "desFornecedor": "Microsoft Corporation",
+          "desProcesso": "Code",
+          "desSoftware": "Visual Studio Code",
+          "tempoUsoSegundos": 12737,
+          "porcentagemUso": 47.863665401525684867160196911,
+          "flgAutorizado": "S"
+        },
+        {
+          "desFornecedor": "Google LLC",
+          "desProcesso": "chrome",
+          "desSoftware": "Google Chrome",
+          "tempoUsoSegundos": 6001,
+          "porcentagemUso": 22.550824846867836608921122844,
+          "flgAutorizado": "S"
+        },
+        {
+          "desFornecedor": "Skype Technologies S.A.",
+          "desProcesso": "Skype",
+          "desSoftware": "Skype",
+          "tempoUsoSegundos": 4421,
+          "porcentagemUso": 16.613430536244410206305663072,
+          "flgAutorizado": "S"
+        },
+        {
+          "desFornecedor": "Allround Automations",
+          "desProcesso": "plsqldev",
+          "desSoftware": "PL/SQL Developer",
+          "tempoUsoSegundos": 1572,
+          "porcentagemUso": 5.9073315546202698132351283304,
+          "flgAutorizado": "S"
+        },
+        {
+          "desFornecedor": "Microsoft Corporation",
+          "desProcesso": "explorer",
+          "desSoftware": "Windows Explorer",
+          "tempoUsoSegundos": 611,
+          "porcentagemUso": 2.296042989741084513922813874,
+          "flgAutorizado": "S"
+        },
+        {
+          "desFornecedor": "ConEmu-Maximus5",
+          "desProcesso": "ConEmu64",
+          "desSoftware": "Console Emulator",
+          "tempoUsoSegundos": 376,
+          "porcentagemUso": 1.4129495321483597008755777686,
+          "flgAutorizado": "S"
+        },
+        {
+          "desFornecedor": "Postman",
+          "desProcesso": "Postman",
+          "desSoftware": "Postman",
+          "tempoUsoSegundos": 246,
+          "porcentagemUso": 0.924429747097065123445191838,
+          "flgAutorizado": "S"
+        },
+        {
+          "desFornecedor": "Opera Software",
+          "desProcesso": "opera",
+          "desSoftware": "Navegador Opera",
+          "tempoUsoSegundos": 167,
+          "porcentagemUso": 0.6275600315658938033144188493,
+          "flgAutorizado": "S"
+        },
+        {
+          "desFornecedor": "Microsoft Corporation",
+          "desProcesso": "notepad",
+          "desSoftware": "Bloco de Notas",
+          "tempoUsoSegundos": 156,
+          "porcentagemUso": 0.5862237420615534929164631168,
+          "flgAutorizado": "S"
+        },
+        {
+          "desFornecedor": "Microsoft Corporation",
+          "desProcesso": "ShellExperienceHost",
+          "desSoftware": null,
+          "tempoUsoSegundos": 123,
+          "porcentagemUso": 0.462214873548532561722595919,
+          "flgAutorizado": "N"
+        },
+        {
+          "desFornecedor": "Mozilla Corporation",
+          "desProcesso": "firefox",
+          "desSoftware": "Mozilla Firefox",
+          "tempoUsoSegundos": 76,
+          "porcentagemUso": 0.2855961820299875991131486979,
+          "flgAutorizado": "S"
+        },
+        {
+          "desFornecedor": "Microsoft Corporation",
+          "desProcesso": "msedge",
+          "desSoftware": "Microsoft Edge",
+          "tempoUsoSegundos": 37,
+          "porcentagemUso": 0.1390402465145992258840329187,
+          "flgAutorizado": "S"
+        },
+        {
+          "desFornecedor": "Microsoft Corporation",
+          "desProcesso": "powershell_ise",
+          "desSoftware": null,
+          "tempoUsoSegundos": 35,
+          "porcentagemUso": 0.1315245575138100785389500582,
+          "flgAutorizado": "N"
+        },
+        {
+          "desFornecedor": "Microsoft Corporation",
+          "desProcesso": "HxOutlook",
+          "desSoftware": null,
+          "tempoUsoSegundos": 35,
+          "porcentagemUso": 0.1315245575138100785389500582,
+          "flgAutorizado": "N"
+        },
+        {
+          "desFornecedor": "Microsoft Corporation",
+          "desProcesso": "OUTLOOK",
+          "desSoftware": "Microsoft Outlook",
+          "tempoUsoSegundos": 9,
+          "porcentagemUso": 0.0338206005035511630528728721,
+          "flgAutorizado": "S"
+        },
+        {
+          "desFornecedor": "Spotify Ltd",
+          "desProcesso": "Spotify",
+          "desSoftware": "Spotify",
+          "tempoUsoSegundos": 8,
+          "porcentagemUso": 0.0300627560031565893803314419,
+          "flgAutorizado": "S"
+        },
+        {
+          "desFornecedor": "iWorkOff",
+          "desProcesso": "iWorkOff",
+          "desSoftware": "iWorkOff",
+          "tempoUsoSegundos": 1,
+          "porcentagemUso": 0.0037578445003945736725414302,
+          "flgAutorizado": "S"
+        }
+      ]
+    },
+    "lstAtividades": [{
+        "desProcesso": "Google Chrome",
+        "desFornecedor": "Google LLC",
+        "dtaInicio": "2021-06-17 08:00:19",
+        "dtaFim": "2021-06-17 08:35:35",
+        "tempoUsoSegundos": 2116,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Windows Explorer",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-17 08:06:28",
+        "dtaFim": "2021-06-17 08:50:21",
+        "tempoUsoSegundos": 2633,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Console Emulator",
+        "desFornecedor": "ConEmu-Maximus5",
+        "dtaInicio": "2021-06-17 08:07:08",
+        "dtaFim": "2021-06-17 08:21:33",
+        "tempoUsoSegundos": 865,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Bloco de Notas",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-17 08:15:54",
+        "dtaFim": "2021-06-17 08:50:42",
+        "tempoUsoSegundos": 2088,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Code",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-17 08:17:57",
+        "dtaFim": "2021-06-17 08:48:43",
+        "tempoUsoSegundos": 1846,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Code",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-17 08:50:42",
+        "dtaFim": "2021-06-17 09:11:07",
+        "tempoUsoSegundos": 1225,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Google Chrome",
+        "desFornecedor": "Google LLC",
+        "dtaInicio": "2021-06-17 09:11:07",
+        "dtaFim": "2021-06-17 09:37:27",
+        "tempoUsoSegundos": 1580,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Code",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-17 09:11:35",
+        "dtaFim": "2021-06-17 09:38:23",
+        "tempoUsoSegundos": 1608,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Google Chrome",
+        "desFornecedor": "Google LLC",
+        "dtaInicio": "2021-06-17 09:38:23",
+        "dtaFim": "2021-06-17 10:04:29",
+        "tempoUsoSegundos": 1566,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Code",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-17 10:04:29",
+        "dtaFim": "2021-06-17 10:52:53",
+        "tempoUsoSegundos": 2904,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Google Chrome",
+        "desFornecedor": "Google LLC",
+        "dtaInicio": "2021-06-17 10:05:28",
+        "dtaFim": "2021-06-17 10:53:00",
+        "tempoUsoSegundos": 2852,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "ShellExperienceHost",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-17 10:18:25",
+        "dtaFim": "2021-06-17 10:20:05",
+        "tempoUsoSegundos": 100,
+        "flgAutorizado": "N"
+      },
+      {
+        "desProcesso": "Visual Studio Code",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-17 10:53:00",
+        "dtaFim": "2021-06-17 11:02:08",
+        "tempoUsoSegundos": 548,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Google Chrome",
+        "desFornecedor": "Google LLC",
+        "dtaInicio": "2021-06-17 11:02:08",
+        "dtaFim": "2021-06-17 11:50:44",
+        "tempoUsoSegundos": 2916,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Code",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-17 11:03:35",
+        "dtaFim": "2021-06-17 11:58:55",
+        "tempoUsoSegundos": 3320,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Mozilla Firefox",
+        "desFornecedor": "Mozilla Corporation",
+        "dtaInicio": "2021-06-17 11:44:18",
+        "dtaFim": "2021-06-17 11:45:34",
+        "tempoUsoSegundos": 76,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Navegador Opera",
+        "desFornecedor": "Opera Software",
+        "dtaInicio": "2021-06-17 11:46:11",
+        "dtaFim": "2021-06-17 11:48:58",
+        "tempoUsoSegundos": 167,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Google Chrome",
+        "desFornecedor": "Google LLC",
+        "dtaInicio": "2021-06-17 11:58:55",
+        "dtaFim": "2021-06-17 12:01:27",
+        "tempoUsoSegundos": 152,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Code",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-17 12:01:27",
+        "dtaFim": "2021-06-17 12:05:37",
+        "tempoUsoSegundos": 250,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Google Chrome",
+        "desFornecedor": "Google LLC",
+        "dtaInicio": "2021-06-17 12:02:57",
+        "dtaFim": "2021-06-17 12:04:58",
+        "tempoUsoSegundos": 121,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Skype",
+        "desFornecedor": "Skype Technologies S.A.",
+        "dtaInicio": "2021-06-17 13:04:19",
+        "dtaFim": "2021-06-17 13:53:30",
+        "tempoUsoSegundos": 2951,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Code",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-17 13:23:04",
+        "dtaFim": "2021-06-17 13:54:51",
+        "tempoUsoSegundos": 1907,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "PL/SQL Developer",
+        "desFornecedor": "Allround Automations",
+        "dtaInicio": "2021-06-17 13:25:38",
+        "dtaFim": "2021-06-17 13:53:59",
+        "tempoUsoSegundos": 1701,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Google Chrome",
+        "desFornecedor": "Google LLC",
+        "dtaInicio": "2021-06-17 13:26:55",
+        "dtaFim": "2021-06-17 13:38:20",
+        "tempoUsoSegundos": 685,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Postman",
+        "desFornecedor": "Postman",
+        "dtaInicio": "2021-06-17 13:47:33",
+        "dtaFim": "2021-06-17 13:54:12",
+        "tempoUsoSegundos": 399,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "PL/SQL Developer",
+        "desFornecedor": "Allround Automations",
+        "dtaInicio": "2021-06-17 13:54:51",
+        "dtaFim": "2021-06-17 14:00:28",
+        "tempoUsoSegundos": 337,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Code",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-17 14:00:28",
+        "dtaFim": "2021-06-17 14:55:09",
+        "tempoUsoSegundos": 3281,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Google Chrome",
+        "desFornecedor": "Google LLC",
+        "dtaInicio": "2021-06-17 14:05:22",
+        "dtaFim": "2021-06-17 14:10:14",
+        "tempoUsoSegundos": 292,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Skype",
+        "desFornecedor": "Skype Technologies S.A.",
+        "dtaInicio": "2021-06-17 14:07:08",
+        "dtaFim": "2021-06-17 14:57:55",
+        "tempoUsoSegundos": 3047,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "PL/SQL Developer",
+        "desFornecedor": "Allround Automations",
+        "dtaInicio": "2021-06-17 14:10:14",
+        "dtaFim": "2021-06-17 14:53:17",
+        "tempoUsoSegundos": 2583,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Windows Explorer",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-17 14:22:04",
+        "dtaFim": "2021-06-17 14:23:06",
+        "tempoUsoSegundos": 62,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Skype",
+        "desFornecedor": "Skype Technologies S.A.",
+        "dtaInicio": "2021-06-17 14:58:09",
+        "dtaFim": "2021-06-17 15:02:42",
+        "tempoUsoSegundos": 273,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "PL/SQL Developer",
+        "desFornecedor": "Allround Automations",
+        "dtaInicio": "2021-06-17 15:02:42",
+        "dtaFim": "2021-06-17 15:27:29",
+        "tempoUsoSegundos": 1487,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Skype",
+        "desFornecedor": "Skype Technologies S.A.",
+        "dtaInicio": "2021-06-17 15:04:30",
+        "dtaFim": "2021-06-17 15:54:01",
+        "tempoUsoSegundos": 2971,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Google Chrome",
+        "desFornecedor": "Google LLC",
+        "dtaInicio": "2021-06-17 15:05:53",
+        "dtaFim": "2021-06-17 15:58:06",
+        "tempoUsoSegundos": 3133,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Code",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-17 15:11:51",
+        "dtaFim": "2021-06-17 15:57:10",
+        "tempoUsoSegundos": 2719,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Postman",
+        "desFornecedor": "Postman",
+        "dtaInicio": "2021-06-17 15:15:33",
+        "dtaFim": "2021-06-17 15:27:45",
+        "tempoUsoSegundos": 732,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Windows Explorer",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-17 15:23:36",
+        "dtaFim": "2021-06-17 15:24:55",
+        "tempoUsoSegundos": 79,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Console Emulator",
+        "desFornecedor": "ConEmu-Maximus5",
+        "dtaInicio": "2021-06-17 15:45:48",
+        "dtaFim": "2021-06-17 15:57:20",
+        "tempoUsoSegundos": 692,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Code",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-17 15:58:06",
+        "dtaFim": "2021-06-17 16:04:00",
+        "tempoUsoSegundos": 354,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Google Chrome",
+        "desFornecedor": "Google LLC",
+        "dtaInicio": "2021-06-17 16:04:00",
+        "dtaFim": "2021-06-17 16:57:32",
+        "tempoUsoSegundos": 3212,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Visual Studio Code",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-17 16:04:23",
+        "dtaFim": "2021-06-17 16:59:05",
+        "tempoUsoSegundos": 3282,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Skype",
+        "desFornecedor": "Skype Technologies S.A.",
+        "dtaInicio": "2021-06-17 16:05:22",
+        "dtaFim": "2021-06-17 16:44:47",
+        "tempoUsoSegundos": 2365,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "PL/SQL Developer",
+        "desFornecedor": "Allround Automations",
+        "dtaInicio": "2021-06-17 16:20:52",
+        "dtaFim": "2021-06-17 16:48:03",
+        "tempoUsoSegundos": 1631,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Postman",
+        "desFornecedor": "Postman",
+        "dtaInicio": "2021-06-17 16:22:59",
+        "dtaFim": "2021-06-17 16:48:20",
+        "tempoUsoSegundos": 1521,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Windows Explorer",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-17 16:24:06",
+        "dtaFim": "2021-06-17 16:57:51",
+        "tempoUsoSegundos": 2025,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Console Emulator",
+        "desFornecedor": "ConEmu-Maximus5",
+        "dtaInicio": "2021-06-17 16:49:07",
+        "dtaFim": "2021-06-17 16:51:30",
+        "tempoUsoSegundos": 143,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Área de Trabalho Remota",
+        "desFornecedor": "Microsoft Corporation",
+        "dtaInicio": "2021-06-17 16:51:30",
+        "dtaFim": "2021-06-17 16:52:42",
+        "tempoUsoSegundos": 72,
+        "flgAutorizado": "S"
+      },
+      {
+        "desProcesso": "Google Chrome",
+        "desFornecedor": "Google LLC",
+        "dtaInicio": "2021-06-17 16:59:05",
+        "dtaFim": "2021-06-17 17:01:40",
+        "tempoUsoSegundos": 155,
+        "flgAutorizado": "S"
       }
     ]
   }

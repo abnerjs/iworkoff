@@ -5,18 +5,18 @@ import AppCollapse from './AppCollapse'
 import { connect } from 'react-redux'
 
 const AppsUtilizados = props => {
-    console.log(props.data)
 
     if (props.data) {
         return (
-            <div className="apps-util">
+            <div className="apps-util-container">
                 <Title content='Apps utilizados' />
-
-                {
-                    props.data.map((key, index) => {
-                        return <AppCollapse app={key} />
-                    })
-                }
+                <div className="apps-util">
+                    <div className="apps-util-content">{
+                        props.data.map((key, index) => {
+                            return <AppCollapse app={key} />
+                        })
+                    }</div>
+                </div>
             </div>
         )
     } else

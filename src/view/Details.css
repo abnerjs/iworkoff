@@ -1,6 +1,7 @@
 .details {
     display: flex;
     flex-direction: row;
+    margin-bottom: 30px;
     height: calc(100% - 80px);
 }
 
@@ -8,6 +9,9 @@
     width: max-content;
     text-align: left;
     margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .details .main {

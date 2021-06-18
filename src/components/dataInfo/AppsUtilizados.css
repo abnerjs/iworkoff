@@ -1,3 +1,18 @@
 .apps-util {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-bottom: 30px;
+}
+
+.apps-util-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     margin-top: 15px;
+}
+
+.apps-util-content {
+    height: 100%;
+    width: 100%;
 }
