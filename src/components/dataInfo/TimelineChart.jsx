@@ -97,12 +97,7 @@ function msUntilMidnight(element) {
         final.setHours(23)
         final.setMinutes(59)
         final.setSeconds(59)
-    } else if (stringToDate(element.dtaInicio).getDate() < stringToDate(element.dtaFim).getDate()) {
-        final.setHours(0)
-        final.setMinutes(0)
-        final.setSeconds(0)
     }
-
 
     var diff = 0
     diff = (final.getHours() - stringToDate(element.dtaInicio).getHours()) * 60 * 60
@@ -116,8 +111,8 @@ function rows(data, dateSelected) {
 
     console.log(data)
     const result = data ? data.reduce(function (r, a) {
-        r[a.app] = r[a.app] || []
-        r[a.app].push(a)
+        r[a.desSoftware] = r[a.desSoftware] || []
+        r[a.desSoftware].push(a)
         return r
     }, Object.create(null)) : {}
 
@@ -130,7 +125,7 @@ function rows(data, dateSelected) {
             {keys.map((key, index) => {
                 return (
                     <div
-                        className={`row row${index} ${'cor' + (index % 3).toString()} ${result[key][0].isAuth ? 'auth' : 'noauth'}`}
+                        className={`row row${index} ${'cor' + (index % 3).toString()} ${result[key][0].flgAutorizado === 'S' ? 'auth' : 'noauth'}`}
                         style={{
                             height: (100 / keys.length) + '%',
                         }}
@@ -182,4 +177,4 @@ const mapStateToProps = state => {
 
 export default connect(
     mapStateToProps
-)(TimelineChart)
+) (TimelineChart)

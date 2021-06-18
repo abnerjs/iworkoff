@@ -22,13 +22,6 @@ function getDataByDateSelected(dateSelected) {
     }
 }
 
-var totalAuth = dataApps[0].resumoAtividades.tempoAutorizado
-var totalNoAuth = dataApps[0].resumoAtividades.tempoNaoAutorizado
-var percentAuth = dataApps[0].resumoAtividades.porcentagemAutorizado
-var percentNoAuth = dataApps[0].resumoAtividades.porcentagemNaoAutorizado
-var totalAtiv = dataApps[0].tempoAtivoSegundos
-var totalIdling = dataApps[0].tempoInativoSegundos
-
 const reducers = combineReducers({
     person: function (state, action) {
         return {
@@ -46,6 +39,13 @@ const reducers = combineReducers({
                     data: getDataByDateSelected(action.payload) ? getDataByDateSelected(action.payload).lstAtividades : undefined,
                     dtaHoraInicio: getDataByDateSelected(action.payload) ? getDataByDateSelected(action.payload).dtaHorInicio : 'Sem atividade',
                     dataBrief: getDataByDateSelected(action.payload) ? getDataByDateSelected(action.payload).resumoAtividades.lstDetalhes : undefined,
+                    totalAuth: getDataByDateSelected(action.payload) ? getDataByDateSelected(action.payload).resumoAtividades.tempoAutorizado : undefined,
+                    totalNoAuth: getDataByDateSelected(action.payload) ? getDataByDateSelected(action.payload).resumoAtividades.tempoNaoAutorizado : undefined,
+                    tempoRegistradoSegundos: getDataByDateSelected(action.payload) ? getDataByDateSelected(action.payload).tempoRegistradoSegundos : undefined,
+                    totalAtiv: getDataByDateSelected(action.payload) ? getDataByDateSelected(action.payload).tempoAtivoSegundos : undefined,
+                    totalIdling: getDataByDateSelected(action.payload) ? getDataByDateSelected(action.payload).tempoInativoSegundos : undefined,
+                    percentAuth: getDataByDateSelected(action.payload) ? getDataByDateSelected(action.payload).resumoAtividades.porcentagemAutorizado : undefined,
+                    percentNoAuth: getDataByDateSelected(action.payload) ? getDataByDateSelected(action.payload).resumoAtividades.porcentagemNaoAutorizado : undefined
                 }
             default:
                 return {
@@ -58,12 +58,13 @@ const reducers = combineReducers({
                     },
                     dtaHoraInicio: getDataByDateSelected(new Date()) ? getDataByDateSelected(new Date()).dtaHorInicio : 'Sem atividade',
                     dtaHoraFim: getDataByDateSelected(new Date()) ? getDataByDateSelected(new Date()).flgSituacao === 'F' ? dataApps[dataApps.length - 1].dtaHorFim : 'Ativo' : 'Sem atividade',
-                    totalAuth: totalAuth,
-                    totalNoAuth: totalNoAuth,
-                    totalAtiv: totalAtiv,
-                    totalIdling: totalIdling,
-                    percentAuth: percentAuth,
-                    percentNoAuth: percentNoAuth
+                    totalAuth: getDataByDateSelected(new Date()) ? getDataByDateSelected(new Date()).resumoAtividades.tempoAutorizado : undefined,
+                    totalNoAuth: getDataByDateSelected(new Date()) ? getDataByDateSelected(new Date()).resumoAtividades.tempoNaoAutorizado : undefined,
+                    tempoRegistradoSegundos: getDataByDateSelected(new Date()) ? getDataByDateSelected(new Date()).tempoRegistradoSegundos : undefined,
+                    totalAtiv: getDataByDateSelected(new Date()) ? getDataByDateSelected(new Date()).tempoAtivoSegundos : undefined,
+                    totalIdling: getDataByDateSelected(new Date()) ? getDataByDateSelected(new Date()).tempoInativoSegundos : undefined,
+                    percentAuth: getDataByDateSelected(new Date()) ? getDataByDateSelected(new Date()).resumoAtividades.porcentagemAutorizado : undefined,
+                    percentNoAuth: getDataByDateSelected(new Date()) ? getDataByDateSelected(new Date()).resumoAtividades.porcentagemNaoAutorizado : undefined
                 }
         }
     },

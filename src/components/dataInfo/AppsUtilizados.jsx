@@ -5,15 +5,7 @@ import AppCollapse from './AppCollapse'
 import { connect } from 'react-redux'
 
 const AppsUtilizados = props => {
-
-    const result = props.data ? props.data.reduce(function (r, a) {
-        r[a.app] = r[a.app] || []
-        r[a.app].push(a)
-        return r
-    }, Object.create(null)) : {}
-
-
-    const keys = result ? Object.keys(result) : {}
+    console.log(props.data)
 
     if (props.data) {
         return (
@@ -21,8 +13,8 @@ const AppsUtilizados = props => {
                 <Title content='Apps utilizados' />
 
                 {
-                    keys.map((key, index) => {
-                        return <AppCollapse app={result[key][0]} />
+                    props.data.map((key, index) => {
+                        return <AppCollapse app={key} />
                     })
                 }
             </div>
