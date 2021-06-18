@@ -49,9 +49,9 @@ function timeMargin(element, index) {
 
 
     if(index > 0) {
-        diff -= stringToDate(element[index - 1].dtaInicio).getHours() * 60 * 60
-        diff -= stringToDate(element[index - 1].dtaInicio).getMinutes() * 60
-        diff -= stringToDate(element[index - 1].dtaInicio).getSeconds()
+        diff -= stringToDate(element[index - 1].dtaFim).getHours() * 60 * 60
+        diff -= stringToDate(element[index - 1].dtaFim).getMinutes() * 60
+        diff -= stringToDate(element[index - 1].dtaFim).getSeconds()
     }
 
     console.log(index + ': ' + element[0].desSoftware + ' ------------------------- ' + diff)

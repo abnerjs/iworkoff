@@ -69,7 +69,6 @@
     border-radius: 8px;
     transition: all ease 0.3s;
     white-space: pre;
-    z-index: 999;
 }
 
 [tooltip] {
