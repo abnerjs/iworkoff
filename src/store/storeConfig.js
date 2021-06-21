@@ -21,6 +21,11 @@ function getDataByDateSelected(dateSelected) {
     }
 }
 
+function getFirstDayOfWeek(date) {
+    date.setTime(date.getTime() - ((date.getDay() - 1) * 24*60*60*1000))
+    return date
+}
+
 const reducers = combineReducers({
     person: function (state, action) {
         return {
