@@ -29,3 +29,20 @@
     visibility: visible;
     opacity: 1;
 }
+
+.chevron-control {
+    font-size: 18px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.chevron-control:hover {
+    color: var(--green-iwo);
+    cursor: pointer;
+}
+
+.chevron-control.left {
+    margin-right: 10px;
+}

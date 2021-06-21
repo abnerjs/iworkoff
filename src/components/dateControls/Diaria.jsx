@@ -3,7 +3,7 @@ import React from 'react'
 import DiaCard from './DiaCard'
 import { connect } from 'react-redux'
 import './Diaria.css'
-import { IoReload } from "react-icons/io5"
+import { IoReload, IoChevronBack, IoChevronForward } from "react-icons/io5"
 import { setDateSelected } from '../../store/actions/dateSelected'
 
 function withoutTime(daySelect) {
@@ -35,7 +35,17 @@ const Diaria = props => {
 
     return (
         <div className='diaria' >
+            <div className="chevron-control left" onClick={() => {
+                props.setDateSelected(new Date(props.dateSelected.getTime() + (-7 * 24 * 60 * 60 * 1000)))
+            }}>
+                <IoChevronBack />
+            </div>
             {rows}
+            <div className="chevron-control" onClick={() => {
+                props.setDateSelected(new Date(props.dateSelected.getTime() + (7 * 24 * 60 * 60 * 1000)))
+            }}>
+                <IoChevronForward />
+            </div>
             <div className={`restore ${isToday ? '' : 'active'}`} onClick={() => { props.setDateSelected(new Date()) }}>
                 <IoReload />
             </div>
