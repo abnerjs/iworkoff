@@ -29,7 +29,7 @@ function getDataByWeekSelected(dateSelected) {
     for (let dataDay of dataApps) {
         for(let key of keys) {
             if (withoutTime(stringToDate(dataDay.dtaHorInicio), arr[key])) {
-                arrWeek.push(dataDay ? dataDay.lstAtividades : [])
+                arrWeek.push(dataDay ? dataDay : [])
             }
         }
     }

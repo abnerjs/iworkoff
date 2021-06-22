@@ -163,6 +163,7 @@ function rows(data, typeOfAnalytics, dataWeek) {
             </div>
         )
     } else if (typeOfAnalytics === 'Semanal') {
+        const semanaDays = ['Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira']
         return (
             <div className="rows">
                 {dataWeek.map((dataDay, index) => {
@@ -171,10 +172,10 @@ function rows(data, typeOfAnalytics, dataWeek) {
                             height: '20%',
                         }}>
                             <div className={`appInfo`} id={`rowInfo${index}`}>
-                                <div className="app"> blabla </div>
-                                <div className="timeInfo"> só um teste boy </div>
+                                <div className="app"> {semanaDays[index]} </div>
+                                <div className="timeInfo"> {secondsToHours(dataDay.tempoRegistradoSegundos)} </div>
                             </div>
-                            {dataDay.map((element, indexj) => {
+                            {dataDay.lstAtividades.map((element, indexj) => {
                                 return (
                                     <div
                                         tooltip={`${stringToDate(element.dtaInicio).getHours()}h${stringToDate(element.dtaInicio).getMinutes()}min - ${stringToDate(element.dtaFim).getHours()}h${stringToDate(element.dtaFim).getMinutes()}min`}
@@ -183,7 +184,7 @@ function rows(data, typeOfAnalytics, dataWeek) {
                                         className={`bar ${element.flgAutorizado === 'S' ? 'auth' : 'noauth'}`}
                                         style={{
                                             width: (msUntilMidnight(element) / 86400 * 100) + '%',
-                                            marginLeft: timeMargin(dataDay, indexj) / 86400 * 100 + '%',
+                                            marginLeft: timeMargin(dataDay.lstAtividades, indexj) / 86400 * 100 + '%',
                                         }}
                                     >
                                     </div>

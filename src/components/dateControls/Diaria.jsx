@@ -35,9 +35,9 @@ const Diaria = props => {
         } else if (props.typeOfAnalytics === 'Semanal') {
             rows.push(
                 <DiaCard delta={i} active={''}
-                    dia={(new Date(new Date(props.weekTime.tuesday).getTime() + (i * 24 * 60 * 60 * 1000))).getDate()}
-                    mes={meses[new Date(new Date(props.weekTime.tuesday).getTime() + (1 * 24 * 60 * 60 * 1000)).getMonth()]}
-                    sem={semana[((new Date(props.weekTime.tuesday).getDay() + i) + 7) % 7]}
+                    dia={(new Date(new Date(props.weekTime.wednesday).getTime() + (i * 24 * 60 * 60 * 1000))).getDate()}
+                    mes={meses[new Date(new Date(props.weekTime.wednesday).getTime() + (1 * 24 * 60 * 60 * 1000)).getMonth()]}
+                    sem={semana[((new Date(props.weekTime.wednesday).getDay() + i) + 7) % 7]}
                 />
             )
         }
