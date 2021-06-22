@@ -1,4 +1,3 @@
-/* eslint-disable import/no-anonymous-default-export */
 import React from 'react'
 import './DiaCard.css'
 import { connect } from 'react-redux'
@@ -7,7 +6,8 @@ import { setDateSelected } from '../../store/actions/dateSelected'
 const DiaCard = props => {
     return (
         <div className={`dia-card ${props.active}`} onClick={() => {
-            props.setDateSelected(new Date(props.dateSelected.getTime() + (props.delta * 24 * 60 * 60 * 1000)))
+            if(props.typeOfAnalytics === 'Diário')
+                props.setDateSelected(new Date(props.dateSelected.getTime() + (props.delta * 24 * 60 * 60 * 1000)))
         }}>
             <div className="sem">{props.sem}</div>
             <div className="dia">{props.dia}</div>
@@ -16,10 +16,10 @@ const DiaCard = props => {
     )
 }
 
-
 const mapStateToProps = state => {
     return {
         dateSelected: state.timelineResult.dateSelected,
+        typeOfAnalytics: state.timelineResult.typeOfAnalytics,
     }
 }
 

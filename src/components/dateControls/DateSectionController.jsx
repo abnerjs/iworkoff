@@ -1,32 +1,66 @@
 /* eslint-disable import/no-anonymous-default-export */
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import './DateSectionController.css'
+import { setTypeOfAnalytics } from '../../store/actions/typeOfAnalytics'
+import { connect } from 'react-redux'
 
-export default props => {
-    const [dateSelect, setDateSelect] = useState('Diário')
+const DateSectionController = props => {
 
     return (
         <div className='date-section'>
             <div className="selectors">
-                <Link to='/home' onClick={() => setDateSelect('Diário')} className={`link
-                ${dateSelect === 'Diário' ? 'active' : ''}
-            `}>
+                <Link to='/home'
+                    onClick={
+                        () => props.setTypeOfAnalytics(0)
+                    }
+                    className={`link
+                        ${props.typeOfAnalytics === 'Diário' ? 'active' : ''}
+                    `}>
                     Diário
-            </Link>
+                </Link>
 
-                <Link to='/home' onClick={() => setDateSelect('Semanal')} className={`link
-                ${dateSelect === 'Semanal' ? 'active' : ''}
-            `}>
+                <Link to='/home'
+                    onClick={
+                        () => props.setTypeOfAnalytics(1)
+                    }
+                    className={`link
+                        ${props.typeOfAnalytics === 'Semanal' ? 'active' : ''}
+                    `}>
                     Semanal
-            </Link>
+                </Link>
 
-                <Link to='/home' onClick={() => setDateSelect('Mensal')} className={`link
-                ${dateSelect === 'Mensal' ? 'active' : ''}
-            `}>
+                <Link to='/home' 
+                    onClick={
+                        () => props.setTypeOfAnalytics(2)
+                    } 
+                    className={`link
+                        ${props.typeOfAnalytics === 'Mensal' ? 'active' : ''}
+                    `}>
                     Mensal
-            </Link>
+                </Link>
             </div>
         </div>
     )
 }
+
+const mapStateToProps = state => {
+    return {
+        dateSelected: state.timelineResult.dateSelected,
+        typeOfAnalytics: state.timelineResult.typeOfAnalytics,
+    }
+}
+
+const mapDispatchToProp = dispatch => {
+    return {
+        setTypeOfAnalytics(newNumber) {
+            const action = setTypeOfAnalytics(newNumber)
+            dispatch(action)
+        }
+    }
+}
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProp
+)(DateSectionController)
