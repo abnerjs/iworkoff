@@ -48,14 +48,11 @@ function timeMargin(element, index) {
     diff += stringToDate(element[index].dtaInicio).getSeconds()
 
 
-    if(index > 0) {
+    if (index > 0) {
         diff -= stringToDate(element[index - 1].dtaFim).getHours() * 60 * 60
         diff -= stringToDate(element[index - 1].dtaFim).getMinutes() * 60
         diff -= stringToDate(element[index - 1].dtaFim).getSeconds()
     }
-
-    console.log(index + ': ' + element[0].desSoftware + ' ------------------------- ' + diff)
-    console.log('    ' + element[index].dtaInicio + ' - ' + element[index].dtaFim + '    ')
 
     return diff
 }
@@ -100,23 +97,22 @@ function msUntilMidnight(element) {
     diff += (final.getMinutes() - stringToDate(element.dtaInicio).getMinutes()) * 60
     diff += final.getSeconds() - stringToDate(element.dtaInicio).getSeconds()
 
-    console.log(diff)
     return diff
 }
 
 
-function rows(data, typeOfAnalytics) {
-    if(typeOfAnalytics === 'Diário') {
+function rows(data, typeOfAnalytics, dataWeek) {
+    if (typeOfAnalytics === 'Diário') {
         const result = data ? data.reduce(function (r, a) {
             r[a.desProcesso] = r[a.desProcesso] || []
             r[a.desProcesso].push(a)
             return r
         }, Object.create(null)) : {}
-    
+
         const keys = result ? Object.keys(result) : {}
-    
+
         for (let key of keys) {
-    
+
             result[key].sort(function (a, b) {
                 var x = stringToDate(a.dtaInicio)
                 var y = stringToDate(b.dtaInicio)
@@ -127,16 +123,16 @@ function rows(data, typeOfAnalytics) {
                 else
                     return 1
             })
-    
+
         }
-    
+
         return (
             <div className="rows">
-    
+
                 {keys.map((key, index) => {
                     return (
                         <div
-                            className={`row row${index} ${'cor' + (index % 3).toString()} ${result[key][0].flgAutorizado === 'S' ? 'auth' : 'noauth'}`}
+                            className={`row diario row${index} ${'cor' + (index % 3).toString()} ${result[key][0].flgAutorizado === 'S' ? 'auth' : 'noauth'}`}
                             style={{
                                 height: (100 / keys.length) + '%',
                             }}
@@ -169,7 +165,33 @@ function rows(data, typeOfAnalytics) {
     } else if (typeOfAnalytics === 'Semanal') {
         return (
             <div className="rows">
-                {}
+                {dataWeek.map((dataDay, index) => {
+                    return (
+                        <div className="row semanal" style={{
+                            height: '20%',
+                        }}>
+                            <div className={`appInfo`} id={`rowInfo${index}`}>
+                                <div className="app"> blabla </div>
+                                <div className="timeInfo"> só um teste boy </div>
+                            </div>
+                            {dataDay.map((element, indexj) => {
+                                return (
+                                    <div
+                                        tooltip={`${stringToDate(element.dtaInicio).getHours()}h${stringToDate(element.dtaInicio).getMinutes()}min - ${stringToDate(element.dtaFim).getHours()}h${stringToDate(element.dtaFim).getMinutes()}min`}
+                                        flow={'left'}
+                                        fulltime={'Uso: ' + secondsToHours(element.tempoUsoSegundos)}
+                                        className={`bar ${element.flgAutorizado === 'S' ? 'auth' : 'noauth'}`}
+                                        style={{
+                                            width: (msUntilMidnight(element) / 86400 * 100) + '%',
+                                            marginLeft: timeMargin(dataDay, indexj) / 86400 * 100 + '%',
+                                        }}
+                                    >
+                                    </div>
+                                )
+                            })}
+                        </div>
+                    )
+                })}
             </div>
         )
     }
@@ -179,7 +201,7 @@ const TimelineChart = props => {
     return (
         <div className="timeline">
             {timeLine()}
-            {rows(props.data, props.typeOfAnalytics)}
+            {rows(props.data, props.typeOfAnalytics, props.dataWeek)}
         </div>
     )
 }
@@ -189,7 +211,7 @@ const mapStateToProps = state => {
         data: state.timelineResult.data,
         dateSelected: state.timelineResult.dateSelected,
         typeOfAnalytics: state.timelineResult.typeOfAnalytics,
-        weekTime: state.timelineResult.weekTime,
+        dataWeek: state.timelineResult.dataWeek,
     }
 }
 

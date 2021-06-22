@@ -29,7 +29,7 @@ function getDataByWeekSelected(dateSelected) {
     for (let dataDay of dataApps) {
         for(let key of keys) {
             if (withoutTime(stringToDate(dataDay.dtaHorInicio), arr[key])) {
-                arrWeek.push(dataDay.lstAtividades)
+                arrWeek.push(dataDay ? dataDay.lstAtividades : [])
             }
         }
     }
@@ -44,7 +44,7 @@ function getDaysOfWeek(date) {
         thursday: date,
         friday: date
     }
-    arr.monday = new Date(date.getTime() - ((date.getDay() - 1) * 24*60*60*1000) + (24*60*60*1000))
+    arr.monday = new Date(date.getTime() - ((date.getDay()) * 24*60*60*1000) + (24*60*60*1000))
     arr.tuesday = new Date(arr.monday.getTime() + (24*60*60*1000))
     arr.wednesday = new Date(arr.tuesday.getTime() + (24*60*60*1000))
     arr.thursday = new Date(arr.wednesday.getTime() + (24*60*60*1000))
@@ -69,6 +69,7 @@ const reducers = combineReducers({
                     weekTime: getDaysOfWeek(action.payload),
                     dtaHoraFim: getDataByDateSelected(action.payload) ? getDataByDateSelected(action.payload).flgSituacao === 'F' ? dataApps[dataApps.length - 1].dtaHorFim : 'Ativo' : 'Sem atividade',
                     data: getDataByDateSelected(action.payload) ? getDataByDateSelected(action.payload).lstAtividades : undefined,
+                    dataWeek: getDataByWeekSelected(action.payload) ? getDataByWeekSelected(action.payload) : undefined,
                     dtaHoraInicio: getDataByDateSelected(action.payload) ? getDataByDateSelected(action.payload).dtaHorInicio : 'Sem atividade',
                     dataBrief: getDataByDateSelected(action.payload) ? getDataByDateSelected(action.payload).resumoAtividades.lstDetalhes : undefined,
                     totalAuth: getDataByDateSelected(action.payload) ? getDataByDateSelected(action.payload).resumoAtividades.tempoAutorizado : undefined,
@@ -87,7 +88,7 @@ const reducers = combineReducers({
             default:
                 return {
                     data: getDataByDateSelected(new Date()) ? getDataByDateSelected(new Date()).lstAtividades : undefined,
-                    dataWeek: getDataByWeekSelected(new Date()),
+                    dataWeek: getDataByWeekSelected(new Date()) ? getDataByWeekSelected(new Date()) : undefined,
                     dataBrief: getDataByDateSelected(new Date()) ? getDataByDateSelected(new Date()).resumoAtividades.lstDetalhes : undefined,
                     dateSelected: new Date(),
                     weekTime: getDaysOfWeek(new Date()),
