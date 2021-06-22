@@ -172,7 +172,7 @@ function rows(data, typeOfAnalytics, dataWeek) {
                             height: '20%',
                         }}>
                             <div className={`appInfo`} id={`rowInfo${index}`}>
-                                <div className="app"> {semanaDays[index]} </div>
+                                <div className="app"> {semanaDays[stringToDate(dataDay.dtaHorInicio).getDay() - 1]} </div>
                                 <div className="timeInfo"> {secondsToHours(dataDay.tempoRegistradoSegundos)} </div>
                             </div>
                             {dataDay.lstAtividades.map((element, indexj) => {
