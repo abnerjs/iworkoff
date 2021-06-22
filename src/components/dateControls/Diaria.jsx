@@ -24,13 +24,25 @@ const Diaria = props => {
 
     var rows = []
     for (let i = -3; i <= 3; i++) {
-        rows.push(
-            <DiaCard delta={i} active={(i === 0) && props.typeOfAnalytics === 'Diário' ? 'active' : ''}
-                dia={(new Date(new Date(props.dateSelected).getTime() + (i * 24 * 60 * 60 * 1000))).getDate()}
-                mes={meses[new Date(new Date(props.dateSelected).getTime() + (1 * 24 * 60 * 60 * 1000)).getMonth()]}
-                sem={semana[((new Date(props.dateSelected).getDay() + i) + 7) % 7]}
-            />
-        )
+        if(props.typeOfAnalytics === 'Diário') {
+            rows.push(
+                <DiaCard delta={i} active={(i === 0) ? 'active' : ''}
+                    dia={(new Date(new Date(props.dateSelected).getTime() + (i * 24 * 60 * 60 * 1000))).getDate()}
+                    mes={meses[new Date(new Date(props.dateSelected).getTime() + (1 * 24 * 60 * 60 * 1000)).getMonth()]}
+                    sem={semana[((new Date(props.dateSelected).getDay() + i) + 7) % 7]}
+                />
+            )
+        } else if (props.typeOfAnalytics === 'Semanal') {
+            rows.push(
+                <DiaCard delta={i} active={''}
+                    dia={(new Date(new Date(props.weekTime.tuesday).getTime() + (i * 24 * 60 * 60 * 1000))).getDate()}
+                    mes={meses[new Date(new Date(props.weekTime.tuesday).getTime() + (1 * 24 * 60 * 60 * 1000)).getMonth()]}
+                    sem={semana[((new Date(props.weekTime.tuesday).getDay() + i) + 7) % 7]}
+                />
+            )
+        }
+
+        
     }
 
     return (
@@ -57,6 +69,7 @@ const mapStateToProps = state => {
     return {
         dateSelected: state.timelineResult.dateSelected,
         typeOfAnalytics: state.timelineResult.typeOfAnalytics,
+        weekTime: state.timelineResult.weekTime,
     }
 }
 
