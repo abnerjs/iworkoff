@@ -210,7 +210,6 @@ const TimelineChart = props => {
 const mapStateToProps = state => {
     return {
         data: state.timelineResult.data,
-        dateSelected: state.timelineResult.dateSelected,
         typeOfAnalytics: state.timelineResult.typeOfAnalytics,
         dataWeek: state.timelineResult.dataWeek,
     }
