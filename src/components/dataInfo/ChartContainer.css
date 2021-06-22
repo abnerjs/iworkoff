@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     background-color: #fff;
-    width: calc(100% - 60px);
+    width: calc(100%);
     flex-grow: 1;
     margin: 15px 0;
     border-radius: 8px;
