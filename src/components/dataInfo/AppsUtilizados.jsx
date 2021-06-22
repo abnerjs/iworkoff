@@ -35,7 +35,7 @@ const AppsUtilizados = props => {
                 </div>
             </div>
         )
-    } else if (props.data && props.typeOfAnalytics === 'Semanal') {
+    } else if (props.dataWeek.length > 0 && props.typeOfAnalytics === 'Semanal') {
         var arr = []
         for (let dataDay of props.dataWeek) {
             arr.push(...new Set([...dataDay.resumoAtividades.lstDetalhes]))

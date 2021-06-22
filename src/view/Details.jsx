@@ -21,7 +21,7 @@ const Details = props => {
                 <ChartContainer />
                 <ActivitiesData />
             </div>
-            {props.data ? <div className="datatext">
+            {props.data || (props.typeOfAnalytics !== 'Diário' && props.dataWeek.length > 0) ? <div className="datatext">
                 <DataSide />
                 <AppsUtilizados />
             </div> : ''}
@@ -32,6 +32,8 @@ const Details = props => {
 const mapStateToProps = state => {
     return {
         data: state.timelineResult.data,
+        dataWeek: state.timelineResult.dataWeek,
+        typeOfAnalytics: state.timelineResult.typeOfAnalytics,
     }
 }
 
