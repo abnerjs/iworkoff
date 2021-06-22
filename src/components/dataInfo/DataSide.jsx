@@ -50,10 +50,6 @@ const DataSide = props => {
         )
     } else if (props.typeOfAnalytics === 'Semanal') {
 
-        for(let dataDay of props.dataWeek) {
-            console.log(dataDay.tempoRegistradoSegundos)
-        }
-
         return (
             <div className="dataside">
                 <Title content='Dados' />
