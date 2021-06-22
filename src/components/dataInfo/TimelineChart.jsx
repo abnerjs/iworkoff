@@ -105,74 +105,81 @@ function msUntilMidnight(element) {
 }
 
 
-function rows(data, dateSelected) {
-
-    const result = data ? data.reduce(function (r, a) {
-        r[a.desProcesso] = r[a.desProcesso] || []
-        r[a.desProcesso].push(a)
-        return r
-    }, Object.create(null)) : {}
-
-    const keys = result ? Object.keys(result) : {}
-
-    for (let key of keys) {
-
-        result[key].sort(function (a, b) {
-            var x = stringToDate(a.dtaInicio)
-            var y = stringToDate(b.dtaInicio)
-            if (x < y)
-                return -1
-            else if (x === y)
-                return 0
-            else
-                return 1
-        })
-
-    }
-
-    return (
-        <div className="rows">
-
-            {keys.map((key, index) => {
-                return (
-                    <div
-                        className={`row row${index} ${'cor' + (index % 3).toString()} ${result[key][0].flgAutorizado === 'S' ? 'auth' : 'noauth'}`}
-                        style={{
-                            height: (100 / keys.length) + '%',
-                        }}
-                        key={index}
-                    >
-                        <div className={`appInfo`} id={`rowInfo${index}`}>
-                            <div className="app"> {key} </div>
-                            <div className="timeInfo">{groupTime(result[key])}</div>
+function rows(data, typeOfAnalytics) {
+    if(typeOfAnalytics === 'Diário') {
+        const result = data ? data.reduce(function (r, a) {
+            r[a.desProcesso] = r[a.desProcesso] || []
+            r[a.desProcesso].push(a)
+            return r
+        }, Object.create(null)) : {}
+    
+        const keys = result ? Object.keys(result) : {}
+    
+        for (let key of keys) {
+    
+            result[key].sort(function (a, b) {
+                var x = stringToDate(a.dtaInicio)
+                var y = stringToDate(b.dtaInicio)
+                if (x < y)
+                    return -1
+                else if (x === y)
+                    return 0
+                else
+                    return 1
+            })
+    
+        }
+    
+        return (
+            <div className="rows">
+    
+                {keys.map((key, index) => {
+                    return (
+                        <div
+                            className={`row row${index} ${'cor' + (index % 3).toString()} ${result[key][0].flgAutorizado === 'S' ? 'auth' : 'noauth'}`}
+                            style={{
+                                height: (100 / keys.length) + '%',
+                            }}
+                            key={index}
+                        >
+                            <div className={`appInfo`} id={`rowInfo${index}`}>
+                                <div className="app"> {key} </div>
+                                <div className="timeInfo">{groupTime(result[key])}</div>
+                            </div>
+                            {result[key].map((element, indexj) => {
+                                return (
+                                    <div
+                                        tooltip={`${stringToDate(element.dtaInicio).getHours()}h${stringToDate(element.dtaInicio).getMinutes()}min - ${stringToDate(element.dtaFim).getHours()}h${stringToDate(element.dtaFim).getMinutes()}min`}
+                                        flow={'left'}
+                                        fulltime={'Uso: ' + secondsToHours(element.tempoUsoSegundos)}
+                                        className={`bar ${result[key][0].flgAutorizado === 'S' ? 'auth' : 'noauth'}`}
+                                        style={{
+                                            width: (msUntilMidnight(element) / 86400 * 100) + '%',
+                                            marginLeft: timeMargin(result[key], indexj) / 86400 * 100 + '%',
+                                        }}
+                                    >
+                                    </div>
+                                )
+                            })}
                         </div>
-                        {result[key].map((element, indexj) => {
-                            return (
-                                <div
-                                    tooltip={`${stringToDate(element.dtaInicio).getHours()}h${stringToDate(element.dtaInicio).getMinutes()}min - ${stringToDate(element.dtaFim).getHours()}h${stringToDate(element.dtaFim).getMinutes()}min`}
-                                    flow={'left'}
-                                    fulltime={'Uso: ' + secondsToHours(element.tempoUsoSegundos)}
-                                    className={`bar ${result[key][0].flgAutorizado === 'S' ? 'auth' : 'noauth'}`}
-                                    style={{
-                                        width: (msUntilMidnight(element) / 86400 * 100) + '%',
-                                        marginLeft: timeMargin(result[key], indexj) / 86400 * 100 + '%',
-                                    }}
-                                >
-                                </div>
-                            )
-                        })}
-                    </div>
-                )
-            })}
-        </div>
-    )
+                    )
+                })}
+            </div>
+        )
+    } else if (typeOfAnalytics === 'Semanal') {
+        return (
+            <div className="rows">
+                {}
+            </div>
+        )
+    }
 }
 
 const TimelineChart = props => {
     return (
         <div className="timeline">
             {timeLine()}
-            {rows(props.data, props.dateSelected)}
+            {rows(props.data, props.typeOfAnalytics)}
         </div>
     )
 }
@@ -181,6 +188,8 @@ const mapStateToProps = state => {
     return {
         data: state.timelineResult.data,
         dateSelected: state.timelineResult.dateSelected,
+        typeOfAnalytics: state.timelineResult.typeOfAnalytics,
+        weekTime: state.timelineResult.weekTime,
     }
 }
 

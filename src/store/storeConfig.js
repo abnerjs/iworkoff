@@ -22,6 +22,20 @@ function getDataByDateSelected(dateSelected) {
     }
 }
 
+function getDataByWeekSelected(dateSelected) {
+    const arr = getDaysOfWeek(dateSelected)
+    var arrWeek = []
+    const keys = arr ? Object.keys(arr) : {}
+    for (let dataDay of dataApps) {
+        for(let key of keys) {
+            if (withoutTime(stringToDate(dataDay.dtaHorInicio), arr[key])) {
+                arrWeek.push(dataDay.lstAtividades)
+            }
+        }
+    }
+    return arrWeek
+}
+
 function getDaysOfWeek(date) {
     var arr = {
         monday: date,
@@ -73,6 +87,7 @@ const reducers = combineReducers({
             default:
                 return {
                     data: getDataByDateSelected(new Date()) ? getDataByDateSelected(new Date()).lstAtividades : undefined,
+                    dataWeek: getDataByWeekSelected(new Date()),
                     dataBrief: getDataByDateSelected(new Date()) ? getDataByDateSelected(new Date()).resumoAtividades.lstDetalhes : undefined,
                     dateSelected: new Date(),
                     weekTime: getDaysOfWeek(new Date()),
