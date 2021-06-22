@@ -1,6 +1,7 @@
 import { combineReducers, createStore } from "redux"
 import dataApps from './dataApps.json'
 
+
 function stringToDate(dtaHorInicio) {
     const tmpaux = dtaHorInicio.split(/[- :]/)
     return new Date(tmpaux[0], tmpaux[1] - 1, tmpaux[2], tmpaux[3], tmpaux[4], tmpaux[5])
@@ -64,12 +65,18 @@ const reducers = combineReducers({
                     percentAuth: getDataByDateSelected(action.payload) ? getDataByDateSelected(action.payload).resumoAtividades.porcentagemAutorizado : undefined,
                     percentNoAuth: getDataByDateSelected(action.payload) ? getDataByDateSelected(action.payload).resumoAtividades.porcentagemNaoAutorizado : undefined
                 }
+            case 'TYPEOF_ANALYTICS_SELECTION_SETTED':
+                return {
+                    ...state,
+                    typeOfAnalytics: action.payload,
+                }
             default:
                 return {
                     data: getDataByDateSelected(new Date()) ? getDataByDateSelected(new Date()).lstAtividades : undefined,
                     dataBrief: getDataByDateSelected(new Date()) ? getDataByDateSelected(new Date()).resumoAtividades.lstDetalhes : undefined,
                     dateSelected: new Date(),
                     weekTime: getDaysOfWeek(new Date()),
+                    typeOfAnalytics: 'Diário',
                     dtaHoraInicio: getDataByDateSelected(new Date()) ? getDataByDateSelected(new Date()).dtaHorInicio : 'Sem atividade',
                     dtaHoraFim: getDataByDateSelected(new Date()) ?
                         getDataByDateSelected(new Date()).flgSituacao === 'F' ? dataApps[dataApps.length - 1].dtaHorFim : 'Ativo' :
