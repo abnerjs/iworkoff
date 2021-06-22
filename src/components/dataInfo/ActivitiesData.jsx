@@ -42,7 +42,7 @@ const ActivitiesData = props => {
                 
             </div>
         )
-    } else if(props.typeOfAnalytics === 'Semanal') {
+    } else if(props.typeOfAnalytics === 'Semanal' && props.dataWeek.length > 0) {
         return (
             <div className="activities">
                 <div className='section'>
