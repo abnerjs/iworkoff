@@ -21,9 +21,21 @@ function getDataByDateSelected(dateSelected) {
     }
 }
 
-function getFirstDayOfWeek(date) {
-    date.setTime(date.getTime() - ((date.getDay() - 1) * 24*60*60*1000))
-    return date
+function getDaysOfWeek(date) {
+    var arr = {
+        monday: date,
+        tuesday: date,
+        wednesday: date,
+        thursday: date,
+        friday: date
+    }
+    arr.monday = new Date(date.getTime() - ((date.getDay() - 1) * 24*60*60*1000) + (24*60*60*1000))
+    arr.tuesday = new Date(arr.monday.getTime() + (24*60*60*1000))
+    arr.wednesday = new Date(arr.tuesday.getTime() + (24*60*60*1000))
+    arr.thursday = new Date(arr.wednesday.getTime() + (24*60*60*1000))
+    arr.friday = new Date(arr.thursday.getTime() + (24*60*60*1000))
+    
+    return arr
 }
 
 const reducers = combineReducers({
@@ -39,6 +51,7 @@ const reducers = combineReducers({
                 return {
                     ...state,
                     dateSelected: action.payload,
+                    weekTime: getDaysOfWeek(action.payload),
                     dtaHoraFim: getDataByDateSelected(action.payload) ? getDataByDateSelected(action.payload).flgSituacao === 'F' ? dataApps[dataApps.length - 1].dtaHorFim : 'Ativo' : 'Sem atividade',
                     data: getDataByDateSelected(action.payload) ? getDataByDateSelected(action.payload).lstAtividades : undefined,
                     dtaHoraInicio: getDataByDateSelected(action.payload) ? getDataByDateSelected(action.payload).dtaHorInicio : 'Sem atividade',
@@ -56,10 +69,7 @@ const reducers = combineReducers({
                     data: getDataByDateSelected(new Date()) ? getDataByDateSelected(new Date()).lstAtividades : undefined,
                     dataBrief: getDataByDateSelected(new Date()) ? getDataByDateSelected(new Date()).resumoAtividades.lstDetalhes : undefined,
                     dateSelected: new Date(),
-                    weekTime: {
-                        initial: new Date(),
-                        final: new Date(),
-                    },
+                    weekTime: getDaysOfWeek(new Date()),
                     dtaHoraInicio: getDataByDateSelected(new Date()) ? getDataByDateSelected(new Date()).dtaHorInicio : 'Sem atividade',
                     dtaHoraFim: getDataByDateSelected(new Date()) ?
                         getDataByDateSelected(new Date()).flgSituacao === 'F' ? dataApps[dataApps.length - 1].dtaHorFim : 'Ativo' :
